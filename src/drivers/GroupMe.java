@@ -2,11 +2,17 @@ package drivers;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.ProtocolException;
 import java.net.URL;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -14,22 +20,66 @@ public class GroupMe {
 	static String GROUP_API = "https://api.groupme.com/v3";
 	static String GROUP_TOKEN;
 	
+	// must be envoked before calling methods from this class
 	public static void load(String token){
 		GROUP_TOKEN = token;
 	}
+	// takes the ID of a bot and sends a message through the GroupMe API.
 	public static void sendMessage(String message, String bot_id) throws IOException, JSONException{
 		HttpURLConnection send_connection = (HttpURLConnection) new URL(GROUP_API + "/bots/post?token=" + GROUP_TOKEN).openConnection();
 		send_connection.setRequestMethod("POST");
 		send_connection.setDoOutput(true);
-		System.out.println("here");
+		
 		JSONObject post_data = new JSONObject("{\"bot_id\":"+ bot_id + ",\"text\": \""+message+"\"}");
 		OutputStream os = send_connection.getOutputStream();
 		os.write(post_data.toString().getBytes("UTF-8"));
 		BufferedReader r = new BufferedReader(new InputStreamReader(send_connection.getInputStream()));
-		String out;
-		while((out = r.readLine()) != null){
-			System.out.println(out);
-		}
 		r.close();
+	}
+	
+	public static void removeMember(String member_id, String group_id) throws MalformedURLException, IOException, JSONException{
+		HttpURLConnection conn = (HttpURLConnection) new URL(GROUP_API + "/groups/"  + group_id + "/members/" + member_id + "/remove?token=" + GROUP_TOKEN).openConnection();
+		conn.setRequestMethod("POST");
+		conn.setDoOutput(true);
+		
+		OutputStream os = conn.getOutputStream();
+		os.write(new byte[0]);
+		BufferedReader r = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+		r.close();
+	}
+	
+	public static void addMember(String group_id, String member_id, String member_name) throws IOException, JSONException{
+		HttpURLConnection conn = (HttpURLConnection) new URL(GROUP_API + "/groups/"  + group_id + "/members/add?token=" + GROUP_TOKEN).openConnection();
+		conn.setRequestMethod("POST");
+		conn.setDoOutput(true);
+		
+		JSONObject post_data = new JSONObject();
+		JSONObject mem = new JSONObject();
+		mem.put("nickname", member_name);
+		mem.put("user_id", member_id);
+		//mem.put("guid", "GUID-1");
+		post_data.append("members", mem);
+		System.out.println(post_data.toString());
+		OutputStream os = conn.getOutputStream();
+		//os.write(post_data.toString().getBytes("UTF-8"));
+		PrintWriter writer = new PrintWriter(new OutputStreamWriter(os, "UTF-8"), true);
+		writer.append(post_data.toString());
+		writer.flush();
+		os.flush();
+		InputStream is = null;
+		try{
+			is = conn.getInputStream();
+		} catch(IOException e){
+			is = conn.getErrorStream();
+		}
+		if(is != null){
+			BufferedReader r = new BufferedReader(new InputStreamReader(is));
+			String out;
+			while((out = r.readLine()) != null){
+				System.out.println(out);
+			}
+		} else {
+			System.out.println("big error");
+		}
 	}
 }

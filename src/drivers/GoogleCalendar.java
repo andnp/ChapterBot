@@ -21,6 +21,7 @@ import com.google.api.services.calendar.model.Events;
 
 public class GoogleCalendar {
 	static Calendar service;
+	// Get a list of events from the calendar
 	public static List<Event> getEvents() throws IOException{
 		String pageToken = null;
 		List<Event> items = new ArrayList<Event>();
@@ -31,7 +32,7 @@ public class GoogleCalendar {
 		} while (pageToken != null);
 		return items;
 	}
-	
+	// Must be called before any calendar method is envoked.
 	public static void load() throws GeneralSecurityException, IOException{
 		HttpTransport httpTransport = GoogleNetHttpTransport.newTrustedTransport();
 		JacksonFactory jsonFactory = JacksonFactory.getDefaultInstance();
@@ -53,7 +54,7 @@ public class GoogleCalendar {
 		
 		service = new Calendar.Builder(httpTransport, jsonFactory, cred).setApplicationName("appname").build();
 	}
-	
+	// Returns a list of events that contain the given string.
 	public static List<Event> getEventsContaining(String name) throws IOException{
 		List<Event> events_contain = new ArrayList<Event>();
 		List<Event> events = getEvents();
