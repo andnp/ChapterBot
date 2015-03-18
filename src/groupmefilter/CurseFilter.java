@@ -1,5 +1,9 @@
 package groupmefilter;
 
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 
 import org.json.JSONException;
@@ -15,7 +19,9 @@ public class CurseFilter extends GroupMePortListener{
 	}
 	
 	public void readMessage(String message){
-		if(message.contains("cows")){
+		message = message.toLowerCase();
+		message = message.split(": ")[1];
+		if(isInBlacklist(message)){
 			try {
 				GroupMe.sendMessage("bad", bot_id);
 			} catch (IOException e) {
@@ -23,6 +29,24 @@ public class CurseFilter extends GroupMePortListener{
 			} catch (JSONException e) {
 				e.printStackTrace();
 			}
+		} 
+	}
+	
+	private boolean isInBlacklist(String word){
+		BufferedReader br;
+		try {
+			br = new BufferedReader(new FileReader("Blacklist.txt"));
+		String line;
+		while((line = br.readLine()) != null){
+			line = line.trim().toLowerCase();
+			if(line.equals(word)) {br.close(); return true;}
 		}
+		br.close();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return false;
 	}
 }

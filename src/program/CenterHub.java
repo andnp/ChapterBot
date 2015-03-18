@@ -21,7 +21,7 @@ public class CenterHub {
 	static String BOT_ID = "0a45c83bbc595e96fbd9ab323d";
 	public static void main(String args[]) throws GeneralSecurityException, IOException, JSONException{
 		GroupMe.load(GROUP_TOKEN);
-		GroupMe.addMember("12838361", "23314953", "Dad");
+		//GroupMe.addMember("12838361", "23314953", "Dad");
 		CheckOuts timesheetchecker = new CheckOuts();
 		//timesheetchecker.start();
 		CurseFilter read_group = new CurseFilter(2000, BOT_ID);
