@@ -2,7 +2,6 @@ package drivers;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -10,6 +9,7 @@ public abstract class GroupMePortListener extends Thread{
 	int PORT = 2000;
 	public void run(){
 		try{
+			@SuppressWarnings("resource")
 			ServerSocket server_socket = new ServerSocket(PORT);
 			while(true){
 				Socket client = server_socket.accept();

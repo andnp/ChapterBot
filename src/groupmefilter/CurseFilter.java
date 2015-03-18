@@ -1,7 +1,6 @@
 package groupmefilter;
 
 import java.io.BufferedReader;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -21,14 +20,14 @@ public class CurseFilter extends GroupMePortListener{
 	}
 	
 	public void readMessage(String message){
-		message = message.toLowerCase();
-		message = message.split(": ")[1];
 		String name = message.split(": ")[0];
+		message = message.split(": ")[1];
+		message = message.toLowerCase();
+		
 		if(isInBlacklist(message)){
 			try {
-				GroupMe.sendMessage("bad", bot_id);
-				GroupMe.removeMember(GroupMe.getMemberID(group_id, name), group_id);
 				AddBack add = new AddBack(30 * 1000, group_id,GroupMe.getUserID(group_id, name),name);
+				GroupMe.removeMember(GroupMe.getMemberID(group_id, name), group_id);
 				add.start();
 			} catch (IOException e) {
 				e.printStackTrace();

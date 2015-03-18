@@ -4,17 +4,11 @@ import groupmefilter.CurseFilter;
 
 import java.io.IOException;
 import java.security.GeneralSecurityException;
-import java.util.List;
-
 import org.json.JSONException;
-
-import com.google.api.services.calendar.model.Event;
 
 import studytablestimesheet.CheckOuts;
 
-import drivers.GoogleCalendar;
 import drivers.GroupMe;
-import drivers.GroupMePortListener;
 
 public class CenterHub {
 	static String GROUP_TOKEN = "dde55e80aa3301322150761316d99941";
