@@ -52,34 +52,70 @@ public class GroupMe {
 		HttpURLConnection conn = (HttpURLConnection) new URL(GROUP_API + "/groups/"  + group_id + "/members/add?token=" + GROUP_TOKEN).openConnection();
 		conn.setRequestMethod("POST");
 		conn.setDoOutput(true);
+		conn.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
+		conn.setRequestProperty("Accept", "application/json");
 		
 		JSONObject post_data = new JSONObject();
 		JSONObject mem = new JSONObject();
 		mem.put("nickname", member_name);
 		mem.put("user_id", member_id);
-		//mem.put("guid", "GUID-1");
+		mem.put("guid", "GUID-1");
 		post_data.append("members", mem);
-		System.out.println(post_data.toString());
 		OutputStream os = conn.getOutputStream();
-		//os.write(post_data.toString().getBytes("UTF-8"));
-		PrintWriter writer = new PrintWriter(new OutputStreamWriter(os, "UTF-8"), true);
-		writer.append(post_data.toString());
-		writer.flush();
+		os.write(post_data.toString().getBytes("UTF-8"));
+		//PrintWriter writer = new PrintWriter(new OutputStreamWriter(os, "UTF-8"), true);
+		//writer.append(post_data.toString());
+		//writer.flush();
 		os.flush();
-		InputStream is = null;
-		try{
-			is = conn.getInputStream();
-		} catch(IOException e){
-			is = conn.getErrorStream();
+		BufferedReader r = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+		r.close();
+	}
+	
+	public static String getMemberID(String group_id, String name) throws IOException, JSONException{
+		HttpURLConnection conn = (HttpURLConnection) new URL(GROUP_API + "/groups/"  + group_id + "?token=" + GROUP_TOKEN).openConnection();
+		conn.setRequestMethod("GET");
+		conn.setRequestProperty("Accept", "application/json");
+		conn.setDoOutput(true);
+		
+		BufferedReader r = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+		String out;
+		String total = "";
+		while((out = r.readLine()) != null){
+			total += out;
 		}
-		if(is != null){
-			BufferedReader r = new BufferedReader(new InputStreamReader(is));
-			String out;
-			while((out = r.readLine()) != null){
-				System.out.println(out);
+		r.close();
+		JSONObject json = new JSONObject(total);
+		JSONArray array = json.getJSONObject("response").getJSONArray("members");
+	
+		for(int i = 0; i < array.length(); i++){
+			if(array.getJSONObject(i).getString("nickname").equals(name)){
+				return array.getJSONObject(i).getString("id");
 			}
-		} else {
-			System.out.println("big error");
 		}
+		return "";
+	}
+	
+	public static String getUserID(String group_id, String name) throws IOException, JSONException{
+		HttpURLConnection conn = (HttpURLConnection) new URL(GROUP_API + "/groups/"  + group_id + "?token=" + GROUP_TOKEN).openConnection();
+		conn.setRequestMethod("GET");
+		conn.setRequestProperty("Accept", "application/json");
+		conn.setDoOutput(true);
+		
+		BufferedReader r = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+		String out;
+		String total = "";
+		while((out = r.readLine()) != null){
+			total += out;
+		}
+		r.close();
+		JSONObject json = new JSONObject(total);
+		JSONArray array = json.getJSONObject("response").getJSONArray("members");
+	
+		for(int i = 0; i < array.length(); i++){
+			if(array.getJSONObject(i).getString("nickname").equals(name)){
+				return array.getJSONObject(i).getString("user_id");
+			}
+		}
+		return "";
 	}
 }

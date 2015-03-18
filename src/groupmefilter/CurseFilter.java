@@ -13,17 +13,23 @@ import drivers.GroupMePortListener;
 
 public class CurseFilter extends GroupMePortListener{
 	String bot_id;
-	public CurseFilter(int port, String bot_id){
+	String group_id;
+	public CurseFilter(int port, String bot_id, String group_id){
 		super(port);
 		this.bot_id = bot_id;
+		this.group_id = group_id;
 	}
 	
 	public void readMessage(String message){
 		message = message.toLowerCase();
 		message = message.split(": ")[1];
+		String name = message.split(": ")[0];
 		if(isInBlacklist(message)){
 			try {
 				GroupMe.sendMessage("bad", bot_id);
+				GroupMe.removeMember(GroupMe.getMemberID(group_id, name), group_id);
+				AddBack add = new AddBack(30 * 1000, group_id,GroupMe.getUserID(group_id, name),name);
+				add.start();
 			} catch (IOException e) {
 				e.printStackTrace();
 			} catch (JSONException e) {
