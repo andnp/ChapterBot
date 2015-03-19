@@ -18,8 +18,6 @@ public class CenterHub {
 	static String DISCUSSION_GROUP_ID = "11283452";
 	public static void main(String args[]) throws GeneralSecurityException, IOException, JSONException{
 		GroupMe.load(GROUP_TOKEN);
-		//GroupMe.addMember("12838361", "23314953", "Dad");
-		//System.out.println(GroupMe.getUserID("12838361", "Dad"));
 		CheckOuts timesheetchecker = new CheckOuts();
 		//timesheetchecker.start();
 		CurseFilter test_group = new CurseFilter(2000, TEST_BOT_ID, TEST_GROUP_ID);

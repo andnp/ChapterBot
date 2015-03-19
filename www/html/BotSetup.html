@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>ChapterBot Control</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-	<script>
-$('#power-button').click(function(){
-	$.post('power.php', function(data){
-		alert("pressed");
-	});
-};
+ <title>ChapterBot Control</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+ <script>
+$(document).ready(function(){
+ $('#offbutton').on('click', function(){
+    $.post('power.php', function(data){
+   });
+ });
+});
 </script>
 </head>
 <body>
-	<body>
-		<div class="container">
-			<div class="jumbotron">
-				<h1>Bot Controls</h1>
-				<p>Setup and control the ChapterBot</p>
-			</div>
-			<button type="button" id="power-button" class="btn btn-danger">Power Off</button>
-		</div>
-	</body>
+ <body>
+  <div class="container">
+   <div class="jumbotron">
+    <h1>Bot Controls</h1>
+    <p>Setup and control the ChapterBot</p>
+   </div>
+   <span class="row">
+    <div class="col-sm-6"><input type="button" id="offbutton" class="btn btn-danger" value="Power Off"/></div>
+    <div class="col-sm-6"><input type="button" id="onbutton" class="btn btn-success" value="Power On"/></div>
+   </span>
+  </div>
+ </body>
 </html>

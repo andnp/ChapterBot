@@ -33,6 +33,23 @@ public class GroupMe {
 		r.close();
 	}
 	
+	public static void sendDirectMessage(String message, String user_id) throws IOException, JSONException{
+		HttpURLConnection send_connection = (HttpURLConnection) new URL(GROUP_API + "/direct_messages/post?token=" + GROUP_TOKEN).openConnection();
+		send_connection.setRequestMethod("POST");
+		send_connection.setDoOutput(true);
+		
+		JSONObject post_data = new JSONObject();
+		JSONObject message_data = new JSONObject();
+		message_data.append("source_guid", "GUID");
+		message_data.append("recipient_id", user_id);
+		message_data.append("text", message);
+		post_data.append("direct_message", message_data);
+		OutputStream os = send_connection.getOutputStream();
+		os.write(post_data.toString().getBytes("UTF-8"));
+		BufferedReader r = new BufferedReader(new InputStreamReader(send_connection.getInputStream()));
+		r.close();
+	}
+	
 	public static void removeMember(String member_id, String group_id) throws MalformedURLException, IOException, JSONException{
 		HttpURLConnection conn = (HttpURLConnection) new URL(GROUP_API + "/groups/"  + group_id + "/members/" + member_id + "/remove?token=" + GROUP_TOKEN).openConnection();
 		conn.setRequestMethod("POST");
