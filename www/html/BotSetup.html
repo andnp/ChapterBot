@@ -22,11 +22,8 @@
 
 <script>
 $('.power-button').click(function(){
-	$.ajax({
-		url: ''
-		type: 'POST',
-		data: {},
-		success: function(result) {alert("Pressed");}
+	$.post('power.php', function(data){
+		alert("pressed");
 	});
 };
 </script>
