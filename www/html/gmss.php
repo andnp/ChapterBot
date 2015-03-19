@@ -1,13 +1,7 @@
 <?php
 require "ToJava.php";
 
-$callback = file_get_contents("php://input");
-$json = json_decode($callback, true);
-
-$text = $json['text'];
-$name = $json['name'];
-
-$data = $name . ": " . $text;
+$data = file_get_contents("php://input");
 
 sendDataToJava($data, 2000);
 ?>

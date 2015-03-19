@@ -6,6 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 import org.json.JSONException;
+import org.json.JSONObject;
 
 import drivers.GroupMe;
 import drivers.GroupMePortListener;
@@ -20,22 +21,27 @@ public class CurseFilter extends GroupMePortListener{
 	}
 	
 	public void readMessage(String message){
-		String name = message.split(": ")[0];
-		message = message.split(": ")[1];
-		message = message.toLowerCase();
-		
-		if(isInBlacklist(message)){
-			try {
-				System.out.println("Kicking: " + name);
-				AddBack add = new AddBack(24 * 60 * 60 * 1000, group_id,GroupMe.getUserID(group_id, name),name);
-				GroupMe.removeMember(GroupMe.getMemberID(group_id, name), group_id);
-				add.start();
-			} catch (IOException e) {
-				e.printStackTrace();
-			} catch (JSONException e) {
-				e.printStackTrace();
-			}
-		} 
+		try {
+			JSONObject json = new JSONObject(message);
+			String user_id = json.getString("user_id");
+			String name = json.getString("name");
+			message = json.getString("text");
+			message = message.toLowerCase();
+			
+			if(isInBlacklist(message)){
+				try {
+					System.out.println("Kicking: " + name);
+					AddBack add = new AddBack(24 * 60 * 60 * 1000, group_id,user_id,name);
+					GroupMe.removeMember(GroupMe.getMemberID(group_id, name), group_id);
+					add.start();
+				} catch (IOException e) {
+					e.printStackTrace();
+				} catch (JSONException e) {
+					e.printStackTrace();
+				}
+			} 
+		} catch (JSONException e1) {
+		}
 	}
 	
 	private boolean isInBlacklist(String message){
