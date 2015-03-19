@@ -26,7 +26,8 @@ public class CurseFilter extends GroupMePortListener{
 		
 		if(isInBlacklist(message)){
 			try {
-				AddBack add = new AddBack(30 * 1000, group_id,GroupMe.getUserID(group_id, name),name);
+				System.out.println("Kicking: " + name);
+				AddBack add = new AddBack(24 * 60 * 60 * 1000, group_id,GroupMe.getUserID(group_id, name),name);
 				GroupMe.removeMember(GroupMe.getMemberID(group_id, name), group_id);
 				add.start();
 			} catch (IOException e) {
@@ -37,14 +38,14 @@ public class CurseFilter extends GroupMePortListener{
 		} 
 	}
 	
-	private boolean isInBlacklist(String word){
+	private boolean isInBlacklist(String message){
 		BufferedReader br;
 		try {
 			br = new BufferedReader(new FileReader("Blacklist.txt"));
 		String line;
 		while((line = br.readLine()) != null){
 			line = line.trim().toLowerCase();
-			if(line.equals(word)) {br.close(); return true;}
+			if((message.contains(" " + line + " ")) || (message.contains(line) && message.length() == line.length()) ) {br.close(); return true;}
 		}
 		br.close();
 		} catch (FileNotFoundException e) {
