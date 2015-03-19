@@ -9,6 +9,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import drivers.GroupMe;
+import drivers.GroupMeIds;
 import drivers.GroupMePortListener;
 
 public class CurseFilter extends GroupMePortListener{
@@ -28,6 +29,8 @@ public class CurseFilter extends GroupMePortListener{
 			message = json.getString("text");
 			message = message.toLowerCase();
 			
+			GroupMeIds.addUserId(name, user_id);
+			
 			if(isInBlacklist(message)){
 				try {
 					System.out.println("Kicking: " + name);
@@ -41,6 +44,9 @@ public class CurseFilter extends GroupMePortListener{
 				}
 			} 
 		} catch (JSONException e1) {
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
 		}
 	}
 	

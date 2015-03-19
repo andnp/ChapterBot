@@ -17,7 +17,6 @@ public abstract class GroupMePortListener extends Thread{
 			
 				String input;
 				while((input = in.readLine()) != null){
-					System.out.println(input);
 					readMessage(input);
 				}
 			}

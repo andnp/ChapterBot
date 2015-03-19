@@ -10,6 +10,7 @@ import com.google.gdata.data.spreadsheet.*;
 import com.google.gdata.util.*;
 
 import drivers.GroupMe;
+import drivers.GroupMeIds;
 
 public class CheckOuts extends Thread{
 	SpreadsheetService service = new SpreadsheetService("MySpreadsheet");
@@ -31,9 +32,14 @@ public class CheckOuts extends Thread{
 				}
 			}
 			while(true){
-				List<String> messages = checkCheckOuts();
-				for(String message : messages){
-					GroupMe.sendMessage(message, BOT_ID);
+				List<String> names = checkCheckOuts();
+				for(String name : names){
+					String user_id = GroupMeIds.getUserID(name);
+					if(user_id != null) {
+						GroupMe.sendDirectMessage("You need to check out of Study Tables", user_id);
+					} else {
+						GroupMe.sendMessage(name + "needs to check out", BOT_ID);
+					}
 				}
 				Thread.sleep((long)(1000 * 60 * 60 * 1)); // sleep for an hour before checking again
 			}
@@ -95,7 +101,7 @@ public class CheckOuts extends Thread{
 			if(row.getCustomElements().getValue("name").equals(name)){
 				ret = Long.parseLong(row.getCustomElements().getValue("epochtime"));
 				if(time - ret > (60 * 60 * hours)){
-					return name + " needs to check out";
+					return name;
 				}
 			}
 		}

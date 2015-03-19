@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
+import java.net.ProtocolException;
 import java.net.URL;
 
 import org.json.JSONArray;
@@ -34,16 +35,20 @@ public class GroupMe {
 	}
 	
 	public static void sendDirectMessage(String message, String user_id) throws IOException, JSONException{
-		HttpURLConnection send_connection = (HttpURLConnection) new URL(GROUP_API + "/direct_messages/post?token=" + GROUP_TOKEN).openConnection();
+		HttpURLConnection send_connection = (HttpURLConnection) new URL(GROUP_API + "/direct_messages?token=" + GROUP_TOKEN).openConnection();
 		send_connection.setRequestMethod("POST");
 		send_connection.setDoOutput(true);
+		send_connection.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
+		send_connection.setRequestProperty("Accept", "application/json");
 		
 		JSONObject post_data = new JSONObject();
 		JSONObject message_data = new JSONObject();
-		message_data.append("source_guid", "GUID");
-		message_data.append("recipient_id", user_id);
-		message_data.append("text", message);
-		post_data.append("direct_message", message_data);
+		message_data.put("source_guid", "GUID");
+		message_data.put("recipient_id", user_id);
+		message_data.put("text", message);
+		post_data.put("direct_message", message_data);
+		System.out.println(send_connection.getURL().toString());
+		System.out.println(post_data.toString());
 		OutputStream os = send_connection.getOutputStream();
 		os.write(post_data.toString().getBytes("UTF-8"));
 		BufferedReader r = new BufferedReader(new InputStreamReader(send_connection.getInputStream()));
@@ -130,5 +135,21 @@ public class GroupMe {
 			}
 		}
 		return "";
+	}
+	
+	public static JSONObject getGroups() throws MalformedURLException, IOException, JSONException{
+		HttpURLConnection conn = (HttpURLConnection) new URL(GROUP_API + "/groups" + "?token=" + GROUP_TOKEN).openConnection();
+		conn.setRequestMethod("GET");
+		conn.setRequestProperty("Accept", "application/json");
+		conn.setDoOutput(true);
+		
+		BufferedReader r = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+		String out;
+		String total = "";
+		while((out = r.readLine()) != null){
+			total += out;
+		}
+		r.close();
+		return new JSONObject(total);
 	}
 }
