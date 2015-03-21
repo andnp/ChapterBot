@@ -81,15 +81,8 @@ public class CenterHub {
 		while((input = in.readLine()) != null){
 			if(input.equals("0")) turnOff();
 			if(input.equals("1")) turnOn();
-			if(input.equals("ping")){sendStatusSignal(client);}
 		}
 		client.close();
-	}
-	
-	public static void sendStatusSignal(Socket client) throws IOException{
-		DataOutputStream out_stream = new DataOutputStream(client.getOutputStream());
-		out_stream.writeBytes("hi");
-		out_stream.close();
 	}
 	
 	public static void monitorStatus(){
