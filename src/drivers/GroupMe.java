@@ -47,8 +47,6 @@ public class GroupMe {
 		message_data.put("recipient_id", user_id);
 		message_data.put("text", message);
 		post_data.put("direct_message", message_data);
-		System.out.println(send_connection.getURL().toString());
-		System.out.println(post_data.toString());
 		OutputStream os = send_connection.getOutputStream();
 		os.write(post_data.toString().getBytes("UTF-8"));
 		BufferedReader r = new BufferedReader(new InputStreamReader(send_connection.getInputStream()));

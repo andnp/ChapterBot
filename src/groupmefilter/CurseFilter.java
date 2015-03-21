@@ -15,8 +15,8 @@ import drivers.GroupMePortListener;
 public class CurseFilter extends GroupMePortListener{
 	String bot_id;
 	String group_id;
-	public CurseFilter(int port, String bot_id, String group_id){
-		super(port);
+	public CurseFilter(int port, String bot_id, String group_id, String name){
+		super(port, name);
 		this.bot_id = bot_id;
 		this.group_id = group_id;
 	}

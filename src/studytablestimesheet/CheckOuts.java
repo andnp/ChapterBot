@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.json.JSONException;
+
+import com.google.common.collect.Lists;
 import com.google.gdata.client.spreadsheet.*;
 import com.google.gdata.data.spreadsheet.*;
 import com.google.gdata.util.*;
@@ -36,9 +38,10 @@ public class CheckOuts extends Thread{
 				for(String name : names){
 					String user_id = GroupMeIds.getUserID(name);
 					if(user_id != null) {
-						GroupMe.sendDirectMessage("You need to check out of Study Tables", user_id);
+						GroupMe.sendDirectMessage("BOT: You need to check out of Study Tables", user_id);
+						user_id = null;
 					} else {
-						GroupMe.sendMessage(name + "needs to check out", BOT_ID);
+						GroupMe.sendMessage(name + " needs to check out", BOT_ID);
 					}
 				}
 				Thread.sleep((long)(1000 * 60 * 60 * 1)); // sleep for an hour before checking again
@@ -97,10 +100,14 @@ public class CheckOuts extends Thread{
 		long ret = 0;
 		long time = System.currentTimeMillis() / 1000;
 		
-		for(ListEntry row : listFeed.getEntries()){
-			if(row.getCustomElements().getValue("name").equals(name)){
+		List<ListEntry> entries = listFeed.getEntries();
+		entries = Lists.reverse(entries);
+		for(ListEntry row : entries){
+			System.out.println(row.getCustomElements().getValue("name"));
+			if(row.getCustomElements().getValue("name").contains(name)){
 				ret = Long.parseLong(row.getCustomElements().getValue("epochtime"));
 				if(time - ret > (60 * 60 * hours)){
+					System.out.println(name + " " + time + " " + ret);
 					return name;
 				}
 			}
