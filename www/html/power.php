@@ -4,6 +4,5 @@ require "ToJava.php";
 //power = 0 means off, power = 1 means on
 $power = $_REQUEST["power"];
 sendDataToJava($power, 1999);
-echo "Hello";
 print_r(error_get_last());
 ?>

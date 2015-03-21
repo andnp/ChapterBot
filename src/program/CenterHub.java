@@ -5,10 +5,15 @@ import groupmefilter.CurseFilter;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.security.GeneralSecurityException;
 import org.json.JSONException;
+import org.json.JSONObject;
 
 import studytablestimesheet.CheckOuts;
 
@@ -57,6 +62,7 @@ public class CenterHub {
 //		Start helper threads
 		loadThreads();
 		server_on = true;
+		monitorStatus();
 	}
 	
 	private static void turnOff() throws IOException{
@@ -64,6 +70,7 @@ public class CenterHub {
 		test_group.kill();
 		discussion_filter.kill();
 		server_on = false;
+		monitorStatus();
 	}
 	
 	private static void readClient() throws IOException{
@@ -78,7 +85,17 @@ public class CenterHub {
 	}
 	
 	private static void monitorStatus(){
-		
+		try {
+			JSONObject json = new JSONObject();
+			json.put("Filter Power", server_on);
+			PrintWriter file_writer = new PrintWriter("botstatus.json");
+			file_writer.println(json.toString(1));
+			file_writer.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (JSONException e) {
+			e.printStackTrace();
+		} 
 	}
 	
 	private static void loadThreads(){
