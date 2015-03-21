@@ -3,14 +3,12 @@ package program;
 import groupmefilter.CurseFilter;
 
 import java.io.BufferedReader;
+import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.security.GeneralSecurityException;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -18,7 +16,6 @@ import org.json.JSONObject;
 import studytablestimesheet.CheckOuts;
 
 import drivers.GroupMe;
-import drivers.GroupMeIds;
 
 public class CenterHub {
 	private static String GROUP_TOKEN = "dde55e80aa3301322150761316d99941";
@@ -27,7 +24,6 @@ public class CenterHub {
 	private static String DISCUSSION_BOT_ID = "17577deb3363947a4326cff0cf";
 	private static String DISCUSSION_GROUP_ID = "11283452";
 	
-	@SuppressWarnings("resource")
 	private static ServerSocket server_socket;
 	
 	private static CheckOuts timesheetchecker = new CheckOuts();
@@ -35,8 +31,8 @@ public class CenterHub {
 	private static CurseFilter discussion_filter;
 	
 	private static boolean server_on = false;
-	
-	private static int start_port = 2000;
+	private static int disc_kick_temp = 0;
+	private static int test_kick_temp = 0;
 	
 	public static void main(String args[]) throws GeneralSecurityException, IOException, JSONException{
 //		Turn the bot on
@@ -69,6 +65,8 @@ public class CenterHub {
 	
 	private static void turnOff() throws IOException{
 		if(!server_on) return;
+		test_kick_temp = test_group.kick_count;
+		disc_kick_temp = discussion_filter.kick_count;
 		test_group.kill();
 		discussion_filter.kill();
 		server_on = false;
@@ -83,7 +81,15 @@ public class CenterHub {
 		while((input = in.readLine()) != null){
 			if(input.equals("0")) turnOff();
 			if(input.equals("1")) turnOn();
+			if(input.equals("ping")){sendStatusSignal(client);}
 		}
+		client.close();
+	}
+	
+	public static void sendStatusSignal(Socket client) throws IOException{
+		DataOutputStream out_stream = new DataOutputStream(client.getOutputStream());
+		out_stream.writeBytes("hi");
+		out_stream.close();
 	}
 	
 	public static void monitorStatus(){
@@ -104,8 +110,10 @@ public class CenterHub {
 	
 	private static void loadThreads(){
 		discussion_filter = new CurseFilter(2001, DISCUSSION_BOT_ID, DISCUSSION_GROUP_ID, "Discussion Filter");
+		discussion_filter.kick_count = disc_kick_temp;
 		discussion_filter.start();
 		test_group = new CurseFilter(2000, TEST_BOT_ID, TEST_GROUP_ID, "Test Filter");
+		test_group.kick_count = test_kick_temp;
 		test_group.start();
 	}
 	
