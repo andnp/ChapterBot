@@ -14,7 +14,7 @@ $(document).ready(function(){
 
 $(document).ready(
 function(){
- updateStatus();
+ setInterval(function(){updateStatus();}, 2000);
 });
 
 function updateStatus(){

@@ -8,6 +8,8 @@ import java.io.IOException;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import program.CenterHub;
+
 import drivers.GroupMe;
 import drivers.GroupMeIds;
 import drivers.GroupMePortListener;
@@ -15,6 +17,7 @@ import drivers.GroupMePortListener;
 public class CurseFilter extends GroupMePortListener{
 	String bot_id;
 	String group_id;
+	public int kick_count = 0;
 	public CurseFilter(int port, String bot_id, String group_id, String name){
 		super(port, name);
 		this.bot_id = bot_id;
@@ -33,6 +36,8 @@ public class CurseFilter extends GroupMePortListener{
 			
 			if(isInBlacklist(message)){
 				try {
+					kick_count++;
+					CenterHub.monitorStatus();
 					System.out.println("Kicking: " + name);
 					AddBack add = new AddBack(24 * 60 * 60 * 1000, group_id,user_id,name);
 					GroupMe.removeMember(GroupMe.getMemberID(group_id, name), group_id);
@@ -57,7 +62,10 @@ public class CurseFilter extends GroupMePortListener{
 		String line;
 		while((line = br.readLine()) != null){
 			line = line.trim().toLowerCase();
-			if((message.contains(" " + line + " ")) || (message.contains(line) && message.length() == line.length()) ) {br.close(); return true;}
+			if(message.contains(" " + line + " ")) {br.close(); return true;}
+			for(String word : message.split(" ")){
+				if(word.equals(line)) {br.close(); return true;}
+			}
 		}
 		br.close();
 		} catch (FileNotFoundException e) {

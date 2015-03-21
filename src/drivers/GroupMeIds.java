@@ -42,7 +42,7 @@ public class GroupMeIds {
 		
 		json.put(name, id);
 		PrintWriter file_writer = new PrintWriter("userid.json");
-		file_writer.println(json.toString(0));
+		file_writer.println(json.toString(1));
 		file_writer.close();
 	}
 }

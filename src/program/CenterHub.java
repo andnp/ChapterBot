@@ -36,6 +36,8 @@ public class CenterHub {
 	
 	private static boolean server_on = false;
 	
+	private static int start_port = 2000;
+	
 	public static void main(String args[]) throws GeneralSecurityException, IOException, JSONException{
 //		Turn the bot on
 		turnOn();
@@ -84,10 +86,12 @@ public class CenterHub {
 		}
 	}
 	
-	private static void monitorStatus(){
+	public static void monitorStatus(){
 		try {
 			JSONObject json = new JSONObject();
 			json.put("Filter Power", server_on);
+			json.put("Discussion Filter Kick Count", discussion_filter.kick_count);
+			json.put("Test Filter Kick Count", test_group.kick_count);
 			PrintWriter file_writer = new PrintWriter("botstatus.json");
 			file_writer.println(json.toString(1));
 			file_writer.close();

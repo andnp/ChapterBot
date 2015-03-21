@@ -1,1 +1,5 @@
-{"Filter Power": true}
+{
+ "Test Filter Kick Count": 0,
+ "Discussion Filter Kick Count": 0,
+ "Filter Power": true
+}
