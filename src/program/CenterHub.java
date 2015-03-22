@@ -35,7 +35,7 @@ public class CenterHub {
 	
 	public static void main(String args[]) throws GeneralSecurityException, IOException, JSONException{
 //		Turn the bot on
-		turnOn();
+//		turnOn();
 		timesheetchecker.start();
 		
 //		List<Event> events = GoogleCalendar.getEventsContaining("Study Tables");
@@ -45,10 +45,10 @@ public class CenterHub {
 //		}
 		
 //		Monitor bot status and listen for controls from webpage.
-		server_socket = new ServerSocket(1999);
-		while(true){
-			readClient();
-		}
+//		server_socket = new ServerSocket(1999);
+//		while(true){
+//			readClient();
+//		}
 	}
 	
 	private static void turnOn(){
