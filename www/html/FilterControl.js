@@ -1,12 +1,13 @@
 $(document).ready(function(){
  $('#offbutton').on('click', function(){
+    $.post('power.php', {power: "0"});
     setTimeout(function(){updateStatus();}, 1000);
  });
 });
 
 $(document).ready(function(){
  $('#onbutton').on('click', function(){
-    $.get(ServerPower.php);
+    $.post('power.php', {power: "1"});
     setTimeout(function(){updateStatus();}, 1000);
  });
 });
