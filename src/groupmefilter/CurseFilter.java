@@ -4,12 +4,15 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import program.CenterHub;
-
 import drivers.GroupMe;
 import drivers.GroupMeIds;
 import drivers.GroupMePortListener;
@@ -33,6 +36,7 @@ public class CurseFilter extends GroupMePortListener{
 			message = message.toLowerCase();
 			
 			GroupMeIds.addUserId(name, user_id);
+			messageCounter(user_id);
 			
 			if(isInBlacklist(message)){
 				try {
@@ -74,5 +78,18 @@ public class CurseFilter extends GroupMePortListener{
 			e.printStackTrace();
 		}
 		return false;
+	}
+	
+	private void messageCounter(String user_id) throws IOException, JSONException{
+		//Get time
+		long epoch_time = System.currentTimeMillis() / 1000;
+		//Open .json
+		String json_text = new String(Files.readAllBytes(Paths.get("discmessages.json")), StandardCharsets.UTF_8);
+		JSONObject json = new JSONObject(json_text);
+		//Append time : id pair
+		json.put(epoch_time + "", user_id);
+		PrintWriter file_writer = new PrintWriter("discmessages.json");
+		file_writer.println(json.toString(1));
+		file_writer.close();
 	}
 }
