@@ -274,3 +274,8 @@ absolutely! i was going to make a google doc and share it with you guys.
 (she doesn't know you are talking to her)
 lol! you guys are entertaining
 actually, she already is :)
+https://github.com/andnp/chapterbot
+you'll have to stay on me to keep pushing my commits. i get behind a lot.
+yes, yes you do :) you also have the necessary info to hack my groupme and the kdr google calendar if you wanted to.
+it's something i've been working on changing, but have never gotten around to it.
+yeah ben, if you wanna go through some of that with me, i'd love to show you how she works. the majority of the machine learning is in committeecommands.java

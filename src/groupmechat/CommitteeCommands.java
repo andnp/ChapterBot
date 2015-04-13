@@ -1,6 +1,5 @@
 package groupmechat;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.nio.charset.StandardCharsets;
@@ -12,8 +11,6 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.GregorianCalendar;
 import java.util.List;
-import java.util.Scanner;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -31,89 +28,44 @@ public class CommitteeCommands extends Thread {
 	private int is_waiting_for_response = 0;
 	ArrayList<String> stack = new ArrayList<String>();
 	private String responder = "";
+
 	
-	public void train() throws IOException, JSONException, InterruptedException{
-		Scanner sc = new Scanner(new File("train.txt"));
-		String message = "";
-		int command = -1;
-		float right = 0;
-		float wrong = 0;
-		while(sc.hasNextLine()){
-			String line = sc.nextLine();
-			message = line.split(" // ")[0];
-			if(message.equals("learn get todos") || message.equals("learn get tasks") || message.equals("learn add todo") || message.equals("learn add task") || message.equals("learn complete todo") || message.equals("learn complete task")){
-				if(committee.equals("Test_Filter")) message = message + " org dev";
-				else message = message + " " + committee;
-			}
-			//System.out.println(message);
-			//System.out.println(line.split(" // ")[1]);
-			command = Integer.parseInt(line.split(" // ")[1]);
-			probablisticCommand(message, "andy");
-			if(last_command == command){ 
-//				System.out.println("success");
-				learn(last_command, message, true);
-				right++;
-			}
-			else {
-				while(last_command != command){
-//					System.out.println("fail");
-					System.out.println(message);
-					learn(last_command, message, false);
-					wrong++;
-					probablisticCommand(message, "andy");
-					if(last_command == command){
-//						System.out.println("success");
-						learn(last_command, message, true);
-						right++;
-					}
-				}
-			}
-		}
-		System.out.println("right: " + right + " wrong: " + wrong + " percent: " + (right / (right + wrong)));
-		sc.close();
-	}
-	public void train_guess(int command){
-		last_command = command;
+	public CommitteeCommands(String bot_id, String committee){ // constructor
+		this.bot_id = bot_id;
+		this.committee = committee;
 	}
 	
+	// Called from GroupMeChat object.
 	public void readMessage(String message, String name) throws Exception{
-		if(message.equals("train")){
-//			for(int i = 0; i <= 3; i++){
-//				train();
-//			}
-		}
-		if(message.equals("nevermind")){
-			last_message = "";
-			last_command = -1;
-			is_waiting_for_response = 0;
-		}
-		if(is_waiting_for_response > 0){
-			executeCommand(message, name);
-		}
 		if(message.equals("iris get todos") || message.equals("iris get tasks") || message.equals("iris add todo") || message.equals("iris add task") || message.equals("iris complete todo") || message.equals("iris complete task")){
-			message = message + " " + committee;
-		}
-		if(message.contains("iris")){
-			probablisticCommand(message, name);
-		}
-		if(message.equals("yes")){
-			if(last_command != -1){
-				executeCommand(message, name);
-				learn(last_command, last_message, true);
-				if(is_waiting_for_response == 0) last_command = -1;
+			message = message + " " + committee; // if a generic command is given, specify the committee name for iris.
+		} 
+		if(message.equals("nevermind")){
+			last_message = ""; // forget last message
+			last_command = -1; // reset last command
+			is_waiting_for_response = 0; // forget that am waiting for a response
+		} else if(is_waiting_for_response > 0){ // if waiting for some sort of response, then jump straight to that command.
+			executeCommand(message, name);
+		} else if(message.contains("iris")){
+			probablisticCommand(message, name); // use machine learning algorithm to probablistically determine desired command
+		} else if(message.equals("yes")){
+			if(last_command != -1){ // if looking for a response to a command confirmation
+				executeCommand(message, name); // execute command
+				learn(last_command, last_message, true); // learn from the positive confirmation
+				if(is_waiting_for_response == 0) last_command = -1; // reset the command
 			}
-		}
-		if(message.equals("no")){
-			if(last_command != -1){
+		} else if(message.equals("no")){
+			if(last_command != -1){ // if looking for a response to a command confirmation
 				System.out.println("hmm");
-				learn(last_command, last_message, false);
-				if(is_waiting_for_response == 0) last_command = -1;
+				learn(last_command, last_message, false); // learn from the negative confirmation
+				if(is_waiting_for_response == 0) last_command = -1; // reset the command
 			}
 		}
 	}
 	
 	private void executeCommand(String message, String name) throws JSONException, IOException, InterruptedException{
 		String fname = name.split(" ")[0];
+		// takes the command number from the last recognized command, and executes the appropriate response
 		switch(last_command){
 		case 0:
 			getTodos(committee);
@@ -185,64 +137,62 @@ public class CommitteeCommands extends Thread {
 	}
 	
 	private void addCalendarEvent(String message, String name) throws InterruptedException, IOException, JSONException{
-		if(is_waiting_for_response == 0){
-			String f_name = name.split(" ")[0];
+		if(is_waiting_for_response == 0){ // first state
+			String f_name = name.split(" ")[0]; // get first name
 			Thread.sleep(500);
-			GroupMe.sendMessage("What calendar event would you like to add "+ f_name + "?", bot_id);
-			is_waiting_for_response = 1;
-			responder = name;
+			GroupMe.sendMessage("What calendar event would you like to add "+ f_name + "?", bot_id); // prompt for event info
+			is_waiting_for_response = 1; // set to second state
+			responder = name; // remember who issued the command so no-one can interrupt
 		} else if(is_waiting_for_response == 1 && responder.equals(name)){
-			stack.add(message);
+			stack.add(message); // push calendar event information to the 'stack'
 			Thread.sleep(500);
-			GroupMe.sendMessage("What date is the event?", bot_id);
-			is_waiting_for_response = 2;
+			GroupMe.sendMessage("What date is the event?", bot_id); // prompt for event date
+			is_waiting_for_response = 2; // set to third state
 		} else if(is_waiting_for_response == 2 && responder.equals(name)){
-			stack.add(message);
-//			GoogleCalendar.quickAddEvent(stack.remove(0) + " " + stack.remove(0));
+			stack.add(message); // push calendar event date to the 'stack'
 			Thread.sleep(500);
-			GroupMe.sendMessage("What time is the event?", bot_id);
-			is_waiting_for_response = 3;
+			GroupMe.sendMessage("What time is the event?", bot_id); // prompt for event time
+			is_waiting_for_response = 3; // set to fouth state
 		} else if(is_waiting_for_response == 3 && responder.equals(name)){
-			stack.add(message);
+			stack.add(message); // push calendar event time to the 'stack'
 			// stack pos 0 = event name || pos 1 = date || pos 2 = time
-			GoogleCalendar.quickAddEvent(stack.get(0) + " " + stack.get(1) + " at " + stack.get(2));
+			GoogleCalendar.quickAddEvent(stack.get(0) + " " + stack.get(1) + " at " + stack.get(2)); // add the event with appropriate data
 			Thread.sleep(500);
 			GroupMe.sendMessage("Added: " + stack.remove(0) + ", scheduled for: " + stack.remove(0) + " at " + stack.remove(0) + " to google calendar.", bot_id);
-			is_waiting_for_response = 0;
-			responder = "";
+			is_waiting_for_response = 0; // reset state machine
+			responder = ""; // forget who issued the command
 		}
 	}
 	
 	private void listCommands() throws InterruptedException, IOException, JSONException{
-		String[] commands = {"Get todos", "Add todo", "Complete todo", "Add calendar event"};
-		String to_send = "";
+		String[] commands = {"Get todos", "Add todo", "Complete todo", "Add calendar event"}; // general list of commands
+		String to_send = ""; // string of information to send
 		for(String command : commands){
 			to_send += command + "\n";
 		}
-		Thread.sleep(100);
-		GroupMe.sendMessage(to_send, bot_id);
+		Thread.sleep(500);
+		GroupMe.sendMessage(to_send, bot_id); // send compiled list of events
 	}
 	
 	private void completeTodo(String comm, String message, String name) throws InterruptedException, IOException, JSONException{
-		if(is_waiting_for_response == 0){
+		if(is_waiting_for_response == 0){ // if in first state
 			Thread.sleep(500);
-			GroupMe.sendMessage("What todo would you like to complete?", bot_id);
-			is_waiting_for_response = 1;
-			responder = name;
+			GroupMe.sendMessage("What todo would you like to complete?", bot_id); // prompt for todo name to complete
+			is_waiting_for_response = 1; // set to second state
+			responder = name; // remember who issued the command
 		} else if(is_waiting_for_response == 1 && responder.equals(name)){
-			Todoist.completeItem(message, comm);
+			Todoist.completeItem(message, comm); // complete an item by name
 			Thread.sleep(500);
-			GroupMe.sendMessage("Completed todo: " + message, bot_id);
-			is_waiting_for_response = 0;
-			responder = "";
+			GroupMe.sendMessage("Completed todo: " + message, bot_id); // report completion in the groupme
+			is_waiting_for_response = 0; // reset state machine
+			responder = ""; // forget who issued the command
 		} 
 	}
 	
 	private void getTodos(String comm) throws JSONException, IOException, InterruptedException{
-		List<String> tasks;
-		tasks = Todoist.getUncompletedTasks(comm);
+		List<String> tasks = Todoist.getUncompletedTasks(comm); // get the list of uncompleted tasks based on committee
 		String to_send = "";
-		if(tasks.isEmpty()){
+		if(tasks.isEmpty()){ // if there are no todos, then report that
 			Thread.sleep(500);
 			GroupMe.sendMessage("No todos", bot_id);
 			return;
@@ -251,40 +201,35 @@ public class CommitteeCommands extends Thread {
 			to_send += task + "\n";
 		}
 		Thread.sleep(100);
-		GroupMe.sendMessage(to_send, bot_id);
+		GroupMe.sendMessage(to_send, bot_id); // report todos to finish
 	}
 	
 	private void addTodo(String comm, String message, String name) throws IOException, JSONException, InterruptedException{
-		if(is_waiting_for_response == 0){
+		if(is_waiting_for_response == 0){ // if in the first state
 			Thread.sleep(500);
-			GroupMe.sendMessage("What todo would you like to add?", bot_id);
-			is_waiting_for_response = 1;
-			responder = name;
+			GroupMe.sendMessage("What todo would you like to add?", bot_id); // prompt for todo information
+			is_waiting_for_response = 1; // set to first state
+			responder = name; // remember name of person who issued command
 		} else if(is_waiting_for_response == 1 && responder.equals(name)){
-			stack.add(message);
+			stack.add(message); // push the todo information to the 'stack'
 			Thread.sleep(500);
-			GroupMe.sendMessage("When is it due?", bot_id);
-			is_waiting_for_response = 2;
+			GroupMe.sendMessage("When is it due?", bot_id); // prompt for due date
+			is_waiting_for_response = 2; // set to third state
 		} else if(is_waiting_for_response == 2 && responder.equals(name)){
-			Todoist.addItem(stack.get(0), message, comm);
+			Todoist.addItem(stack.get(0), message, comm); // add todo
 			Thread.sleep(500);
 			GroupMe.sendMessage("Added: " + stack.remove(0) + " to: " + comm + ". Due on: " + message, bot_id);
-			is_waiting_for_response = 0;
-			responder = "";
+			is_waiting_for_response = 0; // reset state machine
+			responder = ""; // forget who issued the command
 		}
 	}
 	
-	public CommitteeCommands(String bot_id, String committee){
-		this.bot_id = bot_id;
-		this.committee = committee;
-	}
-	
+	// This opens an infinite loop on a new thread that reminds the committee to do todo's due today
 	public void run(){
 		Calendar cal = new GregorianCalendar();
-//		System.out.println("here");
 		while(true){
 			String month = "";
-			switch(cal.get(Calendar.MONTH)){
+			switch(cal.get(Calendar.MONTH)){ // get the String representation of a month as defined by Todoist.com
 			case 0:
 				month = "Jan";
 				break;
@@ -322,23 +267,26 @@ public class CommitteeCommands extends Thread {
 				month = "Dec";
 				break;
 			}
-			String day = cal.get(Calendar.DAY_OF_MONTH) + "";
-			String date = month + " " + day;
-			if(committee.equals("Test_Filter")) committee = "Org Dev";
-//			System.out.println(date);
+			String day = cal.get(Calendar.DAY_OF_MONTH) + ""; // day of month as string
+			String date = month + " " + day; // get combined date IE. (apr 12)
+			if(committee.equals("Test_Filter")) committee = "Org Dev"; // This gives the test group a real committee name.
 			try {
-				List<String> todos = Todoist.getItemByDate(date, committee);
+				List<String> todos = Todoist.getItemByDate(date, committee); // get the list of items due on a specific date
 				String to_send = "";
 				for(String task : todos){
 					to_send += task + "\n";
 				}
-				if(cal.get(Calendar.HOUR_OF_DAY) == 10){
+				if(cal.get(Calendar.HOUR_OF_DAY) == 10){ // if it is currently 10 o'clock
 					if(!todos.isEmpty()) GroupMe.sendMessage("These TODO's still need to be completed today!", bot_id);
 					Thread.sleep(1000);
 					if(!todos.isEmpty()) GroupMe.sendMessage(to_send, bot_id);
-					Thread.sleep(1000 * 60 * 60 * 22);
+					Thread.sleep(1000 * 60 * 60 * 2); // sleep for 2 hours.
 				}
-				Thread.sleep(1000 * 60 * 1);
+				if(cal.get(Calendar.HOUR_OF_DAY) == 9) { // if it is 9
+					Thread.sleep(1000 * 60 * 1); // sleep for a minute
+				} else {
+					Thread.sleep(1000 * 60 * 60 * 1); // sleep for an hour
+				}
 			} catch (IOException | JSONException | InterruptedException e) {
 				e.printStackTrace();
 			}
@@ -346,23 +294,24 @@ public class CommitteeCommands extends Thread {
 	}
 	
 	private void probablisticCommand(String message, String name) throws JSONException, IOException, InterruptedException{
-		String[] words = message.split(" ");
-		String[] doubles = getDoubles(words);
-		String[] triples = getTriples(words);
-		if(words.length < 3) {triples = new String[1]; triples[0] = "";}
+		String[] words = message.split(" "); // get the words from the message
+		String[] doubles = getDoubles(words);// get pairs of words from the message
+		String[] triples = getTriples(words);// get triples of words from the message
+		if(words.length < 3) {triples = new String[1]; triples[0] = "";} // if there are not enough words for a triple, make a fake
+		if(words.length < 2) {doubles = new String[1]; doubles[0] = "";} // if there are not enough words for a double, make a fake
 		
-		float[] command_probabilities = new float[KNOWN_COMMANDS.length];
-//		float[] doubles_probabilities = new float[KNOWN_COMMANDS.length];
+		float[] command_probabilities = new float[KNOWN_COMMANDS.length]; // an array of probabilities
 		
-		for(int i = 0; i < KNOWN_COMMANDS.length; i++){
-			String json_text = new String(Files.readAllBytes(Paths.get("CommandDictionary/"+ i +".json")), StandardCharsets.UTF_8);
-//			System.out.println(i);
-			JSONObject json = new JSONObject(json_text);
-			float word_sum = 0; float doubles_sum = 0; float triples_sum = 0;
+		for(int i = 0; i < KNOWN_COMMANDS.length; i++){ // for every known command
+			String json_text = new String(Files.readAllBytes(Paths.get("CommandDictionary/"+ i +".json")), StandardCharsets.UTF_8); // get data from the command file
+			JSONObject json = new JSONObject(json_text); // parson data into a json object
+			float word_sum = 0; float doubles_sum = 0; float triples_sum = 0; // initialize variables
 			float word_num = 0; float doubles_num = 0; float triples_num = 0;
-			JSONArray json_words = json.getJSONArray("words");
-			JSONArray json_doubles = json.getJSONArray("doubles");
-			JSONArray json_triples = json.getJSONArray("triples");
+			
+			JSONArray json_words = json.getJSONArray("words"); // get the words from the data file
+			JSONArray json_doubles = json.getJSONArray("doubles"); // get the doubles from the data file
+			JSONArray json_triples = json.getJSONArray("triples"); // get the triples from the data file
+			
 			ArrayList<JSONObject> word_list = sortList(populateList(json_words), "word");
 			ArrayList<JSONObject> doubles_list = populateList(json_doubles);
 			ArrayList<JSONObject> triples_list = populateList(json_triples);
@@ -401,9 +350,8 @@ public class CommitteeCommands extends Thread {
 				}
 			}
 			command_probabilities[i] = .1f * (word_sum / word_num) + .35f * (doubles_sum / doubles_num) + .55f * (triples_sum / triples_num);
+			System.out.println(message);
 			System.out.println(KNOWN_COMMANDS[i] +": " + command_probabilities[i]);
-//			System.out.println("Doubles P: " + (doubles_sum / doubles_num));
-//			System.out.println("Triples P: " + (triples_sum / triples_num));
 		}
 		
 		int loc_max = -1;
