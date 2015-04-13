@@ -10,12 +10,12 @@ import java.net.SocketException;
 public abstract class GroupMePortListener extends Thread{
 	int PORT = 2000;
 	public volatile ServerSocket server_socket;
-	public String name = "default name: listener";
+	public String chat_name = "default name: listener";
 	
 	public void run(){
 		try{
 			server_socket = new ServerSocket(PORT);
-			System.out.println(this.name + " is powering up");
+			System.out.println(this.chat_name + " is powering up");
 			while(true){
 				Socket client = server_socket.accept();
 				BufferedReader in = new BufferedReader(new InputStreamReader(client.getInputStream()));
@@ -26,7 +26,7 @@ public abstract class GroupMePortListener extends Thread{
 				}
 			}
 		} catch(SocketException e){
-			System.out.println(this.name + " is powering down");
+			System.out.println(this.chat_name + " is powering down");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -34,7 +34,7 @@ public abstract class GroupMePortListener extends Thread{
 	}
 	public GroupMePortListener(int port, String name){
 		this.PORT = port;
-		this.name = name;
+		this.chat_name = name;
 	}
 	
 	public void kill() {

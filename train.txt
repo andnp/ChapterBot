@@ -1,0 +1,270 @@
+iris tell me our todos // 0
+iris tell me out tasks // 0
+iris give me our todos // 0
+iris give me our tasks // 0
+iris what are our todos? // 0
+iris what are our tasks? // 0
+iris say hi // 1
+iris say hello // 1
+iris say hello to everyone // 1
+iris tell everyone hello // 1
+iris tell everyone hi // 1
+iris could you please tell everyone hello? // 1
+iris could you please say hello to everyone // 1
+iris please say hi! // 1
+iris please say hello! // 1
+iris say hi to everyone // 1
+iris say hi to the group // 1
+iris say hello to the group // 1
+iris add a todo for me // 2
+iris add a task for me // 2
+iris add a todo for this committee // 2
+iris add a task for this committee // 2
+iris complete a todo for this committee // 3
+iris complete a task for this committee // 3
+iris get todos recruitment // 4
+iris get tasks recruitment // 4
+iris get recruitment todos // 4
+iris get recruitment tasks // 4
+iris get todos rush // 4
+iris get tasks rush // 4
+iris get rush todos // 4
+iris get rush tasks // 4
+iris get the rush todos // 4
+iris get the rush tasks // 4
+iris get the recruitment todos // 4
+iris get the recruitment tasks // 4
+iris what are the rush todos? // 4
+iris what are the rush tasks? // 4
+iris what are the recruitment todos? // 4
+iris what are the recruitment tasks? // 4
+iris get todos social // 5
+iris get tasks social // 5
+iris get social todos // 5
+iris get social tasks // 5
+iris get the social todos // 5
+iris get the social tasks // 5
+iris what are the social todos? // 5
+iris what are the social tasks? // 5
+iris get todos philanthropy // 6
+iris get tasks philanthropy // 6
+iris get philanthropy todos // 6
+iris get philanthropy tasks // 6
+iris get the philanthropy todos // 6
+iris get the philanthropy tasks // 6
+iris what are the philanthropy todos? // 6
+iris what are the philanthropy tasks? // 6
+iris get todos education // 7
+iris get tasks education // 7
+iris get education todos // 7
+iris get education tasks // 7
+iris get the education todos // 7
+iris get the education tasks // 7
+iris what are the education todos? // 7
+iris what are the education tasks? // 7
+iris get todos scholarship // 7
+iris get tasks scholarship // 7
+iris get scholarship todos // 7
+iris get scholarship tasks // 7
+iris get the scholarship todos // 7
+iris get the scholarship tasks // 7
+iris what are the scholarship todos? // 7
+iris what are the scholarship tasks? // 7
+iris get todos org dev // 8
+iris get tasks org dev // 8
+iris get org dev todos // 8
+iris get org dev tasks // 8
+iris get the org dev todos // 8
+iris get the org dev tasks // 8
+iris what are the org dev todos? // 8
+iris what are the org dev tasks? // 8
+iris add todo recruitment // 9
+iris add task recruitment // 9
+iris add todo to recruitment // 9
+iris add task to recruitment // 9
+iris tell recruitment to do task // 9
+iris tell recruitment to do todo // 9
+iris add to recruitment todo list // 9
+iris add to recruitment task list // 9
+iris add todo rush // 9
+iris add task rush // 9
+iris add todo to rush // 9
+iris add task to rush // 9
+iris tell rush to do task // 9
+iris tell rush to do todo // 9
+iris add to rush todo list // 9
+iris add to rush task list // 9
+iris add todo social // 10
+iris add task social // 10
+iris add todo to social // 10
+iris add task to social // 10
+iris tell social to do task // 10
+iris tell social to do todo // 10
+iris add to social todo list // 10
+iris add to social task list // 10
+iris add todo philanthropy // 11
+iris add task philanthropy // 11
+iris add todo to philanthropy // 11
+iris add task to philanthropy // 11
+iris tell philanthropy to do task // 11
+iris tell philanthropy to do todo // 11
+iris add to philanthropy todo list // 11
+iris add to philanthropy task list // 11
+iris add todo education // 12
+iris add task education // 12
+iris add todo to education // 12
+iris add task to education // 12
+iris tell education to do task // 12
+iris tell education to do todo // 12
+iris add to education todo list // 12
+iris add to education task list // 12
+iris add todo org dev // 13
+iris add task org dev // 13
+iris add todo to org dev // 13
+iris add task to org dev // 13
+iris tell org dev to do task // 13
+iris tell org dev to do todo // 13
+iris add to org dev todo list // 13
+iris add to org dev task list // 13
+iris complete todo recruitment // 14
+iris complete task recruitment // 14
+iris check off todo recruitment // 14
+iris check off task recruitment // 14
+iris finish todo recruitment // 14
+iris finish task recruitment // 14
+iris i finished a todo in recruitment // 14
+iris i finished a task in recruitment // 14
+iris i completed a todo in recruitment // 14
+iris i completed a task in recruitment // 14
+iris i finished a todo for recruitment // 14
+iris i finished a task for recruitment // 14
+iris i completed a todo for recruitment // 14
+iris i completed a task for recruitment // 14
+iris complete todo rush // 14
+iris complete task rush // 14
+iris check off todo rush // 14
+iris check off task rush // 14
+iris finish todo rush // 14
+iris finish task rush // 14
+iris i finished a todo in rush // 14
+iris i finished a task in rush // 14
+iris i completed a todo in rush // 14
+iris i completed a task in rush // 14
+iris i finished a todo for rush // 14
+iris i finished a task for rush // 14
+iris i completed a todo for rush // 14
+iris i completed a task for rush // 14
+iris complete todo social // 15
+iris complete task social // 15
+iris check off todo social // 15
+iris check off task social // 15
+iris finish todo social // 15
+iris finish task social // 15
+iris i finished a todo in social // 15
+iris i finished a task in social // 15
+iris i completed a todo in social // 15
+iris i completed a task in social // 15
+iris i finished a todo for social // 15
+iris i finished a task for social // 15
+iris i completed a todo for social // 15
+iris i completed a task for social // 15
+iris complete todo philanthropy // 16
+iris complete task philanthropy // 16
+iris check off todo philanthropy // 16
+iris check off task philanthropy // 16
+iris finish todo philanthropy // 16
+iris finish task philanthropy // 16
+iris i finished a todo in philanthropy // 16
+iris i finished a task in philanthropy // 16
+iris i completed a todo in philanthropy // 16
+iris i completed a task in philanthropy // 16
+iris i finished a todo for philanthropy // 16
+iris i finished a task for philanthropy // 16
+iris i completed a todo for philanthropy // 16
+iris i completed a task for philanthropy // 16
+iris complete todo education // 17
+iris complete task education // 17
+iris check off todo education // 17
+iris check off task education // 17
+iris finish todo education // 17
+iris finish task education // 17
+iris i finished a todo in education // 17
+iris i finished a task in education // 17
+iris i completed a todo in education // 17
+iris i completed a task in education // 17
+iris i finished a todo for education // 17
+iris i finished a task for education // 17
+iris i completed a todo for education // 17
+iris i completed a task for education // 17
+iris complete todo scholarship // 17
+iris complete task scholarship // 17
+iris check off todo scholarship // 17
+iris check off task scholarship // 17
+iris finish todo scholarship // 17
+iris finish task scholarship // 17
+iris i finished a todo in scholarship // 17
+iris i finished a task in scholarship // 17
+iris i completed a todo in scholarship // 17
+iris i completed a task in scholarship // 17
+iris i finished a todo for scholarship // 17
+iris i finished a task for scholarship // 17
+iris i completed a todo for scholarship // 17
+iris i completed a task for scholarship // 17
+iris complete todo org dev // 18
+iris complete task org dev // 18
+iris check off todo org dev // 18
+iris check off task org dev // 18
+iris finish todo org dev // 18
+iris finish task org dev // 18
+iris i finished a todo in org dev // 18
+iris i finished a task in org dev // 18
+iris i completed a todo in org dev // 18
+iris i completed a task in org dev // 18
+iris i finished a todo for org dev // 18
+iris i finished a task for org dev // 18
+iris i completed a todo for org dev // 18
+iris i completed a task for org dev // 18
+iris get the todos for the recruitment committee // 4
+iris get the todos for the social committee // 5
+iris get the todos for the philanthropy committee // 6
+iris get the todos for the education committee // 7
+iris get the todos for the org dev committee // 8
+iris get todos organizational development // 8
+iris get tasks organizational development // 8
+iris could you tell me the todos for the recruitment committee? // 4
+iris talk to me about the recruitment todos // 4
+iris list recruitment todos // 4
+iris list recruitment tasks // 4
+iris could you tell me the todos for the rush committee? // 4
+iris talk to me about the rush todos // 4
+iris list rush todos // 4
+iris list rush tasks // 4
+iris could you tell me the todos for the social committee? // 5
+iris talk to me about the social todos // 5
+iris list social todos // 5
+iris list social tasks // 5
+iris could you tell me the todos for the philanthropy committee? // 6
+iris talk to me about the philanthropy todos // 6
+iris list philanthropy todos // 6
+iris list philanthropy tasks // 6
+iris could you tell me the todos for the education committee? // 7
+iris talk to me about the education todos // 7
+iris list education todos // 7
+iris list education tasks // 7
+iris could you tell me the todos for the org dev committee? // 8
+iris talk to me about the org dev todos // 8
+iris list org dev todos // 8
+iris list org dev tasks // 8
+iris get todos social service // 6
+iris get tasks social service // 6
+iris tell me the todos for social service // 6
+iris tell me the tasks for social service // 6
+iris show me the todos for social service // 6
+iris show me the tasks for social service // 6
+iris list todos social service // 6
+iris list tasks social service // 6
+iris what can you do? // 19
+iris what do you know? // 19
+iris what commands do you know? // 19
+iris what commands can you do? // 19
+iris tell me what you can do // 19

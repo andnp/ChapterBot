@@ -1,0 +1,1176 @@
+{
+ "triples": [
+  {
+   "triple": "a calendar event",
+   "data": [
+    3,
+    5
+   ]
+  },
+  {
+   "triple": "add a calendar",
+   "data": [
+    3,
+    5
+   ]
+  },
+  {
+   "triple": "add a todo",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "add a todo?",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "add an event",
+   "data": [
+    7,
+    7
+   ]
+  },
+  {
+   "triple": "add calendar event",
+   "data": [
+    2,
+    2
+   ]
+  },
+  {
+   "triple": "add google calendar",
+   "data": [
+    2,
+    2
+   ]
+  },
+  {
+   "triple": "add todo Recruitment",
+   "data": [
+    0,
+    2
+   ]
+  },
+  {
+   "triple": "add todo Test_Filter",
+   "data": [
+    0,
+    -1,
+    1
+   ]
+  },
+  {
+   "triple": "add todo to",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "an event for",
+   "data": [
+    3,
+    3
+   ]
+  },
+  {
+   "triple": "an event please",
+   "data": [
+    1,
+    1
+   ]
+  },
+  {
+   "triple": "an event to",
+   "data": [
+    3,
+    3
+   ]
+  },
+  {
+   "triple": "boom for recruitment",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "calendar event for",
+   "data": [
+    1,
+    3
+   ]
+  },
+  {
+   "triple": "calendar for me",
+   "data": [
+    2,
+    2
+   ]
+  },
+  {
+   "triple": "can you add",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "can you do?",
+   "data": [
+    0,
+    3
+   ]
+  },
+  {
+   "triple": "can you go",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "complete todo boom",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "could you add",
+   "data": [
+    7,
+    9
+   ]
+  },
+  {
+   "triple": "could you say",
+   "data": [
+    -1,
+    2,
+    1
+   ]
+  },
+  {
+   "triple": "event for me",
+   "data": [
+    1,
+    3
+   ]
+  },
+  {
+   "triple": "event for me.",
+   "data": [
+    1,
+    1
+   ]
+  },
+  {
+   "triple": "event for me?",
+   "data": [
+    2,
+    2
+   ]
+  },
+  {
+   "triple": "event to the",
+   "data": [
+    3,
+    3
+   ]
+  },
+  {
+   "triple": "for me please?",
+   "data": [
+    3,
+    5
+   ]
+  },
+  {
+   "triple": "get todos Org",
+   "data": [
+    0,
+    4
+   ]
+  },
+  {
+   "triple": "get todos Recruitment",
+   "data": [
+    0,
+    2
+   ]
+  },
+  {
+   "triple": "get todos recruitment",
+   "data": [
+    0,
+    2
+   ]
+  },
+  {
+   "triple": "go open-source for",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "google calendar event",
+   "data": [
+    2,
+    2
+   ]
+  },
+  {
+   "triple": "google calendar for",
+   "data": [
+    2,
+    2
+   ]
+  },
+  {
+   "triple": "hi for me?",
+   "data": [
+    -1,
+    2,
+    1
+   ]
+  },
+  {
+   "triple": "iris add a",
+   "data": [
+    1,
+    2
+   ]
+  },
+  {
+   "triple": "iris add an",
+   "data": [
+    1,
+    1
+   ]
+  },
+  {
+   "triple": "iris add calendar",
+   "data": [
+    2,
+    2
+   ]
+  },
+  {
+   "triple": "iris add event",
+   "data": [
+    2,
+    2
+   ]
+  },
+  {
+   "triple": "iris add google",
+   "data": [
+    2,
+    2
+   ]
+  },
+  {
+   "triple": "iris add todo",
+   "data": [
+    0,
+    2,
+    1
+   ]
+  },
+  {
+   "triple": "iris can you",
+   "data": [
+    0,
+    2
+   ]
+  },
+  {
+   "triple": "iris complete todo",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "iris could you",
+   "data": [
+    5,
+    12
+   ]
+  },
+  {
+   "triple": "iris get todos",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "iris please add",
+   "data": [
+    1,
+    1
+   ]
+  },
+  {
+   "triple": "iris say hi",
+   "data": [
+    0,
+    2
+   ]
+  },
+  {
+   "triple": "iris what can",
+   "data": [
+    0,
+    3
+   ]
+  },
+  {
+   "triple": "iris, could you",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "open-source for me?",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "please add an",
+   "data": [
+    1,
+    1
+   ]
+  },
+  {
+   "triple": "say hi for",
+   "data": [
+    -1,
+    2,
+    1
+   ]
+  },
+  {
+   "triple": "say hi iris",
+   "data": [
+    0,
+    2
+   ]
+  },
+  {
+   "triple": "the google calendar",
+   "data": [
+    2,
+    2
+   ]
+  },
+  {
+   "triple": "to the calendar?",
+   "data": [
+    1,
+    1
+   ]
+  },
+  {
+   "triple": "to the google",
+   "data": [
+    2,
+    2
+   ]
+  },
+  {
+   "triple": "to this committee",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "todo boom for",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "todo to this",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "todos Org Dev",
+   "data": [
+    0,
+    4
+   ]
+  },
+  {
+   "triple": "what can you",
+   "data": [
+    0,
+    3
+   ]
+  },
+  {
+   "triple": "you add a",
+   "data": [
+    2,
+    5
+   ]
+  },
+  {
+   "triple": "you add an",
+   "data": [
+    5,
+    5
+   ]
+  },
+  {
+   "triple": "you go open-source",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "you say hi",
+   "data": [
+    -1,
+    2,
+    1
+   ]
+  }
+ ],
+ "doubles": [
+  {
+   "data": [
+    0,
+    4
+   ],
+   "double": "Org Dev"
+  },
+  {
+   "data": [
+    3,
+    5
+   ],
+   "double": "a calendar"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "double": "a todo"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "double": "a todo?"
+  },
+  {
+   "data": [
+    3,
+    7
+   ],
+   "double": "add a"
+  },
+  {
+   "data": [
+    7,
+    7
+   ],
+   "double": "add an"
+  },
+  {
+   "data": [
+    2,
+    2
+   ],
+   "double": "add calendar"
+  },
+  {
+   "data": [
+    2,
+    2
+   ],
+   "double": "add event"
+  },
+  {
+   "data": [
+    2,
+    2
+   ],
+   "double": "add google"
+  },
+  {
+   "data": [
+    0,
+    2,
+    1
+   ],
+   "double": "add todo"
+  },
+  {
+   "data": [
+    7,
+    7
+   ],
+   "double": "an event"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "double": "boom for"
+  },
+  {
+   "data": [
+    7,
+    9
+   ],
+   "double": "calendar event"
+  },
+  {
+   "data": [
+    2,
+    2
+   ],
+   "double": "calendar for"
+  },
+  {
+   "data": [
+    0,
+    5
+   ],
+   "double": "can you"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "double": "complete todo"
+  },
+  {
+   "data": [
+    5,
+    13
+   ],
+   "double": "could you"
+  },
+  {
+   "data": [
+    4,
+    6
+   ],
+   "double": "event for"
+  },
+  {
+   "data": [
+    1,
+    1
+   ],
+   "double": "event please"
+  },
+  {
+   "data": [
+    3,
+    3
+   ],
+   "double": "event to"
+  },
+  {
+   "data": [
+    3,
+    5
+   ],
+   "double": "for me"
+  },
+  {
+   "data": [
+    1,
+    1
+   ],
+   "double": "for me."
+  },
+  {
+   "data": [
+    0,
+    7
+   ],
+   "double": "for me?"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "double": "for recruitment"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "get todos"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "double": "go open-source"
+  },
+  {
+   "data": [
+    4,
+    4
+   ],
+   "double": "google calendar"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "double": "hey iris"
+  },
+  {
+   "data": [
+    -1,
+    2,
+    1
+   ],
+   "double": "hi for"
+  },
+  {
+   "data": [
+    0,
+    2
+   ],
+   "double": "hi iris"
+  },
+  {
+   "data": [
+    7,
+    13
+   ],
+   "double": "iris add"
+  },
+  {
+   "data": [
+    0,
+    2
+   ],
+   "double": "iris can"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "double": "iris complete"
+  },
+  {
+   "data": [
+    5,
+    12
+   ],
+   "double": "iris could"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "iris get"
+  },
+  {
+   "data": [
+    1,
+    1
+   ],
+   "double": "iris please"
+  },
+  {
+   "data": [
+    0,
+    2
+   ],
+   "double": "iris say"
+  },
+  {
+   "data": [
+    0,
+    3
+   ],
+   "double": "iris what"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "double": "iris, could"
+  },
+  {
+   "data": [
+    3,
+    5
+   ],
+   "double": "me please?"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "double": "open-source for"
+  },
+  {
+   "data": [
+    1,
+    1
+   ],
+   "double": "please add"
+  },
+  {
+   "data": [
+    -2,
+    8
+   ],
+   "double": "say hi"
+  },
+  {
+   "data": [
+    1,
+    1
+   ],
+   "double": "the calendar?"
+  },
+  {
+   "data": [
+    2,
+    2
+   ],
+   "double": "the google"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "double": "this committee"
+  },
+  {
+   "data": [
+    3,
+    3
+   ],
+   "double": "to the"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "double": "to this"
+  },
+  {
+   "data": [
+    0,
+    2
+   ],
+   "double": "todo Recruitment"
+  },
+  {
+   "data": [
+    0,
+    -1,
+    1
+   ],
+   "double": "todo Test_Filter"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "double": "todo boom"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "double": "todo to"
+  },
+  {
+   "data": [
+    0,
+    4
+   ],
+   "double": "todos Org"
+  },
+  {
+   "data": [
+    0,
+    2
+   ],
+   "double": "todos Recruitment"
+  },
+  {
+   "data": [
+    0,
+    2
+   ],
+   "double": "todos recruitment"
+  },
+  {
+   "data": [
+    0,
+    3
+   ],
+   "double": "what can"
+  },
+  {
+   "data": [
+    7,
+    10
+   ],
+   "double": "you add"
+  },
+  {
+   "data": [
+    0,
+    3
+   ],
+   "double": "you do?"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "double": "you go"
+  },
+  {
+   "data": [
+    -1,
+    2,
+    1
+   ],
+   "double": "you say"
+  }
+ ],
+ "words": [
+  {
+   "data": [
+    0,
+    4
+   ],
+   "word": "Dev"
+  },
+  {
+   "data": [
+    0,
+    4
+   ],
+   "word": "Org"
+  },
+  {
+   "data": [
+    0,
+    4
+   ],
+   "word": "Recruitment"
+  },
+  {
+   "data": [
+    0,
+    -1,
+    1
+   ],
+   "word": "Test_Filter"
+  },
+  {
+   "data": [
+    3,
+    7
+   ],
+   "word": "a"
+  },
+  {
+   "data": [
+    16,
+    25
+   ],
+   "word": "add"
+  },
+  {
+   "data": [
+    7,
+    7
+   ],
+   "word": "an"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "word": "boom"
+  },
+  {
+   "data": [
+    9,
+    11
+   ],
+   "word": "calendar"
+  },
+  {
+   "data": [
+    1,
+    1
+   ],
+   "word": "calendar?"
+  },
+  {
+   "data": [
+    0,
+    5
+   ],
+   "word": "can"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "word": "committee"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "word": "complete"
+  },
+  {
+   "data": [
+    5,
+    13
+   ],
+   "word": "could"
+  },
+  {
+   "data": [
+    0,
+    3
+   ],
+   "word": "do?"
+  },
+  {
+   "data": [
+    17,
+    19
+   ],
+   "word": "event"
+  },
+  {
+   "data": [
+    4,
+    14
+   ],
+   "word": "for"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "word": "get"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "word": "go"
+  },
+  {
+   "data": [
+    5,
+    5
+   ],
+   "word": "google"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "word": "hey"
+  },
+  {
+   "data": [
+    -2,
+    8
+   ],
+   "word": "hi"
+  },
+  {
+   "data": [
+    13,
+    45
+   ],
+   "word": "iris"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "word": "iris,"
+  },
+  {
+   "data": [
+    3,
+    5
+   ],
+   "word": "me"
+  },
+  {
+   "data": [
+    1,
+    1
+   ],
+   "word": "me."
+  },
+  {
+   "data": [
+    0,
+    7
+   ],
+   "word": "me?"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "word": "open-source"
+  },
+  {
+   "data": [
+    2,
+    2
+   ],
+   "word": "please"
+  },
+  {
+   "data": [
+    3,
+    5
+   ],
+   "word": "please?"
+  },
+  {
+   "data": [
+    0,
+    3
+   ],
+   "word": "recruitment"
+  },
+  {
+   "data": [
+    -2,
+    8
+   ],
+   "word": "say"
+  },
+  {
+   "data": [
+    3,
+    3
+   ],
+   "word": "the"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "word": "this"
+  },
+  {
+   "data": [
+    3,
+    4
+   ],
+   "word": "to"
+  },
+  {
+   "data": [
+    0,
+    4,
+    1
+   ],
+   "word": "todo"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "word": "todo?"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "word": "todos"
+  },
+  {
+   "data": [
+    0,
+    3
+   ],
+   "word": "what"
+  },
+  {
+   "data": [
+    5,
+    17
+   ],
+   "word": "you"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "word": "you"
+  }
+ ],
+ "command": "add calendar event"
+}

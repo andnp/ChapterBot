@@ -1,0 +1,276 @@
+this is a test message for my word capture thing.
+i think that's everyone.
+other than alum
+you right
+wow, i missed a lot. that was quite exciting.
+the real question, were they asian?
+*cough cough* got another lucas like.
+so... how about that weather we've been having??
+right!! i am so freaking excited for this weekend (sorry lucas). frisbee, hiking, other outdoorsy things
+<3
+yup! saturday 12-5ish
+i can walk you through it after class. it's pretty easy.
+i has table, back of the room. fourth floor, west tower.
+i has new table. front of room. fourth floor. west tower.
+i'll play if we can get a few more!
+
+i don't know if i should laugh or feel bad for you. i choose to do both.
+actually we have a ton of burgers here at 509. of you guys would like, i could get the grill going.
+8 o'clock event though.
+coolio
+what cheese?
+just an fyi, the upstairs asked that we turn it down just a little. we should probably respect that.
+you da best.
+hey, how does pushing mccormick's creek back until 2 sound?
+also how does everyone feel this morning?
+<3
+you're adorable. also i had a hard getting to sleep last night. too many monsters under my bed.
+you better get here before candlepass, i wanna hear what you have to say!
+well played sir.
+there are a dozen in the house. they are in the metal filling cabinets in the basement. i cannot bring one, but if you guys need one, you can certainly stop by and grab one!
+You were so close to posting that question in the wrong group, weren't you?
+I just used PowerPoint and Excel.
+Annnndddd, I spelled "Consul" wrong...
+Yeah, I totally agree. I started to put together an infoblock for related goals, then discovered that was a lot more challenging than I thought it would be
+Almost all of those goals have side-effects that can touch on other goals. For instance, increasing brother attendance to events would likely decrease drama
+Also, if you want a higher quality pdf version (with Consul spelled correctly), it's in "KDR Box > Chapter Information"
+I was estimating more immediate costs and gave a lot more weight to time than money
+Also, it was pretty arbitrary, I want to take some time with the chapter and iron out a real cost/benefit analysis. I just wanted to get some sort of graphic out today.
+The way I built the chart was by rating things on a scale from 1-10 on cost and 1-10 on benefit. If you would like, we can discuss in here and make edits to the graphic on the fly.
+Yeah, part of my motivation for doing this activity was to make sure my efforts aligned with the chapter's desires. I didn't want to push recruiting really hard if people would prefer focus on brother retention.
+Some future work/analysis that I would like to do is to come up with a breakdown of paths to achieve each individual goal. And also create an infoblock that shows the relationship between goals
+I think that, instead of posting in the GroupMe to set up a team, it would be more constructive to text people or talk to them in person. Also keep in mind the people who have said that they were interested. Finally, have you talked to some of our previous riders (Loren and Jacob) to see if they would train with you??
+In all seriousness, I would like to have a conversation about how we can increase our name on campus. Anyone have thoughts on how we go about doing that??
+Yeah I agree! I also like Will's comment about MARS, at one point we discussed becoming more involved in multiple different clubs.
+For instance the CS club, we got a lot of nerds in our group who could join that.
+Also if there isn't a board game club, we could build that. That could be incredibly constructive to build our own club.
+I agree Jacob, that's why I wanted to have this conversation before I sent out the TODO for PR.
+And CV for those going to grad school
+Yeah, #2 there is very concerning to me.
+I like the resume workshop idea. Jacob also previously mentioned an event where we discuss sexual assault awareness and safety. Sponsoring events could really get us out there.
+Yeah, we absolutely should talk about doing a resume workshop.
+How do you mean?
+I absolutely see where you are coming from Loren. I think, though, that this may help build our image as a 'professional' social fraternity.
+Also, the resume workshop is just an example of an event, we could also take a minute to brainstorm other events.
+What about bringing in a professional panel to discuss their career?
+We could get a professor to give a talk on one of: {professionalism, research, study habits, stress management, etc} and invite the campus to it.
+So like, get some drinks and a nice dinner or such, and having students on campus invite their favorite professor out to socialize?
+That was one of the most useful uses of GroupMe I have had in a while though. Thanks guys for brainstorming with me!
+So, I'd like to also do an analysis on our chapter tools (GroupMe, Box, Google Drive, Google Calendar, Evernote, etc), and see what more they can do for us. There are a lot of possibilities that I think we have not tapped into yet.
+Furthermore, I'm thinking about taking 2-3 minutes every week in the ST section of chapter to explain/describe a new organizational method. And propose ways we could utilize it in the chapter. Thoughts?
+That actually brings up another point. I've been thinking about putting together a 'professional' committee that could do just that. They would take a moment at every chapter meeting and discuss ways that we could improve our chapter. Their first order of business would be finding a better name than: 'professional committee'. Thoughts on that?
+Using business constructs and ideas found in professional circles.
+Yeah! I like that WIll. And I think that you'd be a good match for that Will/Will.
+Wow, not going to lie, I came up with this a several weeks ago, but didn't pitch it because I didn't think there would be a great response.
+I'm going to post a potential use case / POC in a moment, so you can see what it is I am thinking.
+Absolutely, I'm working on a document right now to give you guys a better idea of what I mean.
+I feel that Mason. I'm super sad we have to go listen to this &#@$ tonight.
+For those of you who were interested in the Organizational Development Committee, here is a sample of something that I would like presented at chapter. Keep in mind this is just a sample, and isn't fully-fledged out.
+Here is the POC I came up with for the Organizational Development Committee. It outlines what I expect their duties would be, and how I anticipate a weekly meeting would go. Obviously, I am very open to new ideas and suggestions for this committee.
+Actually, I created this a while ago for my own personal use, but it is something that I think would also fall under the Organizational Development Committee category.
+Sorry :) Once I'm on a train of thought, I just keep going!
+I'm not sure, I know Mason and I cannot be there.
+at wells 4th floor. come study!!
+we have a room!! 4th floor!!
+yup yup. campus awareness and such.
+i'm not sure who all would be interested in studying this document, but this is an erd (entity relationship diagram) that shows the goals that you guys gave me to work on, and how they are related to each other. this is just a draft, and if you would like the ability to edit it, let me know!!
+
+i fix.
+
+an interesting way to look at this is to see that arrows point away from an entity means that entity affects something. arrows pointing toward an entity means that entity is affected by something.
+the attributes inside the entities will be set to specific ideas pertaining to how we achieve that goal. i'll be updating those as the information becomes available.
+which leads me to another shameless plug to take this survey if you haven't yet!! https://iu.co1.qualtrics.com/se/?sid=sv_e5sxgkgu9uvylg1
+when is iudm?
+that's what i thought, so we have a long while before we really need to worry about it?
+i just mean, it doesn't have to be a big hubbabaloo in the here and now.
+to be fair fountainhead was one of my favorite books :)
+
+i updated the erd :)
+and killed discussion at the same time :)
+very good question. i agree that the nodes with the most lines are definitely more beneficial. i think it would be interesting to redo the cost/benefit analysis with this image as a guide.
+the entities with the most outward lines have an effect on more goals, perhaps we should target those.
+that's what the attributes are within each entity. those are the ideas that people gave us from https://iu.co1.qualtrics.com/se/?sid=sv_e5sxgkgu9uvylg1 < that survey for how we intend to accomplish these things. i think is really important for us as a chapter to decide where we want to go before we decide how we want to get there.
+you cannot have any idea how excited i am for that ^
+yeah, i was nervous with how much i should put in the erd, i didn't want to make it sound like i was pushing big open drinking events in an official group. but i'm super excited because that is going to be soo good for us as a chapter.
+very good question, and definitely something worth talking about here/in a social meeting.
+also worth talking about here for the open events.
+alcohol and such
+let's not do that, and actually talk about it.
+say hi
+say hi
+say hi
+so far you two, jordan carder, jeff, lucas, and will have expressed interest in the group
+i'm keeping it just the two of you for now until we have things better figured out.
+i'm also going to test out having a digital assistant in the group (bot). every meet iris, she knows how to say hi.
+she can also get our todos for this group.
+iris, get tasks
+that's it so far :)
+iris = siri (backwards)
+
+^ that came from a google search of "hot girl named iris"
+based on a quick google search, i would say yes. i think she could do that.
+i'm definitely going to work on that soon. it doesn't look too hard.
+say hi iris
+not super attractive, but it will do :)
+my hope is to get iris developed enough to be able to deploy her in other committee groups as a beneficial assistant. i want her to be able to dynamically control todo's, read and add events to the google calendar, amongst other various activities.
+i felt like she would be more helpful in this committee than most. plus this committee could definitely help train people on what she's into.
+iris, add todo: teach committee how to use iris todos
+iris get tasks
+iris add task connect iris to qualtrics api
+iris get tasks
+iris complete todo: begin adding members to groupme
+iris get todos
+iris get todos
+:)
+lol! probably, i never looked into making a bot like messages.
+i like this a lot, i know i'm biased being her creator and all, but i feel like this could actually be useful. tomorrow i will add due date functionality and have her post reminders when the due date is approaching for tasks.
+true, but that is definitely possible if we wanted it for some other use case.
+i don't know if you've ever used todoist, but that is how she keeps track of todo's and such. i sent you guys an invitation to this particular todoist project.
+what kind of new events? like if one committee posts something on the calendar, it tells everyone else?
+that would be cool, i could definitely make her do that!
+harder, but still very possible!
+one of the other things i foresee this committee doing is being a group that gets some of the random things done. for instance, hornung is concerned about liability with the car smash. he was planning on not even considering the event because he didn't want to deal with the liability concerns (another problem in and of itself). i told him to just assume liability was taken care of, and to start planning. this is the group i would like to go to and say: "hey here is something that needs to be done" and this group would either do it, or figure which exec member/committee should deal with it.
+exactly. and a lot of people just don't know who to take those issues to. if it is coming from a committee, they should all go to me, then i will distribute them. but that doesn't seem to happen, so maybe if we make it public that this committee is dealing with it, then people will respond more positively.
+that being said, iris add todo figure out what we need to do to make liability for car smash not a concern due: monday
+iris get todos
+haha, sorry! yeah, that's what i meant aaron. i don't really wanna do the work for other committees, more i just want to direct them. so if hornung brought this to us, we would first discuss how to get that information (legal services perhaps) then decide whose job it is to get it. so in that instance maybe aedile, pr, or just give it back to philanthropy.
+or me.
+lol, i only have a minute between classes, but that ^ whole deal cracks me up :) we'll keep working on the filter to make sure people aren't kicked for no reason. just keep in mind that this group is not for talking about potentially risky topics. if you are not sure if it is safe to talk about it here, ask in an unrelated group first.
+i will review all of this more in depth in a couple of hours. 
+iris get todos
+hey iris, say hi
+here is what i have found for the car smash event. what would you guys say needs to be done from here? there is definitely a lot to think about in terms of safety, and because philanthropy has 3 trustworthy members, it may be a strain to put all of this on them. thoughts?
+http://www.safety.queensu.ca/safety/policy/eh&s/carsmash.pdf
+what kind of people/who?
+quinn rusnak
+qrusnak@indiana.edu
+sounds good to me. i think a good next step would be to have philanthropy draw up a poc for the event, and come up with all of the potential risks.
+i agree that it makes most sense for risk manager to deal with that. 
+also, check this out!
+iris get todos education
+it works with any committee
+i figured that would be good for us, to be able to look at what every committee is doing. give me 5 minutes, and we'll be able to add to their todo's also.
+not yet, but once i get a bot going in their groups, it will be able to. i can set up a round-about way of informing them they have a new todo, but the message wouldn't be customizable.
+iris add todo recruitment this is a test
+iris get todos recruitment
+uh oh!
+iris get todos recruitment
+and here is what i could do for the committees right now, until i get a bot going in all of them ^
+so i created that todo from my testing groupme.
+i second that ^. we are all here for you, let us know what we can do.
+yeah, i use it a lot now. i've found it can really help because i use too many different services between me, kdr, and work. so ifttt helps bring everything together in a nice clean way.
+are you okay?
+oh wait, i'm the motherfucker who hit you :)
+apparently a well aimed pathfinder book can do some real damage :d
+i'm going to be late to study tables, if someone could grab a table on the fourth floor, that would be sweet.
+good to see the bot still works :)
+i wish i could make groupme say: "andy patterson begrudgingly added alex dittmer to the group" 
+how do you guys feel about helping me test drive a new digital assistant in this group??
+yes
+she is rather unsure of herself right now. while she is in training mode, she will always ask to double check the command before she executes it. once she has better accuracy, i will tell her to build up some confidence and stop second guessing.
+iris can you complete a todo for me?
+yes
+..... silly assistant. i fix.
+iris can you complete a todo for me?
+yes
+discuss using part of budget for making "goodie baskets" for pnm's who sign bids.
+thanks :)
+she can also show you your current todos.
+iris can you show me the todos for this committee?
+yes
+we also have the power to add todos to recruitment from here if we want.
+agreed!
+she's starting to become a little more intelligent. now every time someone asks her to do something she learns from it.
+no worries, she isn't too smart. yet.
+i had to give her about 10,000,000 training commands just to get her to this level.
+it appears as if you will.
+"andy patterson begrudgingly added will mcelhaney to the group"
+lol yeah, i wrote a bot to train my bot. dedicated or lazy, idk.
+hmmm... i'm not sure.
+absolutely! that's why i like computers.
+lololol
+should i tell him i changed the word?
+it should be noted that testword is no longer a test word.
+hmmm fair point.
+lols
+lol, yeah iris was out for a while doing some training on her own. i didn't figure her services would be needed! i'm glad to be proven wrong!
+with the new update, now all you say is something along the lines of add todo, then she will prompt you through the rest. for example:
+iris could you add a todo for this committee?
+yes
+discuss where events will be held next year
+april 18
+do you guys wanna meet up at some point today and do org dev stuff? i'd like to be able to propose the committee officially at chapter on sunday! (especially with eli and such)
+we are at the library.
+wow, they really crossed a line this time. i thought sae was bad.
+we're not there.
+i can never get him to leave......
+almost!
+well played sir.
+hey guys, y'all should start showing up. especially if you want to pregame.
+hey guys, y'all should start showing up. especially of you want to see me pregame.
+ frisbee at wright before chapter?
+ true. they are at 509. if i relocate one to wright, will people play with it conmigo?
+4 o'clock frisbee at wright??
+iris can you show us our todos please?
+iris add todo recruitment
+yes
+start designing the rush shirts for next semester
+sat
+iris show me our todos
+i know that a.a.ron and i will be there. i am unsure if anyone else is planning on going...
+hey guys, try to be at chapter 20-30 minutes early so that we can start taking pictures for the composite before chapter.
+oak
+cherry
+wright
+butler
+nike
+guys pictures!!!!!!!!!!! be here now!!!!!!!!
+guys!!!! we need you here!!!!!!
+iris could you add an event to the google calendar for me please?
+this is a test event
+today at 2pm
+yup!
+you can ask her many different ways too.
+iris add calendar event
+nevermind
+iris add event
+nevermind
+etc.
+thanks! i foresee this being the most useful command for committees mostly because no one knows how to work the damn calendar.
+no, if you just put a date then it makes it an all day event.
+think i should make it ask for date then ask for time seperately?
+yeah, i'm not sure how google handles the am and pm part.
+iris could you add an event for me?
+another test
+april 13 at 3
+looks like it assumed 3pm
+go for it
+yup also assumed 5pm
+cool!
+hey guys, meet iris! she is a digital assistant that i'm currently building out. she doesn't know a lot yet, but she can add events to the google calendar from groupme.
+iris say hi
+nevermind
+i confused her with all my words :)
+anyways, if you want to add an event from groupme it looks like such:
+iris could you add an event to the calendar?
+this is a test event
+wednesday
+6pm
+if you want to know what commands she recognizes, you can ask her too :)
+iris what can you do?
+yes
+i just showed iris off to social. i think they might find a lot of use with the calendar stuff.
+lolol! she only recognizes yes or no when she asks "is this the command you want"
+otherwise, she will not learn and will keep making the same mistake
+i was just updating her, she didn't hear you. try again!
+maybe she will be less confusing now:
+iris could you say hi for me?
+yes
+actually, if any of you want to be in the test group to mess around / teach iris, i can add you.
+ben says i can add ad hoc committees at my discretion. we are now official! i'm going to chat with exec further and present a well typed out use-case for this committee. we should also work on writing out an application for this committee.
+application to join that is.
+absolutely! i was going to make a google doc and share it with you guys. 
+(i already deleted it)
+(she doesn't know you are talking to her)
+lol! you guys are entertaining
+actually, she already is :)

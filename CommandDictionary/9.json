@@ -1,0 +1,5847 @@
+{
+ "triples": [
+  {
+   "triple": "a calendar event",
+   "data": [
+    0,
+    5
+   ]
+  },
+  {
+   "triple": "a task for",
+   "data": [
+    0,
+    138
+   ]
+  },
+  {
+   "triple": "a task in",
+   "data": [
+    0,
+    118
+   ]
+  },
+  {
+   "triple": "a todo for",
+   "data": [
+    0,
+    144
+   ]
+  },
+  {
+   "triple": "a todo in",
+   "data": [
+    0,
+    127
+   ]
+  },
+  {
+   "triple": "about the education",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "about the org",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "about the philanthropy",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "about the recruitment",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "about the rush",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "about the social",
+   "data": [
+    0,
+    9
+   ]
+  },
+  {
+   "triple": "add a calendar",
+   "data": [
+    0,
+    5
+   ]
+  },
+  {
+   "triple": "add a task",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "add a todo",
+   "data": [
+    0,
+    17
+   ]
+  },
+  {
+   "triple": "add a todo?",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "add an event",
+   "data": [
+    0,
+    7
+   ]
+  },
+  {
+   "triple": "add calendar event",
+   "data": [
+    0,
+    2
+   ]
+  },
+  {
+   "triple": "add google calendar",
+   "data": [
+    0,
+    2
+   ]
+  },
+  {
+   "triple": "add task education",
+   "data": [
+    0,
+    11
+   ]
+  },
+  {
+   "triple": "add task org",
+   "data": [
+    0,
+    11
+   ]
+  },
+  {
+   "triple": "add task philanthropy",
+   "data": [
+    -1,
+    11
+   ]
+  },
+  {
+   "triple": "add task recruitment",
+   "data": [
+    8,
+    9
+   ]
+  },
+  {
+   "triple": "add task rush",
+   "data": [
+    8,
+    8
+   ]
+  },
+  {
+   "triple": "add task social",
+   "data": [
+    -1,
+    8,
+    1
+   ]
+  },
+  {
+   "triple": "add task to",
+   "data": [
+    15,
+    49
+   ]
+  },
+  {
+   "triple": "add to education",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "add to org",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "add to philanthropy",
+   "data": [
+    -1,
+    18
+   ]
+  },
+  {
+   "triple": "add to recruitment",
+   "data": [
+    16,
+    16
+   ]
+  },
+  {
+   "triple": "add to rush",
+   "data": [
+    16,
+    16
+   ]
+  },
+  {
+   "triple": "add to social",
+   "data": [
+    -1,
+    16,
+    1
+   ]
+  },
+  {
+   "triple": "add todo Recruitment",
+   "data": [
+    2,
+    2
+   ]
+  },
+  {
+   "triple": "add todo Test_Filter",
+   "data": [
+    -1,
+    5,
+    1
+   ]
+  },
+  {
+   "triple": "add todo education",
+   "data": [
+    0,
+    11
+   ]
+  },
+  {
+   "triple": "add todo for",
+   "data": [
+    0,
+    3
+   ]
+  },
+  {
+   "triple": "add todo org",
+   "data": [
+    0,
+    12
+   ]
+  },
+  {
+   "triple": "add todo philanthropy",
+   "data": [
+    -1,
+    12
+   ]
+  },
+  {
+   "triple": "add todo recruitment",
+   "data": [
+    9,
+    12
+   ]
+  },
+  {
+   "triple": "add todo rush",
+   "data": [
+    8,
+    8
+   ]
+  },
+  {
+   "triple": "add todo social",
+   "data": [
+    -1,
+    9,
+    1
+   ]
+  },
+  {
+   "triple": "add todo to",
+   "data": [
+    15,
+    54
+   ]
+  },
+  {
+   "triple": "an event for",
+   "data": [
+    0,
+    3
+   ]
+  },
+  {
+   "triple": "an event please",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "an event to",
+   "data": [
+    0,
+    3
+   ]
+  },
+  {
+   "triple": "are our tasks?",
+   "data": [
+    0,
+    9
+   ]
+  },
+  {
+   "triple": "are our todos?",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "are the education",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "are the org",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "are the philanthropy",
+   "data": [
+    0,
+    18
+   ]
+  },
+  {
+   "triple": "are the recruitment",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "are the rush",
+   "data": [
+    0,
+    17
+   ]
+  },
+  {
+   "triple": "are the scholarship",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "are the social",
+   "data": [
+    0,
+    18
+   ]
+  },
+  {
+   "triple": "boom for recruitment",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "calendar event for",
+   "data": [
+    0,
+    3
+   ]
+  },
+  {
+   "triple": "calendar for me",
+   "data": [
+    0,
+    2
+   ]
+  },
+  {
+   "triple": "can you add",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "can you do?",
+   "data": [
+    -1,
+    27
+   ]
+  },
+  {
+   "triple": "can you get",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "can you go",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "can you show",
+   "data": [
+    0,
+    3
+   ]
+  },
+  {
+   "triple": "check off task",
+   "data": [
+    0,
+    60
+   ]
+  },
+  {
+   "triple": "check off todo",
+   "data": [
+    0,
+    64
+   ]
+  },
+  {
+   "triple": "commands can you",
+   "data": [
+    0,
+    4
+   ]
+  },
+  {
+   "triple": "commands do you",
+   "data": [
+    0,
+    4
+   ]
+  },
+  {
+   "triple": "complete a task",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "complete a todo",
+   "data": [
+    0,
+    10
+   ]
+  },
+  {
+   "triple": "complete task education",
+   "data": [
+    0,
+    10
+   ]
+  },
+  {
+   "triple": "complete task org",
+   "data": [
+    0,
+    11
+   ]
+  },
+  {
+   "triple": "complete task philanthropy",
+   "data": [
+    0,
+    10
+   ]
+  },
+  {
+   "triple": "complete task recruitment",
+   "data": [
+    0,
+    7,
+    1
+   ]
+  },
+  {
+   "triple": "complete task rush",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "complete task scholarship",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "complete task social",
+   "data": [
+    0,
+    11
+   ]
+  },
+  {
+   "triple": "complete todo boom",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "complete todo education",
+   "data": [
+    0,
+    10
+   ]
+  },
+  {
+   "triple": "complete todo org",
+   "data": [
+    0,
+    10
+   ]
+  },
+  {
+   "triple": "complete todo philanthropy",
+   "data": [
+    0,
+    10
+   ]
+  },
+  {
+   "triple": "complete todo recruitment",
+   "data": [
+    -1,
+    10
+   ]
+  },
+  {
+   "triple": "complete todo rush",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "complete todo scholarship",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "complete todo social",
+   "data": [
+    0,
+    12
+   ]
+  },
+  {
+   "triple": "completed a task",
+   "data": [
+    0,
+    115
+   ]
+  },
+  {
+   "triple": "completed a todo",
+   "data": [
+    0,
+    115
+   ]
+  },
+  {
+   "triple": "could you add",
+   "data": [
+    0,
+    9
+   ]
+  },
+  {
+   "triple": "could you please",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "could you say",
+   "data": [
+    0,
+    4
+   ]
+  },
+  {
+   "triple": "could you tell",
+   "data": [
+    0,
+    54
+   ]
+  },
+  {
+   "triple": "dev task list",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "dev to do",
+   "data": [
+    0,
+    17
+   ]
+  },
+  {
+   "triple": "dev todo list",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "do you know?",
+   "data": [
+    0,
+    15
+   ]
+  },
+  {
+   "triple": "education task list",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "education to do",
+   "data": [
+    0,
+    18
+   ]
+  },
+  {
+   "triple": "education todo list",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "event for me",
+   "data": [
+    0,
+    3
+   ]
+  },
+  {
+   "triple": "event for me.",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "event for me?",
+   "data": [
+    0,
+    2
+   ]
+  },
+  {
+   "triple": "event to the",
+   "data": [
+    0,
+    3
+   ]
+  },
+  {
+   "triple": "finish task education",
+   "data": [
+    0,
+    9
+   ]
+  },
+  {
+   "triple": "finish task org",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "finish task philanthropy",
+   "data": [
+    0,
+    9
+   ]
+  },
+  {
+   "triple": "finish task recruitment",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "finish task rush",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "finish task scholarship",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "finish task social",
+   "data": [
+    0,
+    10
+   ]
+  },
+  {
+   "triple": "finish todo education",
+   "data": [
+    0,
+    9
+   ]
+  },
+  {
+   "triple": "finish todo org",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "finish todo philanthropy",
+   "data": [
+    0,
+    9
+   ]
+  },
+  {
+   "triple": "finish todo recruitment",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "finish todo rush",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "finish todo scholarship",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "finish todo social",
+   "data": [
+    0,
+    10
+   ]
+  },
+  {
+   "triple": "finished a task",
+   "data": [
+    0,
+    117
+   ]
+  },
+  {
+   "triple": "finished a todo",
+   "data": [
+    0,
+    130
+   ]
+  },
+  {
+   "triple": "for me please?",
+   "data": [
+    0,
+    5
+   ]
+  },
+  {
+   "triple": "for org dev",
+   "data": [
+    0,
+    34
+   ]
+  },
+  {
+   "triple": "for social service",
+   "data": [
+    0,
+    37
+   ]
+  },
+  {
+   "triple": "for the education",
+   "data": [
+    0,
+    22
+   ]
+  },
+  {
+   "triple": "for the org",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "for the philanthropy",
+   "data": [
+    0,
+    17
+   ]
+  },
+  {
+   "triple": "for the recruitment",
+   "data": [
+    0,
+    17
+   ]
+  },
+  {
+   "triple": "for the rush",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "for the social",
+   "data": [
+    0,
+    21
+   ]
+  },
+  {
+   "triple": "for this committee",
+   "data": [
+    0,
+    37
+   ]
+  },
+  {
+   "triple": "for this week?",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "get education tasks",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "get education todos",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "get org dev",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "get our todos",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "get philanthropy tasks",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "get philanthropy todos",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "get recruitment tasks",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "get recruitment todos",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "get rush tasks",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "get rush todos",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "get scholarship tasks",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "get scholarship todos",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "get social tasks",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "get social todos",
+   "data": [
+    0,
+    10
+   ]
+  },
+  {
+   "triple": "get tasks education",
+   "data": [
+    0,
+    9
+   ]
+  },
+  {
+   "triple": "get tasks org",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "get tasks organizational",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "get tasks philanthropy",
+   "data": [
+    0,
+    10
+   ]
+  },
+  {
+   "triple": "get tasks recruitment",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "get tasks rush",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "get tasks scholarship",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "get tasks social",
+   "data": [
+    -1,
+    44
+   ]
+  },
+  {
+   "triple": "get the education",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "get the org",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "get the philanthropy",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "get the recruitment",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "get the rush",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "get the scholarship",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "get the social",
+   "data": [
+    0,
+    18
+   ]
+  },
+  {
+   "triple": "get the todos",
+   "data": [
+    0,
+    47
+   ]
+  },
+  {
+   "triple": "get todos Org",
+   "data": [
+    0,
+    4
+   ]
+  },
+  {
+   "triple": "get todos Recruitment",
+   "data": [
+    0,
+    2
+   ]
+  },
+  {
+   "triple": "get todos Test_Filter",
+   "data": [
+    0,
+    2
+   ]
+  },
+  {
+   "triple": "get todos education",
+   "data": [
+    0,
+    10
+   ]
+  },
+  {
+   "triple": "get todos org",
+   "data": [
+    0,
+    10
+   ]
+  },
+  {
+   "triple": "get todos organizational",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "get todos philanthropy",
+   "data": [
+    0,
+    11
+   ]
+  },
+  {
+   "triple": "get todos recruitment",
+   "data": [
+    0,
+    10
+   ]
+  },
+  {
+   "triple": "get todos rush",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "get todos scholarship",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "get todos social",
+   "data": [
+    -1,
+    45
+   ]
+  },
+  {
+   "triple": "give me our",
+   "data": [
+    0,
+    18
+   ]
+  },
+  {
+   "triple": "go open-source for",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "google calendar event",
+   "data": [
+    0,
+    2
+   ]
+  },
+  {
+   "triple": "google calendar for",
+   "data": [
+    0,
+    2
+   ]
+  },
+  {
+   "triple": "hello to everyone",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "hello to the",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "hi for me?",
+   "data": [
+    0,
+    4
+   ]
+  },
+  {
+   "triple": "hi to everyone",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "hi to the",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "i completed a",
+   "data": [
+    0,
+    230
+   ]
+  },
+  {
+   "triple": "i finished a",
+   "data": [
+    0,
+    247
+   ]
+  },
+  {
+   "triple": "in org dev",
+   "data": [
+    0,
+    34
+   ]
+  },
+  {
+   "triple": "iris add a",
+   "data": [
+    0,
+    34
+   ]
+  },
+  {
+   "triple": "iris add an",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "iris add calendar",
+   "data": [
+    0,
+    2
+   ]
+  },
+  {
+   "triple": "iris add event",
+   "data": [
+    0,
+    2
+   ]
+  },
+  {
+   "triple": "iris add google",
+   "data": [
+    0,
+    2
+   ]
+  },
+  {
+   "triple": "iris add task",
+   "data": [
+    28,
+    109
+   ]
+  },
+  {
+   "triple": "iris add to",
+   "data": [
+    29,
+    100
+   ]
+  },
+  {
+   "triple": "iris add todo",
+   "data": [
+    29,
+    132
+   ]
+  },
+  {
+   "triple": "iris can you",
+   "data": [
+    0,
+    6
+   ]
+  },
+  {
+   "triple": "iris check off",
+   "data": [
+    0,
+    124
+   ]
+  },
+  {
+   "triple": "iris complete a",
+   "data": [
+    0,
+    18
+   ]
+  },
+  {
+   "triple": "iris complete task",
+   "data": [
+    0,
+    65,
+    1
+   ]
+  },
+  {
+   "triple": "iris complete todo",
+   "data": [
+    -1,
+    69
+   ]
+  },
+  {
+   "triple": "iris could you",
+   "data": [
+    0,
+    82
+   ]
+  },
+  {
+   "triple": "iris finish task",
+   "data": [
+    0,
+    60
+   ]
+  },
+  {
+   "triple": "iris finish todo",
+   "data": [
+    0,
+    60
+   ]
+  },
+  {
+   "triple": "iris get education",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "iris get org",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "iris get philanthropy",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "iris get recruitment",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "iris get rush",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "iris get scholarship",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "iris get social",
+   "data": [
+    0,
+    18
+   ]
+  },
+  {
+   "triple": "iris get tasks",
+   "data": [
+    -1,
+    103
+   ]
+  },
+  {
+   "triple": "iris get the",
+   "data": [
+    0,
+    161
+   ]
+  },
+  {
+   "triple": "iris get todos",
+   "data": [
+    -1,
+    118
+   ]
+  },
+  {
+   "triple": "iris give me",
+   "data": [
+    0,
+    18
+   ]
+  },
+  {
+   "triple": "iris i completed",
+   "data": [
+    0,
+    230
+   ]
+  },
+  {
+   "triple": "iris i finished",
+   "data": [
+    0,
+    247
+   ]
+  },
+  {
+   "triple": "iris list education",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "iris list org",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "iris list philanthropy",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "iris list recruitment",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "iris list rush",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "iris list social",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "iris list tasks",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "iris list todos",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "iris please add",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "iris please say",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "iris say hello",
+   "data": [
+    0,
+    85
+   ]
+  },
+  {
+   "triple": "iris say hey",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "iris say hi",
+   "data": [
+    0,
+    27
+   ]
+  },
+  {
+   "triple": "iris show me",
+   "data": [
+    0,
+    19
+   ]
+  },
+  {
+   "triple": "iris talk to",
+   "data": [
+    0,
+    49
+   ]
+  },
+  {
+   "triple": "iris tell education",
+   "data": [
+    0,
+    18
+   ]
+  },
+  {
+   "triple": "iris tell everyone",
+   "data": [
+    0,
+    18
+   ]
+  },
+  {
+   "triple": "iris tell me",
+   "data": [
+    -1,
+    61
+   ]
+  },
+  {
+   "triple": "iris tell org",
+   "data": [
+    0,
+    17
+   ]
+  },
+  {
+   "triple": "iris tell philanthropy",
+   "data": [
+    -1,
+    18
+   ]
+  },
+  {
+   "triple": "iris tell recruitment",
+   "data": [
+    16,
+    19
+   ]
+  },
+  {
+   "triple": "iris tell rush",
+   "data": [
+    16,
+    16
+   ]
+  },
+  {
+   "triple": "iris tell social",
+   "data": [
+    -1,
+    16,
+    1
+   ]
+  },
+  {
+   "triple": "iris what are",
+   "data": [
+    0,
+    134
+   ]
+  },
+  {
+   "triple": "iris what can",
+   "data": [
+    -1,
+    23
+   ]
+  },
+  {
+   "triple": "iris what commands",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "iris what do",
+   "data": [
+    0,
+    11
+   ]
+  },
+  {
+   "triple": "iris, could you",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "list education tasks",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "list education todos",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "list org dev",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "list philanthropy tasks",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "list philanthropy todos",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "list recruitment tasks",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "list recruitment todos",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "list rush tasks",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "list rush todos",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "list social tasks",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "list social todos",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "list tasks social",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "list todos social",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "me about the",
+   "data": [
+    0,
+    49
+   ]
+  },
+  {
+   "triple": "me our tasks",
+   "data": [
+    0,
+    9
+   ]
+  },
+  {
+   "triple": "me our todos",
+   "data": [
+    0,
+    24
+   ]
+  },
+  {
+   "triple": "me out tasks",
+   "data": [
+    0,
+    12
+   ]
+  },
+  {
+   "triple": "me the tasks",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "me the todos",
+   "data": [
+    0,
+    75
+   ]
+  },
+  {
+   "triple": "me what you",
+   "data": [
+    -1,
+    16
+   ]
+  },
+  {
+   "triple": "off task education",
+   "data": [
+    0,
+    10
+   ]
+  },
+  {
+   "triple": "off task org",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "off task philanthropy",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "off task recruitment",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "off task rush",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "off task scholarship",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "off task social",
+   "data": [
+    0,
+    10
+   ]
+  },
+  {
+   "triple": "off todo education",
+   "data": [
+    0,
+    9
+   ]
+  },
+  {
+   "triple": "off todo org",
+   "data": [
+    0,
+    9
+   ]
+  },
+  {
+   "triple": "off todo philanthropy",
+   "data": [
+    0,
+    10
+   ]
+  },
+  {
+   "triple": "off todo recruitment",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "off todo rush",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "off todo scholarship",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "off todo social",
+   "data": [
+    0,
+    12
+   ]
+  },
+  {
+   "triple": "open-source for me?",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "org dev committee",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "org dev committee?",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "org dev task",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "org dev tasks",
+   "data": [
+    0,
+    24
+   ]
+  },
+  {
+   "triple": "org dev tasks?",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "org dev to",
+   "data": [
+    0,
+    17
+   ]
+  },
+  {
+   "triple": "org dev todo",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "org dev todos",
+   "data": [
+    0,
+    32
+   ]
+  },
+  {
+   "triple": "org dev todos?",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "our todos for",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "our todos please?",
+   "data": [
+    0,
+    3
+   ]
+  },
+  {
+   "triple": "philanthropy task list",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "philanthropy to do",
+   "data": [
+    -1,
+    18
+   ]
+  },
+  {
+   "triple": "philanthropy todo list",
+   "data": [
+    -1,
+    10
+   ]
+  },
+  {
+   "triple": "please add an",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "please say hello",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "please say hello!",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "please say hi!",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "please tell everyone",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "recruitment task list",
+   "data": [
+    8,
+    8
+   ]
+  },
+  {
+   "triple": "recruitment to do",
+   "data": [
+    16,
+    19
+   ]
+  },
+  {
+   "triple": "recruitment todo list",
+   "data": [
+    8,
+    8
+   ]
+  },
+  {
+   "triple": "rush task list",
+   "data": [
+    8,
+    8
+   ]
+  },
+  {
+   "triple": "rush to do",
+   "data": [
+    16,
+    16
+   ]
+  },
+  {
+   "triple": "rush todo list",
+   "data": [
+    8,
+    8
+   ]
+  },
+  {
+   "triple": "say hello iris",
+   "data": [
+    0,
+    3
+   ]
+  },
+  {
+   "triple": "say hello to",
+   "data": [
+    0,
+    24
+   ]
+  },
+  {
+   "triple": "say hey iris",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "say hi for",
+   "data": [
+    0,
+    4
+   ]
+  },
+  {
+   "triple": "say hi iris",
+   "data": [
+    0,
+    2
+   ]
+  },
+  {
+   "triple": "say hi iris?",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "say hi to",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "show me our",
+   "data": [
+    0,
+    3
+   ]
+  },
+  {
+   "triple": "show me the",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "show us our",
+   "data": [
+    0,
+    3
+   ]
+  },
+  {
+   "triple": "social task list",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "social to do",
+   "data": [
+    -1,
+    16,
+    1
+   ]
+  },
+  {
+   "triple": "social todo list",
+   "data": [
+    -1,
+    8,
+    1
+   ]
+  },
+  {
+   "triple": "talk to me",
+   "data": [
+    0,
+    49
+   ]
+  },
+  {
+   "triple": "task for education",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "task for me",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "task for org",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "task for philanthropy",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "task for recruitment",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "task for rush",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "task for scholarship",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "task for social",
+   "data": [
+    0,
+    18
+   ]
+  },
+  {
+   "triple": "task for this",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "task in education",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "task in org",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "task in philanthropy",
+   "data": [
+    0,
+    19
+   ]
+  },
+  {
+   "triple": "task in recruitment",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "task in rush",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "task in scholarship",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "task in social",
+   "data": [
+    0,
+    19
+   ]
+  },
+  {
+   "triple": "task org dev",
+   "data": [
+    0,
+    38
+   ]
+  },
+  {
+   "triple": "task to education",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "task to org",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "task to philanthropy",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "task to recruitment",
+   "data": [
+    8,
+    8
+   ]
+  },
+  {
+   "triple": "task to rush",
+   "data": [
+    8,
+    8
+   ]
+  },
+  {
+   "triple": "task to social",
+   "data": [
+    0,
+    7,
+    1
+   ]
+  },
+  {
+   "triple": "tasks for social",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "tasks org dev",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "tasks organizational development",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "tasks social service",
+   "data": [
+    0,
+    19
+   ]
+  },
+  {
+   "triple": "tell education to",
+   "data": [
+    0,
+    18
+   ]
+  },
+  {
+   "triple": "tell everyone hello",
+   "data": [
+    0,
+    10
+   ]
+  },
+  {
+   "triple": "tell everyone hello?",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "tell everyone hi",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "tell me our",
+   "data": [
+    0,
+    12
+   ]
+  },
+  {
+   "triple": "tell me out",
+   "data": [
+    0,
+    12
+   ]
+  },
+  {
+   "triple": "tell me the",
+   "data": [
+    0,
+    75
+   ]
+  },
+  {
+   "triple": "tell me what",
+   "data": [
+    -1,
+    16
+   ]
+  },
+  {
+   "triple": "tell org dev",
+   "data": [
+    0,
+    17
+   ]
+  },
+  {
+   "triple": "tell philanthropy to",
+   "data": [
+    -1,
+    18
+   ]
+  },
+  {
+   "triple": "tell recruitment to",
+   "data": [
+    16,
+    19
+   ]
+  },
+  {
+   "triple": "tell rush to",
+   "data": [
+    16,
+    16
+   ]
+  },
+  {
+   "triple": "tell social to",
+   "data": [
+    -1,
+    16,
+    1
+   ]
+  },
+  {
+   "triple": "the education committee",
+   "data": [
+    0,
+    12
+   ]
+  },
+  {
+   "triple": "the education committee?",
+   "data": [
+    0,
+    10
+   ]
+  },
+  {
+   "triple": "the education tasks",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "the education tasks?",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "the education todos",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "the education todos?",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "the google calendar",
+   "data": [
+    0,
+    2
+   ]
+  },
+  {
+   "triple": "the org dev",
+   "data": [
+    0,
+    56
+   ]
+  },
+  {
+   "triple": "the philanthropy committee",
+   "data": [
+    0,
+    9
+   ]
+  },
+  {
+   "triple": "the philanthropy committee?",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "the philanthropy tasks",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "the philanthropy tasks?",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "the philanthropy todos",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "the philanthropy todos?",
+   "data": [
+    0,
+    10
+   ]
+  },
+  {
+   "triple": "the recruitment committee",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "the recruitment committee?",
+   "data": [
+    0,
+    9
+   ]
+  },
+  {
+   "triple": "the recruitment tasks",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "the recruitment tasks?",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "the recruitment todos",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "the recruitment todos?",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "the rush committee?",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "the rush tasks",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "the rush tasks?",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "the rush todos",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "the rush todos?",
+   "data": [
+    0,
+    9
+   ]
+  },
+  {
+   "triple": "the scholarship tasks",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "the scholarship tasks?",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "the scholarship todos",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "the scholarship todos?",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "the social committee",
+   "data": [
+    0,
+    10
+   ]
+  },
+  {
+   "triple": "the social committee?",
+   "data": [
+    0,
+    11
+   ]
+  },
+  {
+   "triple": "the social tasks",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "the social tasks?",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "the social todos",
+   "data": [
+    0,
+    19
+   ]
+  },
+  {
+   "triple": "the social todos?",
+   "data": [
+    0,
+    10
+   ]
+  },
+  {
+   "triple": "the tasks for",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "the todos for",
+   "data": [
+    0,
+    122
+   ]
+  },
+  {
+   "triple": "to do task",
+   "data": [
+    13,
+    58
+   ]
+  },
+  {
+   "triple": "to do todo",
+   "data": [
+    16,
+    48
+   ]
+  },
+  {
+   "triple": "to education task",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "to education todo",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "to me about",
+   "data": [
+    0,
+    49
+   ]
+  },
+  {
+   "triple": "to org dev",
+   "data": [
+    0,
+    33
+   ]
+  },
+  {
+   "triple": "to philanthropy task",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "to philanthropy todo",
+   "data": [
+    -1,
+    10
+   ]
+  },
+  {
+   "triple": "to recruitment task",
+   "data": [
+    8,
+    8
+   ]
+  },
+  {
+   "triple": "to recruitment todo",
+   "data": [
+    8,
+    8
+   ]
+  },
+  {
+   "triple": "to rush task",
+   "data": [
+    8,
+    8
+   ]
+  },
+  {
+   "triple": "to rush todo",
+   "data": [
+    8,
+    8
+   ]
+  },
+  {
+   "triple": "to social task",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "to social todo",
+   "data": [
+    -1,
+    8,
+    1
+   ]
+  },
+  {
+   "triple": "to the calendar?",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "to the google",
+   "data": [
+    0,
+    2
+   ]
+  },
+  {
+   "triple": "to the group",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "to this committee",
+   "data": [
+    1,
+    1
+   ]
+  },
+  {
+   "triple": "todo boom for",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "todo for education",
+   "data": [
+    0,
+    17
+   ]
+  },
+  {
+   "triple": "todo for me",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "todo for org",
+   "data": [
+    0,
+    18
+   ]
+  },
+  {
+   "triple": "todo for philanthropy",
+   "data": [
+    0,
+    17
+   ]
+  },
+  {
+   "triple": "todo for recruitment",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "todo for rush",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "todo for scholarship",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "todo for social",
+   "data": [
+    0,
+    18
+   ]
+  },
+  {
+   "triple": "todo for this",
+   "data": [
+    0,
+    21
+   ]
+  },
+  {
+   "triple": "todo in education",
+   "data": [
+    0,
+    18
+   ]
+  },
+  {
+   "triple": "todo in org",
+   "data": [
+    0,
+    18
+   ]
+  },
+  {
+   "triple": "todo in philanthropy",
+   "data": [
+    0,
+    19
+   ]
+  },
+  {
+   "triple": "todo in recruitment",
+   "data": [
+    0,
+    17
+   ]
+  },
+  {
+   "triple": "todo in rush",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "todo in scholarship",
+   "data": [
+    0,
+    16
+   ]
+  },
+  {
+   "triple": "todo in social",
+   "data": [
+    0,
+    23
+   ]
+  },
+  {
+   "triple": "todo org dev",
+   "data": [
+    0,
+    39
+   ]
+  },
+  {
+   "triple": "todo to education",
+   "data": [
+    0,
+    9
+   ]
+  },
+  {
+   "triple": "todo to org",
+   "data": [
+    0,
+    9
+   ]
+  },
+  {
+   "triple": "todo to philanthropy",
+   "data": [
+    0,
+    9
+   ]
+  },
+  {
+   "triple": "todo to recruitment",
+   "data": [
+    8,
+    8
+   ]
+  },
+  {
+   "triple": "todo to rush",
+   "data": [
+    8,
+    8
+   ]
+  },
+  {
+   "triple": "todo to social",
+   "data": [
+    -1,
+    8,
+    1
+   ]
+  },
+  {
+   "triple": "todo to this",
+   "data": [
+    1,
+    1
+   ]
+  },
+  {
+   "triple": "todos Org Dev",
+   "data": [
+    0,
+    4
+   ]
+  },
+  {
+   "triple": "todos for social",
+   "data": [
+    0,
+    21
+   ]
+  },
+  {
+   "triple": "todos for the",
+   "data": [
+    0,
+    101
+   ]
+  },
+  {
+   "triple": "todos for this",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "todos org dev",
+   "data": [
+    0,
+    10
+   ]
+  },
+  {
+   "triple": "todos organizational development",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "todos social service",
+   "data": [
+    -1,
+    33
+   ]
+  },
+  {
+   "triple": "us our todos",
+   "data": [
+    0,
+    3
+   ]
+  },
+  {
+   "triple": "wanna say hi",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "what are our",
+   "data": [
+    0,
+    17
+   ]
+  },
+  {
+   "triple": "what are the",
+   "data": [
+    0,
+    117
+   ]
+  },
+  {
+   "triple": "what can you",
+   "data": [
+    -1,
+    23
+   ]
+  },
+  {
+   "triple": "what commands can",
+   "data": [
+    0,
+    4
+   ]
+  },
+  {
+   "triple": "what commands do",
+   "data": [
+    0,
+    4
+   ]
+  },
+  {
+   "triple": "what do you",
+   "data": [
+    0,
+    11
+   ]
+  },
+  {
+   "triple": "what you can",
+   "data": [
+    -1,
+    16
+   ]
+  },
+  {
+   "triple": "you add a",
+   "data": [
+    0,
+    5
+   ]
+  },
+  {
+   "triple": "you add an",
+   "data": [
+    0,
+    5
+   ]
+  },
+  {
+   "triple": "you can do",
+   "data": [
+    -1,
+    16
+   ]
+  },
+  {
+   "triple": "you get our",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "you go open-source",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "you please say",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "you please tell",
+   "data": [
+    0,
+    8
+   ]
+  },
+  {
+   "triple": "you say hi",
+   "data": [
+    0,
+    4
+   ]
+  },
+  {
+   "triple": "you show us",
+   "data": [
+    0,
+    3
+   ]
+  },
+  {
+   "triple": "you tell me",
+   "data": [
+    0,
+    54
+   ]
+  }
+ ],
+ "doubles": [
+  {
+   "data": [
+    0,
+    4
+   ],
+   "double": "Org Dev"
+  },
+  {
+   "data": [
+    0,
+    5
+   ],
+   "double": "a calendar"
+  },
+  {
+   "data": [
+    0,
+    256
+   ],
+   "double": "a task"
+  },
+  {
+   "data": [
+    0,
+    272
+   ],
+   "double": "a todo"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "double": "a todo?"
+  },
+  {
+   "data": [
+    0,
+    49
+   ],
+   "double": "about the"
+  },
+  {
+   "data": [
+    0,
+    39
+   ],
+   "double": "add a"
+  },
+  {
+   "data": [
+    0,
+    7
+   ],
+   "double": "add an"
+  },
+  {
+   "data": [
+    0,
+    2
+   ],
+   "double": "add calendar"
+  },
+  {
+   "data": [
+    0,
+    2
+   ],
+   "double": "add event"
+  },
+  {
+   "data": [
+    0,
+    2
+   ],
+   "double": "add google"
+  },
+  {
+   "data": [
+    28,
+    109
+   ],
+   "double": "add task"
+  },
+  {
+   "data": [
+    29,
+    100
+   ],
+   "double": "add to"
+  },
+  {
+   "data": [
+    29,
+    132
+   ],
+   "double": "add todo"
+  },
+  {
+   "data": [
+    0,
+    7
+   ],
+   "double": "an event"
+  },
+  {
+   "data": [
+    0,
+    17
+   ],
+   "double": "are our"
+  },
+  {
+   "data": [
+    0,
+    117
+   ],
+   "double": "are the"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "double": "boom for"
+  },
+  {
+   "data": [
+    0,
+    9
+   ],
+   "double": "calendar event"
+  },
+  {
+   "data": [
+    0,
+    2
+   ],
+   "double": "calendar for"
+  },
+  {
+   "data": [
+    -1,
+    16
+   ],
+   "double": "can do"
+  },
+  {
+   "data": [
+    -1,
+    33
+   ],
+   "double": "can you"
+  },
+  {
+   "data": [
+    0,
+    124
+   ],
+   "double": "check off"
+  },
+  {
+   "data": [
+    0,
+    4
+   ],
+   "double": "commands can"
+  },
+  {
+   "data": [
+    0,
+    4
+   ],
+   "double": "commands do"
+  },
+  {
+   "data": [
+    0,
+    18
+   ],
+   "double": "complete a"
+  },
+  {
+   "data": [
+    0,
+    65,
+    1
+   ],
+   "double": "complete task"
+  },
+  {
+   "data": [
+    -1,
+    69
+   ],
+   "double": "complete todo"
+  },
+  {
+   "data": [
+    0,
+    230
+   ],
+   "double": "completed a"
+  },
+  {
+   "data": [
+    0,
+    83
+   ],
+   "double": "could you"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "dev committee"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "dev committee?"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "dev task"
+  },
+  {
+   "data": [
+    0,
+    24
+   ],
+   "double": "dev tasks"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "dev tasks?"
+  },
+  {
+   "data": [
+    0,
+    17
+   ],
+   "double": "dev to"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "dev todo"
+  },
+  {
+   "data": [
+    0,
+    32
+   ],
+   "double": "dev todos"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "dev todos?"
+  },
+  {
+   "data": [
+    13,
+    58
+   ],
+   "double": "do task"
+  },
+  {
+   "data": [
+    16,
+    48
+   ],
+   "double": "do todo"
+  },
+  {
+   "data": [
+    0,
+    15
+   ],
+   "double": "do you"
+  },
+  {
+   "data": [
+    0,
+    12
+   ],
+   "double": "education committee"
+  },
+  {
+   "data": [
+    0,
+    10
+   ],
+   "double": "education committee?"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "education task"
+  },
+  {
+   "data": [
+    0,
+    24
+   ],
+   "double": "education tasks"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "education tasks?"
+  },
+  {
+   "data": [
+    0,
+    18
+   ],
+   "double": "education to"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "education todo"
+  },
+  {
+   "data": [
+    0,
+    32
+   ],
+   "double": "education todos"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "education todos?"
+  },
+  {
+   "data": [
+    0,
+    6
+   ],
+   "double": "event for"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "double": "event please"
+  },
+  {
+   "data": [
+    0,
+    3
+   ],
+   "double": "event to"
+  },
+  {
+   "data": [
+    0,
+    10
+   ],
+   "double": "everyone hello"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "everyone hello?"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "everyone hi"
+  },
+  {
+   "data": [
+    0,
+    60
+   ],
+   "double": "finish task"
+  },
+  {
+   "data": [
+    0,
+    60
+   ],
+   "double": "finish todo"
+  },
+  {
+   "data": [
+    0,
+    247
+   ],
+   "double": "finished a"
+  },
+  {
+   "data": [
+    0,
+    33
+   ],
+   "double": "for education"
+  },
+  {
+   "data": [
+    0,
+    21
+   ],
+   "double": "for me"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "double": "for me."
+  },
+  {
+   "data": [
+    0,
+    7
+   ],
+   "double": "for me?"
+  },
+  {
+   "data": [
+    0,
+    34
+   ],
+   "double": "for org"
+  },
+  {
+   "data": [
+    0,
+    33
+   ],
+   "double": "for philanthropy"
+  },
+  {
+   "data": [
+    0,
+    33
+   ],
+   "double": "for recruitment"
+  },
+  {
+   "data": [
+    0,
+    32
+   ],
+   "double": "for rush"
+  },
+  {
+   "data": [
+    0,
+    32
+   ],
+   "double": "for scholarship"
+  },
+  {
+   "data": [
+    0,
+    73
+   ],
+   "double": "for social"
+  },
+  {
+   "data": [
+    0,
+    101
+   ],
+   "double": "for the"
+  },
+  {
+   "data": [
+    0,
+    38
+   ],
+   "double": "for this"
+  },
+  {
+   "data": [
+    0,
+    16
+   ],
+   "double": "get education"
+  },
+  {
+   "data": [
+    0,
+    16
+   ],
+   "double": "get org"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "double": "get our"
+  },
+  {
+   "data": [
+    0,
+    16
+   ],
+   "double": "get philanthropy"
+  },
+  {
+   "data": [
+    0,
+    16
+   ],
+   "double": "get recruitment"
+  },
+  {
+   "data": [
+    0,
+    16
+   ],
+   "double": "get rush"
+  },
+  {
+   "data": [
+    0,
+    16
+   ],
+   "double": "get scholarship"
+  },
+  {
+   "data": [
+    0,
+    18
+   ],
+   "double": "get social"
+  },
+  {
+   "data": [
+    -1,
+    103
+   ],
+   "double": "get tasks"
+  },
+  {
+   "data": [
+    0,
+    161
+   ],
+   "double": "get the"
+  },
+  {
+   "data": [
+    -1,
+    118
+   ],
+   "double": "get todos"
+  },
+  {
+   "data": [
+    0,
+    18
+   ],
+   "double": "give me"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "double": "go open-source"
+  },
+  {
+   "data": [
+    0,
+    4
+   ],
+   "double": "google calendar"
+  },
+  {
+   "data": [
+    0,
+    13
+   ],
+   "double": "hello iris"
+  },
+  {
+   "data": [
+    0,
+    24
+   ],
+   "double": "hello to"
+  },
+  {
+   "data": [
+    0,
+    3
+   ],
+   "double": "hey iris"
+  },
+  {
+   "data": [
+    0,
+    4
+   ],
+   "double": "hi for"
+  },
+  {
+   "data": [
+    0,
+    7
+   ],
+   "double": "hi iris"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "double": "hi iris?"
+  },
+  {
+   "data": [
+    0,
+    16
+   ],
+   "double": "hi to"
+  },
+  {
+   "data": [
+    0,
+    230
+   ],
+   "double": "i completed"
+  },
+  {
+   "data": [
+    0,
+    247
+   ],
+   "double": "i finished"
+  },
+  {
+   "data": [
+    0,
+    34
+   ],
+   "double": "in education"
+  },
+  {
+   "data": [
+    0,
+    34
+   ],
+   "double": "in org"
+  },
+  {
+   "data": [
+    0,
+    38
+   ],
+   "double": "in philanthropy"
+  },
+  {
+   "data": [
+    0,
+    33
+   ],
+   "double": "in recruitment"
+  },
+  {
+   "data": [
+    0,
+    32
+   ],
+   "double": "in rush"
+  },
+  {
+   "data": [
+    0,
+    32
+   ],
+   "double": "in scholarship"
+  },
+  {
+   "data": [
+    0,
+    42
+   ],
+   "double": "in social"
+  },
+  {
+   "data": [
+    86,
+    382
+   ],
+   "double": "iris add"
+  },
+  {
+   "data": [
+    0,
+    6
+   ],
+   "double": "iris can"
+  },
+  {
+   "data": [
+    0,
+    124
+   ],
+   "double": "iris check"
+  },
+  {
+   "data": [
+    -2,
+    154
+   ],
+   "double": "iris complete"
+  },
+  {
+   "data": [
+    0,
+    82
+   ],
+   "double": "iris could"
+  },
+  {
+   "data": [
+    0,
+    120
+   ],
+   "double": "iris finish"
+  },
+  {
+   "data": [
+    -2,
+    496
+   ],
+   "double": "iris get"
+  },
+  {
+   "data": [
+    0,
+    18
+   ],
+   "double": "iris give"
+  },
+  {
+   "data": [
+    0,
+    477
+   ],
+   "double": "iris i"
+  },
+  {
+   "data": [
+    0,
+    112
+   ],
+   "double": "iris list"
+  },
+  {
+   "data": [
+    0,
+    17
+   ],
+   "double": "iris please"
+  },
+  {
+   "data": [
+    0,
+    113
+   ],
+   "double": "iris say"
+  },
+  {
+   "data": [
+    0,
+    19
+   ],
+   "double": "iris show"
+  },
+  {
+   "data": [
+    0,
+    49
+   ],
+   "double": "iris talk"
+  },
+  {
+   "data": [
+    28,
+    185
+   ],
+   "double": "iris tell"
+  },
+  {
+   "data": [
+    -1,
+    176
+   ],
+   "double": "iris what"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "double": "iris, could"
+  },
+  {
+   "data": [
+    0,
+    16
+   ],
+   "double": "list education"
+  },
+  {
+   "data": [
+    0,
+    16
+   ],
+   "double": "list org"
+  },
+  {
+   "data": [
+    0,
+    16
+   ],
+   "double": "list philanthropy"
+  },
+  {
+   "data": [
+    0,
+    16
+   ],
+   "double": "list recruitment"
+  },
+  {
+   "data": [
+    0,
+    16
+   ],
+   "double": "list rush"
+  },
+  {
+   "data": [
+    0,
+    16
+   ],
+   "double": "list social"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "list tasks"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "list todos"
+  },
+  {
+   "data": [
+    0,
+    49
+   ],
+   "double": "me about"
+  },
+  {
+   "data": [
+    0,
+    33
+   ],
+   "double": "me our"
+  },
+  {
+   "data": [
+    0,
+    12
+   ],
+   "double": "me out"
+  },
+  {
+   "data": [
+    0,
+    5
+   ],
+   "double": "me please?"
+  },
+  {
+   "data": [
+    0,
+    91
+   ],
+   "double": "me the"
+  },
+  {
+   "data": [
+    -1,
+    16
+   ],
+   "double": "me what"
+  },
+  {
+   "data": [
+    0,
+    60
+   ],
+   "double": "off task"
+  },
+  {
+   "data": [
+    0,
+    64
+   ],
+   "double": "off todo"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "double": "open-source for"
+  },
+  {
+   "data": [
+    0,
+    301
+   ],
+   "double": "org dev"
+  },
+  {
+   "data": [
+    0,
+    16
+   ],
+   "double": "organizational development"
+  },
+  {
+   "data": [
+    0,
+    9
+   ],
+   "double": "our tasks"
+  },
+  {
+   "data": [
+    0,
+    9
+   ],
+   "double": "our tasks?"
+  },
+  {
+   "data": [
+    0,
+    28
+   ],
+   "double": "our todos"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "our todos?"
+  },
+  {
+   "data": [
+    0,
+    12
+   ],
+   "double": "out tasks"
+  },
+  {
+   "data": [
+    0,
+    9
+   ],
+   "double": "philanthropy committee"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "philanthropy committee?"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "philanthropy task"
+  },
+  {
+   "data": [
+    0,
+    24
+   ],
+   "double": "philanthropy tasks"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "philanthropy tasks?"
+  },
+  {
+   "data": [
+    -1,
+    18
+   ],
+   "double": "philanthropy to"
+  },
+  {
+   "data": [
+    -1,
+    10
+   ],
+   "double": "philanthropy todo"
+  },
+  {
+   "data": [
+    0,
+    32
+   ],
+   "double": "philanthropy todos"
+  },
+  {
+   "data": [
+    0,
+    10
+   ],
+   "double": "philanthropy todos?"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "double": "please add"
+  },
+  {
+   "data": [
+    0,
+    24
+   ],
+   "double": "please say"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "please tell"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "recruitment committee"
+  },
+  {
+   "data": [
+    0,
+    9
+   ],
+   "double": "recruitment committee?"
+  },
+  {
+   "data": [
+    8,
+    8
+   ],
+   "double": "recruitment task"
+  },
+  {
+   "data": [
+    0,
+    24
+   ],
+   "double": "recruitment tasks"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "recruitment tasks?"
+  },
+  {
+   "data": [
+    16,
+    19
+   ],
+   "double": "recruitment to"
+  },
+  {
+   "data": [
+    8,
+    8
+   ],
+   "double": "recruitment todo"
+  },
+  {
+   "data": [
+    0,
+    32
+   ],
+   "double": "recruitment todos"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "recruitment todos?"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "rush committee?"
+  },
+  {
+   "data": [
+    8,
+    8
+   ],
+   "double": "rush task"
+  },
+  {
+   "data": [
+    0,
+    24
+   ],
+   "double": "rush tasks"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "rush tasks?"
+  },
+  {
+   "data": [
+    16,
+    16
+   ],
+   "double": "rush to"
+  },
+  {
+   "data": [
+    8,
+    8
+   ],
+   "double": "rush todo"
+  },
+  {
+   "data": [
+    0,
+    32
+   ],
+   "double": "rush todos"
+  },
+  {
+   "data": [
+    0,
+    9
+   ],
+   "double": "rush todos?"
+  },
+  {
+   "data": [
+    0,
+    96
+   ],
+   "double": "say hello"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "say hello!"
+  },
+  {
+   "data": [
+    0,
+    2
+   ],
+   "double": "say hey"
+  },
+  {
+   "data": [
+    0,
+    34
+   ],
+   "double": "say hi"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "say hi!"
+  },
+  {
+   "data": [
+    0,
+    16
+   ],
+   "double": "scholarship tasks"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "scholarship tasks?"
+  },
+  {
+   "data": [
+    0,
+    16
+   ],
+   "double": "scholarship todos"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "scholarship todos?"
+  },
+  {
+   "data": [
+    0,
+    19
+   ],
+   "double": "show me"
+  },
+  {
+   "data": [
+    0,
+    3
+   ],
+   "double": "show us"
+  },
+  {
+   "data": [
+    0,
+    10
+   ],
+   "double": "social committee"
+  },
+  {
+   "data": [
+    0,
+    11
+   ],
+   "double": "social committee?"
+  },
+  {
+   "data": [
+    -1,
+    89
+   ],
+   "double": "social service"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "social task"
+  },
+  {
+   "data": [
+    0,
+    24
+   ],
+   "double": "social tasks"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "social tasks?"
+  },
+  {
+   "data": [
+    -1,
+    16,
+    1
+   ],
+   "double": "social to"
+  },
+  {
+   "data": [
+    -1,
+    8,
+    1
+   ],
+   "double": "social todo"
+  },
+  {
+   "data": [
+    0,
+    37
+   ],
+   "double": "social todos"
+  },
+  {
+   "data": [
+    0,
+    10
+   ],
+   "double": "social todos?"
+  },
+  {
+   "data": [
+    0,
+    49
+   ],
+   "double": "talk to"
+  },
+  {
+   "data": [
+    0,
+    40
+   ],
+   "double": "task education"
+  },
+  {
+   "data": [
+    0,
+    138
+   ],
+   "double": "task for"
+  },
+  {
+   "data": [
+    0,
+    118
+   ],
+   "double": "task in"
+  },
+  {
+   "data": [
+    16,
+    48
+   ],
+   "double": "task list"
+  },
+  {
+   "data": [
+    0,
+    38
+   ],
+   "double": "task org"
+  },
+  {
+   "data": [
+    -1,
+    38
+   ],
+   "double": "task philanthropy"
+  },
+  {
+   "data": [
+    7,
+    34
+   ],
+   "double": "task recruitment"
+  },
+  {
+   "data": [
+    8,
+    32
+   ],
+   "double": "task rush"
+  },
+  {
+   "data": [
+    0,
+    24
+   ],
+   "double": "task scholarship"
+  },
+  {
+   "data": [
+    -1,
+    39,
+    1
+   ],
+   "double": "task social"
+  },
+  {
+   "data": [
+    15,
+    49
+   ],
+   "double": "task to"
+  },
+  {
+   "data": [
+    0,
+    9
+   ],
+   "double": "tasks education"
+  },
+  {
+   "data": [
+    0,
+    16
+   ],
+   "double": "tasks for"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "tasks org"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "tasks organizational"
+  },
+  {
+   "data": [
+    0,
+    10
+   ],
+   "double": "tasks philanthropy"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "tasks recruitment"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "tasks rush"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "tasks scholarship"
+  },
+  {
+   "data": [
+    -1,
+    52
+   ],
+   "double": "tasks social"
+  },
+  {
+   "data": [
+    0,
+    18
+   ],
+   "double": "tell education"
+  },
+  {
+   "data": [
+    0,
+    26
+   ],
+   "double": "tell everyone"
+  },
+  {
+   "data": [
+    -1,
+    115
+   ],
+   "double": "tell me"
+  },
+  {
+   "data": [
+    0,
+    17
+   ],
+   "double": "tell org"
+  },
+  {
+   "data": [
+    -1,
+    18
+   ],
+   "double": "tell philanthropy"
+  },
+  {
+   "data": [
+    16,
+    19
+   ],
+   "double": "tell recruitment"
+  },
+  {
+   "data": [
+    16,
+    16
+   ],
+   "double": "tell rush"
+  },
+  {
+   "data": [
+    -1,
+    16,
+    1
+   ],
+   "double": "tell social"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "double": "the calendar?"
+  },
+  {
+   "data": [
+    0,
+    62
+   ],
+   "double": "the education"
+  },
+  {
+   "data": [
+    0,
+    2
+   ],
+   "double": "the google"
+  },
+  {
+   "data": [
+    0,
+    16
+   ],
+   "double": "the group"
+  },
+  {
+   "data": [
+    0,
+    56
+   ],
+   "double": "the org"
+  },
+  {
+   "data": [
+    0,
+    59
+   ],
+   "double": "the philanthropy"
+  },
+  {
+   "data": [
+    0,
+    57
+   ],
+   "double": "the recruitment"
+  },
+  {
+   "data": [
+    0,
+    49
+   ],
+   "double": "the rush"
+  },
+  {
+   "data": [
+    0,
+    32
+   ],
+   "double": "the scholarship"
+  },
+  {
+   "data": [
+    0,
+    66
+   ],
+   "double": "the social"
+  },
+  {
+   "data": [
+    0,
+    16
+   ],
+   "double": "the tasks"
+  },
+  {
+   "data": [
+    0,
+    122
+   ],
+   "double": "the todos"
+  },
+  {
+   "data": [
+    1,
+    38
+   ],
+   "double": "this committee"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "double": "this week?"
+  },
+  {
+   "data": [
+    29,
+    106
+   ],
+   "double": "to do"
+  },
+  {
+   "data": [
+    0,
+    33
+   ],
+   "double": "to education"
+  },
+  {
+   "data": [
+    0,
+    24
+   ],
+   "double": "to everyone"
+  },
+  {
+   "data": [
+    0,
+    49
+   ],
+   "double": "to me"
+  },
+  {
+   "data": [
+    0,
+    33
+   ],
+   "double": "to org"
+  },
+  {
+   "data": [
+    -1,
+    35
+   ],
+   "double": "to philanthropy"
+  },
+  {
+   "data": [
+    32,
+    32
+   ],
+   "double": "to recruitment"
+  },
+  {
+   "data": [
+    32,
+    32
+   ],
+   "double": "to rush"
+  },
+  {
+   "data": [
+    -4,
+    35,
+    1
+   ],
+   "double": "to social"
+  },
+  {
+   "data": [
+    0,
+    19
+   ],
+   "double": "to the"
+  },
+  {
+   "data": [
+    1,
+    1
+   ],
+   "double": "to this"
+  },
+  {
+   "data": [
+    2,
+    2
+   ],
+   "double": "todo Recruitment"
+  },
+  {
+   "data": [
+    -1,
+    5,
+    1
+   ],
+   "double": "todo Test_Filter"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "double": "todo boom"
+  },
+  {
+   "data": [
+    0,
+    39
+   ],
+   "double": "todo education"
+  },
+  {
+   "data": [
+    0,
+    147
+   ],
+   "double": "todo for"
+  },
+  {
+   "data": [
+    0,
+    127
+   ],
+   "double": "todo in"
+  },
+  {
+   "data": [
+    13,
+    52
+   ],
+   "double": "todo list"
+  },
+  {
+   "data": [
+    0,
+    39
+   ],
+   "double": "todo org"
+  },
+  {
+   "data": [
+    -1,
+    41
+   ],
+   "double": "todo philanthropy"
+  },
+  {
+   "data": [
+    8,
+    38
+   ],
+   "double": "todo recruitment"
+  },
+  {
+   "data": [
+    8,
+    32
+   ],
+   "double": "todo rush"
+  },
+  {
+   "data": [
+    0,
+    24
+   ],
+   "double": "todo scholarship"
+  },
+  {
+   "data": [
+    -1,
+    43,
+    1
+   ],
+   "double": "todo social"
+  },
+  {
+   "data": [
+    15,
+    54
+   ],
+   "double": "todo to"
+  },
+  {
+   "data": [
+    0,
+    4
+   ],
+   "double": "todos Org"
+  },
+  {
+   "data": [
+    0,
+    2
+   ],
+   "double": "todos Recruitment"
+  },
+  {
+   "data": [
+    0,
+    2
+   ],
+   "double": "todos Test_Filter"
+  },
+  {
+   "data": [
+    0,
+    10
+   ],
+   "double": "todos education"
+  },
+  {
+   "data": [
+    0,
+    123
+   ],
+   "double": "todos for"
+  },
+  {
+   "data": [
+    0,
+    10
+   ],
+   "double": "todos org"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "todos organizational"
+  },
+  {
+   "data": [
+    0,
+    11
+   ],
+   "double": "todos philanthropy"
+  },
+  {
+   "data": [
+    0,
+    3
+   ],
+   "double": "todos please?"
+  },
+  {
+   "data": [
+    0,
+    10
+   ],
+   "double": "todos recruitment"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "todos rush"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "todos scholarship"
+  },
+  {
+   "data": [
+    -1,
+    53
+   ],
+   "double": "todos social"
+  },
+  {
+   "data": [
+    0,
+    3
+   ],
+   "double": "us our"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "double": "wanna say"
+  },
+  {
+   "data": [
+    0,
+    134
+   ],
+   "double": "what are"
+  },
+  {
+   "data": [
+    -1,
+    23
+   ],
+   "double": "what can"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "double": "what commands"
+  },
+  {
+   "data": [
+    0,
+    11
+   ],
+   "double": "what do"
+  },
+  {
+   "data": [
+    -1,
+    16
+   ],
+   "double": "what you"
+  },
+  {
+   "data": [
+    0,
+    10
+   ],
+   "double": "you add"
+  },
+  {
+   "data": [
+    -1,
+    16
+   ],
+   "double": "you can"
+  },
+  {
+   "data": [
+    -1,
+    27
+   ],
+   "double": "you do?"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "double": "you get"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "double": "you go"
+  },
+  {
+   "data": [
+    0,
+    15
+   ],
+   "double": "you know?"
+  },
+  {
+   "data": [
+    0,
+    16
+   ],
+   "double": "you please"
+  },
+  {
+   "data": [
+    0,
+    4
+   ],
+   "double": "you say"
+  },
+  {
+   "data": [
+    0,
+    3
+   ],
+   "double": "you show"
+  },
+  {
+   "data": [
+    0,
+    54
+   ],
+   "double": "you tell"
+  }
+ ],
+ "words": [
+  {
+   "data": [
+    0,
+    4
+   ],
+   "word": "Dev"
+  },
+  {
+   "data": [
+    0,
+    4
+   ],
+   "word": "Org"
+  },
+  {
+   "data": [
+    2,
+    4
+   ],
+   "word": "Recruitment"
+  },
+  {
+   "data": [
+    -2,
+    9
+   ],
+   "word": "Test_Filter"
+  },
+  {
+   "data": [
+    0,
+    534
+   ],
+   "word": "a"
+  },
+  {
+   "data": [
+    0,
+    49
+   ],
+   "word": "about"
+  },
+  {
+   "data": [
+    87,
+    394
+   ],
+   "word": "add"
+  },
+  {
+   "data": [
+    0,
+    7
+   ],
+   "word": "an"
+  },
+  {
+   "data": [
+    0,
+    134
+   ],
+   "word": "are"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "word": "boom"
+  },
+  {
+   "data": [
+    0,
+    11
+   ],
+   "word": "calendar"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "word": "calendar?"
+  },
+  {
+   "data": [
+    -2,
+    49
+   ],
+   "word": "can"
+  },
+  {
+   "data": [
+    0,
+    124
+   ],
+   "word": "check"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "word": "commands"
+  },
+  {
+   "data": [
+    1,
+    85
+   ],
+   "word": "committee"
+  },
+  {
+   "data": [
+    0,
+    54
+   ],
+   "word": "committee?"
+  },
+  {
+   "data": [
+    -2,
+    154
+   ],
+   "word": "complete"
+  },
+  {
+   "data": [
+    0,
+    230
+   ],
+   "word": "completed"
+  },
+  {
+   "data": [
+    0,
+    83
+   ],
+   "word": "could"
+  },
+  {
+   "data": [
+    0,
+    301
+   ],
+   "word": "dev"
+  },
+  {
+   "data": [
+    0,
+    16
+   ],
+   "word": "development"
+  },
+  {
+   "data": [
+    28,
+    137
+   ],
+   "word": "do"
+  },
+  {
+   "data": [
+    -1,
+    27
+   ],
+   "word": "do?"
+  },
+  {
+   "data": [
+    0,
+    310
+   ],
+   "word": "education"
+  },
+  {
+   "data": [
+    0,
+    18
+   ],
+   "word": "event"
+  },
+  {
+   "data": [
+    0,
+    50
+   ],
+   "word": "everyone"
+  },
+  {
+   "data": [
+    0,
+    120
+   ],
+   "word": "finish"
+  },
+  {
+   "data": [
+    0,
+    247
+   ],
+   "word": "finished"
+  },
+  {
+   "data": [
+    0,
+    438
+   ],
+   "word": "for"
+  },
+  {
+   "data": [
+    -2,
+    497
+   ],
+   "word": "get"
+  },
+  {
+   "data": [
+    0,
+    18
+   ],
+   "word": "give"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "word": "go"
+  },
+  {
+   "data": [
+    0,
+    4
+   ],
+   "word": "google"
+  },
+  {
+   "data": [
+    0,
+    16
+   ],
+   "word": "group"
+  },
+  {
+   "data": [
+    0,
+    116
+   ],
+   "word": "hello"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "word": "hello!"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "word": "hello?"
+  },
+  {
+   "data": [
+    0,
+    4
+   ],
+   "word": "hey"
+  },
+  {
+   "data": [
+    0,
+    47
+   ],
+   "word": "hi"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "word": "hi!"
+  },
+  {
+   "data": [
+    0,
+    477
+   ],
+   "word": "i"
+  },
+  {
+   "data": [
+    0,
+    245
+   ],
+   "word": "in"
+  },
+  {
+   "data": [
+    109,
+    2553
+   ],
+   "word": "iris"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "word": "iris,"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "word": "iris?"
+  },
+  {
+   "data": [
+    0,
+    15
+   ],
+   "word": "know?"
+  },
+  {
+   "data": [
+    29,
+    212
+   ],
+   "word": "list"
+  },
+  {
+   "data": [
+    -1,
+    222
+   ],
+   "word": "me"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "word": "me."
+  },
+  {
+   "data": [
+    0,
+    7
+   ],
+   "word": "me?"
+  },
+  {
+   "data": [
+    0,
+    124
+   ],
+   "word": "off"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "word": "open-source"
+  },
+  {
+   "data": [
+    0,
+    301
+   ],
+   "word": "org"
+  },
+  {
+   "data": [
+    0,
+    16
+   ],
+   "word": "organizational"
+  },
+  {
+   "data": [
+    0,
+    54
+   ],
+   "word": "our"
+  },
+  {
+   "data": [
+    0,
+    12
+   ],
+   "word": "out"
+  },
+  {
+   "data": [
+    -4,
+    315
+   ],
+   "word": "philanthropy"
+  },
+  {
+   "data": [
+    0,
+    34
+   ],
+   "word": "please"
+  },
+  {
+   "data": [
+    0,
+    8
+   ],
+   "word": "please?"
+  },
+  {
+   "data": [
+    64,
+    297
+   ],
+   "word": "recruitment"
+  },
+  {
+   "data": [
+    64,
+    273
+   ],
+   "word": "rush"
+  },
+  {
+   "data": [
+    0,
+    148
+   ],
+   "word": "say"
+  },
+  {
+   "data": [
+    0,
+    176
+   ],
+   "word": "scholarship"
+  },
+  {
+   "data": [
+    -1,
+    89
+   ],
+   "word": "service"
+  },
+  {
+   "data": [
+    0,
+    22
+   ],
+   "word": "show"
+  },
+  {
+   "data": [
+    -13,
+    461
+   ],
+   "word": "social"
+  },
+  {
+   "data": [
+    0,
+    49
+   ],
+   "word": "talk"
+  },
+  {
+   "data": [
+    56,
+    658
+   ],
+   "word": "task"
+  },
+  {
+   "data": [
+    -1,
+    308
+   ],
+   "word": "tasks"
+  },
+  {
+   "data": [
+    0,
+    65
+   ],
+   "word": "tasks?"
+  },
+  {
+   "data": [
+    28,
+    247
+   ],
+   "word": "tell"
+  },
+  {
+   "data": [
+    0,
+    538
+   ],
+   "word": "the"
+  },
+  {
+   "data": [
+    1,
+    39
+   ],
+   "word": "this"
+  },
+  {
+   "data": [
+    88,
+    401
+   ],
+   "word": "to"
+  },
+  {
+   "data": [
+    58,
+    698
+   ],
+   "word": "todo"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "word": "todo?"
+  },
+  {
+   "data": [
+    -1,
+    489
+   ],
+   "word": "todos"
+  },
+  {
+   "data": [
+    0,
+    69
+   ],
+   "word": "todos?"
+  },
+  {
+   "data": [
+    0,
+    3
+   ],
+   "word": "us"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "word": "wanna"
+  },
+  {
+   "data": [
+    0,
+    1
+   ],
+   "word": "week?"
+  },
+  {
+   "data": [
+    -2,
+    192
+   ],
+   "word": "what"
+  },
+  {
+   "data": [
+    -2,
+    147
+   ],
+   "word": "you"
+  }
+ ],
+ "command": "add todo recruitment"
+}

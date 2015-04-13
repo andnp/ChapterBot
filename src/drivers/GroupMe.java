@@ -26,7 +26,10 @@ public class GroupMe {
 		send_connection.setRequestMethod("POST");
 		send_connection.setDoOutput(true);
 		
-		JSONObject post_data = new JSONObject("{\"bot_id\":"+ bot_id + ",\"text\": \""+message+"\"}");
+		//JSONObject post_data = new JSONObject("{\"bot_id\":"+ bot_id + ",\"text\": \""+message+"\"}");
+		JSONObject post_data = new JSONObject();
+		post_data.put("bot_id", bot_id);
+		post_data.put("text", message);
 		OutputStream os = send_connection.getOutputStream();
 		os.write(post_data.toString().getBytes("UTF-8"));
 		BufferedReader r = new BufferedReader(new InputStreamReader(send_connection.getInputStream()));

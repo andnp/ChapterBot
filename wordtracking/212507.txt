@@ -1,0 +1,12 @@
+is this the command you want? add calendar event
+hi
+what calendar event would you like to add andy?
+what date is the event?
+what time is the event?
+added: this is a test event, scheduled for: wednesday at 6pm to google calendar.
+is this the command you want? what can you do?
+get todos
+add todos
+complete todos
+add calendar event
+

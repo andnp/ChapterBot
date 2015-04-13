@@ -6,7 +6,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
  $('#onbutton').on('click', function(){
-    $.get(ServerPower.php);
+    $.get('ServerPower.php');
     setTimeout(function(){updateStatus();}, 1000);
  });
 });

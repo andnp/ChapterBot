@@ -1,4 +1,4 @@
-package groupmefilter;
+package groupmechat;
 
 import java.io.IOException;
 
