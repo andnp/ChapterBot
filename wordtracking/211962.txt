@@ -62,3 +62,12 @@ is this the command you want (yes/no)? get todos education
 finish planning for the leadership training. due: apr 18
 
 is this the command you want (yes/no)? get todos
+is this the command you want (yes/no)? complete todo recruitment
+is this the command you want (yes/no)? add todo recruitment
+what todo would you like to add?
+when is it due?
+added: dorm storm  to: recruitment. due on: next recruitment meeting
+is this the command you want (yes/no)? add todo
+what todo would you like to add?
+when is it due?
+added: discuss the six cylinders of phired up. to: recruitment. due on: april 23.

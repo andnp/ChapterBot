@@ -576,7 +576,7 @@ public class CommitteeCommands extends Thread {
 		return array;
 	}
 	
-	// Do a binarySearch for in a list based on alphabetical order
+	// Do a binarySearch in a list based on alphabetical order
 	public int binarySearch(ArrayList<JSONObject> word_list, String word, final String key) throws JSONException{
 		JSONObject temp = new JSONObject();
 		temp.put(key, word);
