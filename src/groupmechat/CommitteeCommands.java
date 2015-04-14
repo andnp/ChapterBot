@@ -294,6 +294,8 @@ public class CommitteeCommands extends Thread {
 	}
 	
 	private void probablisticCommand(String message, String name) throws JSONException, IOException, InterruptedException{
+		System.out.println(message);
+		
 		String[] words = message.split(" "); // get the words from the message
 		String[] doubles = getDoubles(words);// get pairs of words from the message
 		String[] triples = getTriples(words);// get triples of words from the message
@@ -302,8 +304,8 @@ public class CommitteeCommands extends Thread {
 		
 		float[] command_probabilities = new float[KNOWN_COMMANDS.length]; // an array of probabilities
 		
-		for(int i = 0; i < KNOWN_COMMANDS.length; i++){ // for every known command
-			String json_text = new String(Files.readAllBytes(Paths.get("CommandDictionary/"+ i +".json")), StandardCharsets.UTF_8); // get data from the command file
+		for(int command_index = 0; command_index < KNOWN_COMMANDS.length; command_index++){ // for every known command
+			String json_text = new String(Files.readAllBytes(Paths.get("CommandDictionary/"+ command_index +".json")), StandardCharsets.UTF_8); // get data from the command file
 			JSONObject json = new JSONObject(json_text); // parson data into a json object
 			float word_sum = 0; float doubles_sum = 0; float triples_sum = 0; // initialize variables
 			float word_num = 0; float doubles_num = 0; float triples_num = 0;
@@ -312,59 +314,57 @@ public class CommitteeCommands extends Thread {
 			JSONArray json_doubles = json.getJSONArray("doubles"); // get the doubles from the data file
 			JSONArray json_triples = json.getJSONArray("triples"); // get the triples from the data file
 			
-			ArrayList<JSONObject> word_list = sortList(populateList(json_words), "word");
-			ArrayList<JSONObject> doubles_list = populateList(json_doubles);
-			ArrayList<JSONObject> triples_list = populateList(json_triples);
-			//System.out.println((String)json_words.getJSONObject(0).keys().next());
-			for(int k = 0; k < words.length; k++){
-				int j = binarySearch(word_list, words[k], "word");
-				boolean contains = j >= 0;
+			ArrayList<JSONObject> word_list = sortList(populateList(json_words), "word"); // sorted list of words
+			ArrayList<JSONObject> doubles_list = populateList(json_doubles); // sorted list of doubles
+			ArrayList<JSONObject> triples_list = populateList(json_triples); // sorted list of triples
+			
+			for(int word_index = 0; word_index < words.length; word_index++){ // iterate over words
+				int j = binarySearch(word_list, words[word_index], "word"); // find index of word (if it exists)
+				boolean contains = j >= 0; // if j > 0, then word exists
 				if(contains){
-					JSONArray data = json_words.getJSONObject(j).getJSONArray("data");
-					word_sum += (float)(data.getDouble(0) / data.getDouble(1));
-					word_num++;
+					JSONArray data = json_words.getJSONObject(j).getJSONArray("data"); // get the jth word
+					word_sum += (float)(data.getDouble(0) / data.getDouble(1)); // sum of (number of times correct / total number of uses)
+					word_num++; // increase number words
 				} else {
-					word_num++;
+					word_num++; // increase number words
 				}
 			}
-			for(int k = 0; k < doubles.length; k++){
-				int j = binarySearch(doubles_list, doubles[k], "double");
+			for(int k = 0; k < doubles.length; k++){ // iterate over doubles
+				int j = binarySearch(doubles_list, doubles[k], "double"); // find index of double (if it exists)
 				boolean contains = j >= 0;
 				if(contains){
-					JSONArray data = json_doubles.getJSONObject(j).getJSONArray("data");
-					doubles_sum += (float)(data.getDouble(0) / data.getDouble(1));
-					doubles_num++;
+					JSONArray data = json_doubles.getJSONObject(j).getJSONArray("data"); // get the jth double
+					doubles_sum += (float)(data.getDouble(0) / data.getDouble(1)); // sum of (number of times correct / total number of uses)
+					doubles_num++; // increase number doubles
 				} else {
-					doubles_num++;
+					doubles_num++; // increase number of doubles
 				}
-			}
-			for(int k = 0; k < triples.length; k++){
-				int j = binarySearch(triples_list, triples[k], "triple");
+			} 
+			for(int k = 0; k < triples.length; k++){ // iterate over triples
+				int j = binarySearch(triples_list, triples[k], "triple"); // find index of triple (if it exists)
 				boolean contains = j >= 0;
 				if(contains){
-					JSONArray data = json_triples.getJSONObject(j).getJSONArray("data");
-					triples_sum += (float)(data.getDouble(0) / data.getDouble(1));
-					triples_num++;
+					JSONArray data = json_triples.getJSONObject(j).getJSONArray("data"); // get the jth triple
+					triples_sum += (float)(data.getDouble(0) / data.getDouble(1)); // sum of (number of times correct / total number of uses)
+					triples_num++; // increase number triples
 				} else {
-					triples_num++;
+					triples_num++; // increase number triples
 				}
 			}
-			command_probabilities[i] = .1f * (word_sum / word_num) + .35f * (doubles_sum / doubles_num) + .55f * (triples_sum / triples_num);
-			System.out.println(message);
-			System.out.println(KNOWN_COMMANDS[i] +": " + command_probabilities[i]);
+			command_probabilities[command_index] = .1f * (word_sum / word_num) + .35f * (doubles_sum / doubles_num) + .55f * (triples_sum / triples_num); // compute weighted average of (word average, double average, triple average)
+			System.out.println(KNOWN_COMMANDS[command_index] +": " + command_probabilities[command_index]);
 		}
 		
 		int loc_max = -1;
 		float cur_max = -2;
-		for(int i = 0; i < command_probabilities.length; i++){
-			if(command_probabilities[i] > cur_max){
-				loc_max = i;
-				cur_max = command_probabilities[i];
+		for(int i = 0; i < command_probabilities.length; i++){ // iterate over command probabilities
+			if(command_probabilities[i] > cur_max){ // if current command probability is greater than the current max
+				loc_max = i; // save location of max
+				cur_max = command_probabilities[i]; // save current max probability
 			}
 		}
-//		train_guess(loc_max);
-		if(cur_max < .05) return;
-		if(cur_max > .4){
+		if(cur_max < .05) return; // if best guess is less than 5%, give up
+		if(cur_max > .4){ // if best guess is greater than 40% automatically execute
 			last_command = loc_max;
 			executeCommand(message, name);
 			learn(loc_max, message, true);
@@ -372,27 +372,29 @@ public class CommitteeCommands extends Thread {
 			last_message = message;
 			return;
 		}
-		guess(loc_max);
-		last_message = message;
+		guess(loc_max); // if best guess is greater than 5% but less than 40%, ask if best guess is correct
+		last_message = message; // remember the last message
 	}
 	
 	private void learn(int command, String message, boolean correct) throws IOException, JSONException{
-		for(int k = 0; k < KNOWN_COMMANDS.length; k++){
-			String json_text = new String(Files.readAllBytes(Paths.get("CommandDictionary/"+ k +".json")), StandardCharsets.UTF_8);
-			JSONObject json = new JSONObject(json_text);
-			JSONArray json_words = json.getJSONArray("words");
-			JSONArray json_doubles = json.getJSONArray("doubles");
-			JSONArray json_triples = json.getJSONArray("triples");
-			ArrayList<JSONObject> word_list = populateList(json_words);
-			ArrayList<JSONObject> doubles_list = populateList(json_doubles);
-			ArrayList<JSONObject> triples_list = populateList(json_triples);
+		for(int command_index = 0; command_index < KNOWN_COMMANDS.length; command_index++){
+			String json_text = new String(Files.readAllBytes(Paths.get("CommandDictionary/"+ command_index +".json")), StandardCharsets.UTF_8); // read data file
+			JSONObject json = new JSONObject(json_text); // convert data into json object
 			
-			String[] words = message.split(" ");
-			String[] doubles = getDoubles(words);
-			String[] triples = getTriples(words);
-			for(int j = 0; j < words.length; j++){
-				int i = binarySearch(word_list, words[j], "word");
-				//System.out.println("file: " + k +".json : Word " + words[j] + ": " + i);
+			JSONArray json_words = json.getJSONArray("words"); // get the words from the json object
+			JSONArray json_doubles = json.getJSONArray("doubles"); // get the doubles from the json object
+			JSONArray json_triples = json.getJSONArray("triples"); // get the triples from the json object
+			
+			ArrayList<JSONObject> word_list = populateList(json_words); // get a list of words
+			ArrayList<JSONObject> doubles_list = populateList(json_doubles); // get a list of doubles
+			ArrayList<JSONObject> triples_list = populateList(json_triples); // get a list of triples
+			
+			String[] words = message.split(" "); // get array of message words
+			String[] doubles = getDoubles(words); // get array of message doubles
+			String[] triples = getTriples(words); // get array of message triples
+			
+			for(int word_index = 0; word_index < words.length; word_index++){ // iterate over words
+				int i = binarySearch(word_list, words[word_index], "word");
 				boolean contained = i >= 0;
 				if(contained){
 					JSONObject json_word = json_words.getJSONObject(i);
@@ -400,33 +402,33 @@ public class CommitteeCommands extends Thread {
 					int count = word_info.getInt(0);
 					int of = word_info.getInt(1);
 					
-					if(correct && k == command){
+					if(correct && command_index == command){
 						word_info.put(0, ++count);
-					} else if(!correct && k == command){
+					} else if(!correct && command_index == command){
 						word_info.put(0, --count);
 					}
 					word_info.put(1, ++of);
 				}
-				if(!contained && !words[j].equals("learn")){
+				if(!contained && !words[word_index].equals("learn")){
 					JSONObject json_word = new JSONObject();
 					JSONArray word_info = new JSONArray();
-					if(correct && k == command){
+					if(correct && command_index == command){
 						word_info.put(1);
 					} else {
 						word_info.put(0);
 					}
-					if(!correct && k == command){
+					if(!correct && command_index == command){
 						word_info.put(-1);
 					}
 					word_info.put(1);
-					json_word.put("word", words[j]);
+					json_word.put("word", words[word_index]);
 					json_word.put("data", word_info);
 					word_list.add(json_word);
 				}
 				contained = false;
 			}
-			for(int j = 0; j < doubles.length; j++){
-				int i = binarySearch(doubles_list, doubles[j], "double");
+			for(int double_index = 0; double_index < doubles.length; double_index++){
+				int i = binarySearch(doubles_list, doubles[double_index], "double");
 //				System.out.println("file: " + k +".json : Double " + doubles[j] + ": " + i);
 				boolean contained = i >= 0;
 				if(contained){
@@ -435,9 +437,9 @@ public class CommitteeCommands extends Thread {
 					int count = double_info.getInt(0);
 					int of = double_info.getInt(1);
 					
-					if(correct && k == command){
+					if(correct && command_index == command){
 						double_info.put(0, ++count);
-					} else if(!correct && k == command){
+					} else if(!correct && command_index == command){
 						double_info.put(0, --count);
 					}
 					double_info.put(1, ++of);
@@ -445,23 +447,23 @@ public class CommitteeCommands extends Thread {
 				if(!contained){
 					JSONObject json_double = new JSONObject();
 					JSONArray double_info = new JSONArray();
-					if(correct && k == command){
+					if(correct && command_index == command){
 						double_info.put(1);
 					} else {
 						double_info.put(0);
 					}
-					if(!correct && k == command){
+					if(!correct && command_index == command){
 						double_info.put(-1);
 					}
 					double_info.put(1);
-					json_double.put("double", doubles[j]);
+					json_double.put("double", doubles[double_index]);
 					json_double.put("data", double_info);
 					doubles_list.add(json_double);
 				}
 				contained = false;
 			}
-			for(int j = 0; j < triples.length; j++){
-				int i = binarySearch(triples_list, triples[j], "triple");
+			for(int triple_index = 0; triple_index < triples.length; triple_index++){
+				int i = binarySearch(triples_list, triples[triple_index], "triple");
 //				System.out.println("file: " + k +".json : Double " + doubles[j] + ": " + i);
 				boolean contained = i >= 0;
 				if(contained){
@@ -470,9 +472,9 @@ public class CommitteeCommands extends Thread {
 					int count = triple_info.getInt(0);
 					int of = triple_info.getInt(1);
 					
-					if(correct && k == command){
+					if(correct && command_index == command){
 						triple_info.put(0, ++count);
-					} else if(!correct && k == command){
+					} else if(!correct && command_index == command){
 						triple_info.put(0, --count);
 					}
 					triple_info.put(1, ++of);
@@ -480,33 +482,37 @@ public class CommitteeCommands extends Thread {
 				if(!contained){
 					JSONObject json_triple = new JSONObject();
 					JSONArray triple_info = new JSONArray();
-					if(correct && k == command){
+					if(correct && command_index == command){
 						triple_info.put(1);
 					} else {
 						triple_info.put(0);
 					}
-					if(!correct && k == command){
+					if(!correct && command_index == command){
 						triple_info.put(-1);
 					}
 					triple_info.put(1);
-					json_triple.put("triple", triples[j]);
+					json_triple.put("triple", triples[triple_index]);
 					json_triple.put("data", triple_info);
 					triples_list.add(json_triple);
 				}
 				contained = false;
 			}
-			json_words = listToArray(sortList(word_list, "word"));
+			
+			json_words = listToArray(sortList(word_list, "word")); // sort data then put back to JSON Array
 			json_doubles = listToArray(sortList(doubles_list, "double"));
 			json_triples = listToArray(sortList(triples_list, "triple"));
-			json.put("words", json_words);
+			
+			json.put("words", json_words); // put data back into main json object
 			json.put("doubles", json_doubles);
 			json.put("triples", json_triples);
-			PrintWriter file_writer = new PrintWriter("CommandDictionary/" + k + ".json");
+			
+			PrintWriter file_writer = new PrintWriter("CommandDictionary/" + command_index + ".json"); // write the json object back to file
 			file_writer.println(json.toString(1));
 			file_writer.close();
 		}
 	}
 	
+	// returns an array containing the doubles
 	public String[] getDoubles(String[] words){
 		String [] doubles = new String[words.length - 1];
 		for(int i = 0; i < words.length - 1; i++){
@@ -515,6 +521,7 @@ public class CommitteeCommands extends Thread {
 		return doubles;
 	}
 	
+	// returns an array containing the triples
 	public String[] getTriples(String[] words){
 		String[] triples = new String[words.length - 2];
 		for(int i = 0; i < words.length - 2; i++){
@@ -523,6 +530,7 @@ public class CommitteeCommands extends Thread {
 		return triples;
 	}
 	
+	// sends a groupme message asking if the command is correct
 	private void guess(int command) throws IOException, JSONException, InterruptedException{
 		if(command == -1){System.out.println("error"); return;}
 		Thread.sleep(500);
@@ -530,7 +538,7 @@ public class CommitteeCommands extends Thread {
 		last_command = command;
 	}
 
-	
+	// JSONArray to ArrayList
 	public ArrayList<JSONObject> populateList(JSONArray json_words) throws JSONException{
 		ArrayList<JSONObject> word_list = new ArrayList<JSONObject>();
 		for(int i = 0; i < json_words.length(); i++){
@@ -539,6 +547,7 @@ public class CommitteeCommands extends Thread {
 		return word_list;
 	}
 	
+	// Sort an ArrayList without side effects
 	public ArrayList<JSONObject> sortList(ArrayList<JSONObject> word_list, final String key){
 		Collections.sort(word_list, new Comparator<JSONObject>(){
 			
@@ -557,26 +566,8 @@ public class CommitteeCommands extends Thread {
 		});
 		return word_list;
 	}
-//	private ArrayList<JSONObject> sortJSONArray(JSONArray json_words) throws JSONException{
-//		ArrayList<JSONObject> word_list = populateList(json_words);
-//		Collections.sort(word_list, new Comparator<JSONObject>(){
-//			private static final String KEY = "word";
-//			
-//			public int compare(JSONObject a, JSONObject b){
-//				String valA = "";
-//				String valB = "";
-//				
-//				try{
-//					valA = a.getString(KEY);
-//					valB = b.getString(KEY);
-//				} catch(JSONException e){
-//					
-//				}
-//				return valA.compareTo(valB);
-//			}
-//		});
-//		return word_list;
-//	}
+
+	// Take an ArrayList and turn it into a JSONArray
 	public JSONArray listToArray(ArrayList<JSONObject> word_list){
 		JSONArray array = new JSONArray();
 		for(JSONObject json : word_list){
@@ -584,6 +575,8 @@ public class CommitteeCommands extends Thread {
 		}
 		return array;
 	}
+	
+	// Do a binarySearch for in a list based on alphabetical order
 	public int binarySearch(ArrayList<JSONObject> word_list, String word, final String key) throws JSONException{
 		JSONObject temp = new JSONObject();
 		temp.put(key, word);
