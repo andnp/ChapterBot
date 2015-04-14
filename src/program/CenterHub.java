@@ -9,6 +9,8 @@ import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.security.GeneralSecurityException;
+import java.util.Scanner;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -21,7 +23,7 @@ import drivers.GroupMe;
 import drivers.Todoist;
 
 public class CenterHub {
-	private static String GROUP_TOKEN = "dde55e80aa3301322150761316d99941";
+	private static String GROUP_TOKEN = "";
 	private static String TEST_BOT_ID = "0a45c83bbc595e96fbd9ab323d";
 	private static String TEST_GROUP_ID = "12838361";
 	private static String DISCUSSION_BOT_ID = "b4f94be6d7c65a3f38b44b4fca";
@@ -50,6 +52,11 @@ public class CenterHub {
 	private static int test_kick_temp = 0;
 	
 	public static void main(String args[]) throws GeneralSecurityException, IOException, JSONException{
+//		read groupme token from file
+		Scanner sc = new Scanner("groupmetokens.txt");
+		GROUP_TOKEN = sc.nextLine();
+		sc.close();
+		
 //		Turn the bot on
 		turnOn();
 		//timesheetchecker.start();
