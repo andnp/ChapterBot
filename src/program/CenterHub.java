@@ -36,6 +36,8 @@ public class CenterHub {
 	private static String RECRUITMENT_GROUP_ID = "10911018";
 	private static String SOCIAL_BOT_ID = "648c163212b97f2fceffec9633";
 	private static String SOCIAL_GROUP_ID = "11012799";
+	private static String PHIL_BOT_ID = "6be869349880ef444171a2046e";
+	private static String PHIL_GROUP_ID = "11012911";
 	
 	private static ServerSocket server_socket;
 	
@@ -46,6 +48,7 @@ public class CenterHub {
 	private static GroupMeChat org_dev;
 	private static GroupMeChat recruitment;
 	private static GroupMeChat social;
+	private static GroupMeChat phil;
 	
 	private static boolean server_on = false;
 	private static int disc_kick_temp = 0;
@@ -160,6 +163,12 @@ public class CenterHub {
 		social.curseFilterOff();
 		social.messageCounterOff();
 		social.start();
+		phil = new GroupMeChat(2006, PHIL_BOT_ID, PHIL_GROUP_ID, "Philanthropy");
+		phil.committeeCommandsOn();
+		phil.wordCaptureOn();
+		phil.curseFilterOn();
+		phil.messageCounterOff();
+		phil.start();
 	}
 	
 	private static void loadStaticClasses(){
