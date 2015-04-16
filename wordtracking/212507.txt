@@ -11,3 +11,9 @@ complete todos
 add calendar event
 
 is this the command you want (yes/no)? get todos org dev
+approximate cost to chapter of upcoming events, and put estimated cost in minutes. due: apr 18
+begin discussing what funds you need for next semester's budget. due: apr 18
+
+what todo would you like to add?
+when is it due?
+added: discuss the olympics and make sure the games are well planned out. to: social. due on: saturday

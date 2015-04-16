@@ -39,7 +39,7 @@
    "triple": "a todo to",
    "data": [
     0,
-    5
+    11
    ]
   },
   {
@@ -102,7 +102,7 @@
    "triple": "add a todo",
    "data": [
     0,
-    23
+    29
    ]
   },
   {
@@ -608,7 +608,14 @@
    "triple": "could you add",
    "data": [
     0,
-    12
+    18
+   ]
+  },
+  {
+   "triple": "could you get",
+   "data": [
+    0,
+    1
    ]
   },
   {
@@ -1002,7 +1009,7 @@
    "triple": "get social todos",
    "data": [
     0,
-    10
+    12
    ]
   },
   {
@@ -1093,7 +1100,7 @@
    "triple": "get the rush",
    "data": [
     0,
-    16
+    17
    ]
   },
   {
@@ -1121,7 +1128,7 @@
    "triple": "get todos Org",
    "data": [
     0,
-    4
+    6
    ]
   },
   {
@@ -1177,14 +1184,14 @@
    "triple": "get todos recruitment",
    "data": [
     0,
-    10
+    11
    ]
   },
   {
    "triple": "get todos rush",
    "data": [
     0,
-    8
+    9
    ]
   },
   {
@@ -1380,7 +1387,7 @@
    "triple": "iris could you",
    "data": [
     0,
-    85
+    92
    ]
   },
   {
@@ -1443,7 +1450,7 @@
    "triple": "iris get social",
    "data": [
     0,
-    18
+    20
    ]
   },
   {
@@ -1464,7 +1471,7 @@
    "triple": "iris get todos",
    "data": [
     -1,
-    119
+    123
    ]
   },
   {
@@ -2114,6 +2121,13 @@
    ]
   },
   {
+   "triple": "rush todos for",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
    "triple": "say hello iris",
    "data": [
     0,
@@ -2181,6 +2195,13 @@
    "data": [
     0,
     3
+   ]
+  },
+  {
+   "triple": "social for me?",
+   "data": [
+    0,
+    6
    ]
   },
   {
@@ -2663,7 +2684,7 @@
    "triple": "the rush todos",
    "data": [
     0,
-    16
+    17
    ]
   },
   {
@@ -2839,6 +2860,13 @@
    "data": [
     0,
     8
+   ]
+  },
+  {
+   "triple": "to social for",
+   "data": [
+    0,
+    6
    ]
   },
   {
@@ -3071,7 +3099,7 @@
    "triple": "todo to social",
    "data": [
     0,
-    10
+    16
    ]
   },
   {
@@ -3085,7 +3113,14 @@
    "triple": "todos Org Dev",
    "data": [
     0,
-    4
+    6
+   ]
+  },
+  {
+   "triple": "todos for me?",
+   "data": [
+    0,
+    1
    ]
   },
   {
@@ -3197,7 +3232,7 @@
    "triple": "you add a",
    "data": [
     0,
-    9
+    15
    ]
   },
   {
@@ -3216,6 +3251,13 @@
   },
   {
    "triple": "you get our",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "you get the",
    "data": [
     0,
     1
@@ -3268,7 +3310,7 @@
   {
    "data": [
     0,
-    4
+    6
    ],
    "double": "Org Dev"
   },
@@ -3289,7 +3331,7 @@
   {
    "data": [
     29,
-    278
+    284
    ],
    "double": "a todo"
   },
@@ -3310,7 +3352,7 @@
   {
    "data": [
     0,
-    45
+    51
    ],
    "double": "add a"
   },
@@ -3471,7 +3513,7 @@
   {
    "data": [
     0,
-    86
+    93
    ],
    "double": "could you"
   },
@@ -3717,7 +3759,7 @@
   {
    "data": [
     0,
-    8
+    15
    ],
    "double": "for me?"
   },
@@ -3829,7 +3871,7 @@
   {
    "data": [
     0,
-    18
+    20
    ],
    "double": "get social"
   },
@@ -3843,14 +3885,14 @@
   {
    "data": [
     0,
-    161
+    162
    ],
    "double": "get the"
   },
   {
    "data": [
     -1,
-    119
+    123
    ],
    "double": "get todos"
   },
@@ -3878,7 +3920,7 @@
   {
    "data": [
     0,
-    13
+    14
    ],
    "double": "hello iris"
   },
@@ -3906,7 +3948,7 @@
   {
    "data": [
     0,
-    7
+    11
    ],
    "double": "hi iris"
   },
@@ -4019,7 +4061,7 @@
   {
    "data": [
     0,
-    85
+    92
    ],
    "double": "iris could"
   },
@@ -4033,7 +4075,7 @@
   {
    "data": [
     -2,
-    497
+    503
    ],
    "double": "iris get"
   },
@@ -4474,7 +4516,7 @@
   {
    "data": [
     0,
-    32
+    33
    ],
    "double": "rush todos"
   },
@@ -4578,6 +4620,13 @@
   },
   {
    "data": [
+    0,
+    6
+   ],
+   "double": "social for"
+  },
+  {
+   "data": [
     -1,
     89
    ],
@@ -4621,7 +4670,7 @@
   {
    "data": [
     0,
-    37
+    39
    ],
    "double": "social todos"
   },
@@ -4894,7 +4943,7 @@
   {
    "data": [
     0,
-    49
+    50
    ],
    "double": "the rush"
   },
@@ -5006,7 +5055,7 @@
   {
    "data": [
     0,
-    37
+    43
    ],
    "double": "to social"
   },
@@ -5125,14 +5174,14 @@
   {
    "data": [
     0,
-    59
+    65
    ],
    "double": "todo to"
   },
   {
    "data": [
     0,
-    4
+    6
    ],
    "double": "todos Org"
   },
@@ -5167,7 +5216,7 @@
   {
    "data": [
     0,
-    123
+    124
    ],
    "double": "todos for"
   },
@@ -5202,14 +5251,14 @@
   {
    "data": [
     0,
-    10
+    11
    ],
    "double": "todos recruitment"
   },
   {
    "data": [
     0,
-    8
+    9
    ],
    "double": "todos rush"
   },
@@ -5279,7 +5328,7 @@
   {
    "data": [
     0,
-    14
+    20
    ],
    "double": "you add"
   },
@@ -5300,7 +5349,7 @@
   {
    "data": [
     0,
-    1
+    2
    ],
    "double": "you get"
   },
@@ -5351,14 +5400,14 @@
   {
    "data": [
     0,
-    4
+    6
    ],
    "word": "Dev"
   },
   {
    "data": [
     0,
-    4
+    6
    ],
    "word": "Org"
   },
@@ -5386,7 +5435,7 @@
   {
    "data": [
     61,
-    540
+    546
    ],
    "word": "a"
   },
@@ -5400,7 +5449,7 @@
   {
    "data": [
     0,
-    401
+    407
    ],
    "word": "add"
   },
@@ -5491,7 +5540,7 @@
   {
    "data": [
     0,
-    86
+    93
    ],
    "word": "could"
   },
@@ -5568,14 +5617,14 @@
   {
    "data": [
     31,
-    439
+    446
    ],
    "word": "for"
   },
   {
    "data": [
     -2,
-    498
+    505
    ],
    "word": "get"
   },
@@ -5610,7 +5659,7 @@
   {
    "data": [
     0,
-    97
+    98
    ],
    "word": "hello"
   },
@@ -5638,7 +5687,7 @@
   {
    "data": [
     0,
-    47
+    51
    ],
    "word": "hi"
   },
@@ -5666,7 +5715,7 @@
   {
    "data": [
     100,
-    2542
+    2560
    ],
    "word": "iris"
   },
@@ -5715,7 +5764,7 @@
   {
    "data": [
     0,
-    8
+    15
    ],
    "word": "me?"
   },
@@ -5785,7 +5834,7 @@
   {
    "data": [
     0,
-    301
+    302
    ],
    "word": "recruitment"
   },
@@ -5799,7 +5848,7 @@
   {
    "data": [
     0,
-    273
+    275
    ],
    "word": "rush"
   },
@@ -5834,7 +5883,7 @@
   {
    "data": [
     -2,
-    461
+    469
    ],
    "word": "social"
   },
@@ -5883,7 +5932,7 @@
   {
    "data": [
     0,
-    538
+    539
    ],
    "word": "the"
   },
@@ -5897,14 +5946,14 @@
   {
    "data": [
     0,
-    407
+    413
    ],
    "word": "to"
   },
   {
    "data": [
     51,
-    706
+    712
    ],
    "word": "todo"
   },
@@ -5918,7 +5967,7 @@
   {
    "data": [
     -1,
-    490
+    497
    ],
    "word": "todos"
   },
@@ -5960,7 +6009,7 @@
   {
    "data": [
     -1,
-    151
+    158
    ],
    "word": "you"
   }
