@@ -177,14 +177,23 @@ public class CommitteeCommands extends Thread {
 	private void completeTodo(String comm, String message, String name) throws InterruptedException, JSONException, IOException{
 		if(is_waiting_for_response == 0){ // if in first state
 			Thread.sleep(500);
-			GroupMe.sendMessage("What todo would you like to complete?", bot_id); // prompt for todo name to complete
+			GroupMe.sendMessage("What todo would you like to complete? ('#' or 'all')", bot_id); // prompt for todo name to complete
 			is_waiting_for_response = 1; // set to second state
 			responder = name; // remember who issued the command
 		} else if(is_waiting_for_response == 1 && responder.equals(name)){
+			int todo = -2;
 			try{
-				Todoist.completeItem(message, comm); // complete an item by name
-			} catch (IOException e){
-				GroupMe.sendMessage("Unfortunately Todoist is down", bot_id);
+				if(message.contains("all")){ // if the message says 'all' complete every todo.
+					ArrayList<Integer> ids = Todoist.getItemIds(comm); // get all of the ids so we know the number of todos
+					for(int i = 0; i < ids.size(); i++){ // iterate over todoist items
+						Todoist.completeItem(i, comm); // complete an item by number
+					}
+				} else {
+					todo = Integer.parseInt(message.replaceAll("[^\\d.]", "")); // get integers from message string
+					Todoist.completeItem(todo, comm); // complete an item by number
+				}
+			} catch (IOException e){ // if Todoist returns an IOException, then Todoist API server must be down
+				GroupMe.sendMessage("Unfortunately Todoist is down", bot_id); // warn group that Todoist is currently down.
 				return;
 			}
 			Thread.sleep(500);
@@ -203,8 +212,9 @@ public class CommitteeCommands extends Thread {
 				GroupMe.sendMessage("No todos", bot_id);
 				return;
 			}
+			int i = 0;
 			for(String task : tasks){
-				to_send += task + "\n";
+				to_send += i + ") " + task + "\n";
 			}
 			Thread.sleep(100);
 			GroupMe.sendMessage(to_send, bot_id); // report todos to finish

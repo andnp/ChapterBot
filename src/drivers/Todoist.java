@@ -106,6 +106,30 @@ public class Todoist {
 		return 0;
 	}
 	
+	public static ArrayList<Integer> getItemIds(String committee) throws MalformedURLException, IOException, JSONException{
+		HttpURLConnection conn = (HttpURLConnection) new URL(TODO_API + "getUncompletedItems?" + TODO_TOKEN + "&project_id=" + project_id_map.get(committee)).openConnection();
+		conn.setRequestMethod("GET");
+		conn.setRequestProperty("Accept", "application/json");
+		conn.setDoOutput(true);
+		
+		BufferedReader r = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+		String out;
+		String total = "";
+		while((out = r.readLine()) != null){
+			total += out;
+		}
+		r.close();
+		JSONArray json_array = new JSONArray(total);
+		JSONObject json;
+		ArrayList<Integer> ret = new ArrayList<Integer>();
+		for(int i = 0; i < json_array.length(); i++){
+			json = json_array.getJSONObject(i);
+			ret.add(json.getInt("id"));
+		}
+		
+		return ret;
+	}
+	
 	public static void addItem(String item, String date, String committee) throws MalformedURLException, IOException{
 		String url = "";
 		if(date.equals("")){
@@ -122,9 +146,9 @@ public class Todoist {
 		r.close();
 	}
 	
-	public static void completeItem(String item, String committee) throws MalformedURLException, IOException, JSONException{
-		String id = getItemId(item, committee) + "";
-		String url = TODO_API + "completeItems?" + TODO_TOKEN + "&ids=[" + id + "]";
+	public static void completeItem(int item, String committee) throws MalformedURLException, IOException, JSONException{
+		ArrayList<Integer> ids = getItemIds(committee);
+		String url = TODO_API + "completeItems?" + TODO_TOKEN + "&ids=[" + ids.get(item) + "]";
 		HttpURLConnection conn = (HttpURLConnection) new URL(url.replaceAll(" ", "%20")).openConnection();
 		conn.setRequestMethod("GET");
 		conn.setRequestProperty("Accept", "application/json");
