@@ -174,14 +174,19 @@ public class CommitteeCommands extends Thread {
 		GroupMe.sendMessage(to_send, bot_id); // send compiled list of events
 	}
 	
-	private void completeTodo(String comm, String message, String name) throws InterruptedException, IOException, JSONException{
+	private void completeTodo(String comm, String message, String name) throws InterruptedException, JSONException, IOException{
 		if(is_waiting_for_response == 0){ // if in first state
 			Thread.sleep(500);
 			GroupMe.sendMessage("What todo would you like to complete?", bot_id); // prompt for todo name to complete
 			is_waiting_for_response = 1; // set to second state
 			responder = name; // remember who issued the command
 		} else if(is_waiting_for_response == 1 && responder.equals(name)){
-			Todoist.completeItem(message, comm); // complete an item by name
+			try{
+				Todoist.completeItem(message, comm); // complete an item by name
+			} catch (IOException e){
+				GroupMe.sendMessage("Unfortunately Todoist is down", bot_id);
+				return;
+			}
 			Thread.sleep(500);
 			GroupMe.sendMessage("Completed todo: " + message, bot_id); // report completion in the groupme
 			is_waiting_for_response = 0; // reset state machine
@@ -190,18 +195,22 @@ public class CommitteeCommands extends Thread {
 	}
 	
 	private void getTodos(String comm) throws JSONException, IOException, InterruptedException{
-		List<String> tasks = Todoist.getUncompletedTasks(comm); // get the list of uncompleted tasks based on committee
-		String to_send = "";
-		if(tasks.isEmpty()){ // if there are no todos, then report that
-			Thread.sleep(500);
-			GroupMe.sendMessage("No todos", bot_id);
-			return;
+		try{
+			List<String> tasks = Todoist.getUncompletedTasks(comm); // get the list of uncompleted tasks based on committee
+			String to_send = "";
+			if(tasks.isEmpty()){ // if there are no todos, then report that
+				Thread.sleep(500);
+				GroupMe.sendMessage("No todos", bot_id);
+				return;
+			}
+			for(String task : tasks){
+				to_send += task + "\n";
+			}
+			Thread.sleep(100);
+			GroupMe.sendMessage(to_send, bot_id); // report todos to finish
+		} catch(IOException e){
+			GroupMe.sendMessage("Unfortunately Todoist is down", bot_id);
 		}
-		for(String task : tasks){
-			to_send += task + "\n";
-		}
-		Thread.sleep(100);
-		GroupMe.sendMessage(to_send, bot_id); // report todos to finish
 	}
 	
 	private void addTodo(String comm, String message, String name) throws IOException, JSONException, InterruptedException{
@@ -216,7 +225,12 @@ public class CommitteeCommands extends Thread {
 			GroupMe.sendMessage("When is it due?", bot_id); // prompt for due date
 			is_waiting_for_response = 2; // set to third state
 		} else if(is_waiting_for_response == 2 && responder.equals(name)){
-			Todoist.addItem(stack.get(0), message, comm); // add todo
+			try{
+				Todoist.addItem(stack.get(0), message, comm); // add todo
+			} catch(IOException e){
+				GroupMe.sendMessage("Unfortunately Todoist is down", bot_id);
+				return;
+			}
 			Thread.sleep(500);
 			GroupMe.sendMessage("Added: " + stack.remove(0) + " to: " + comm + ". Due on: " + message, bot_id);
 			is_waiting_for_response = 0; // reset state machine
