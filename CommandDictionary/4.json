@@ -39,7 +39,7 @@
    "triple": "a todo to",
    "data": [
     0,
-    11
+    12
    ]
   },
   {
@@ -103,7 +103,7 @@
    "triple": "add a todo",
    "data": [
     0,
-    29
+    30
    ]
   },
   {
@@ -129,6 +129,20 @@
   },
   {
    "triple": "add google calendar",
+   "data": [
+    0,
+    2
+   ]
+  },
+  {
+   "triple": "add recruitment todo",
+   "data": [
+    0,
+    2
+   ]
+  },
+  {
+   "triple": "add rush todo",
    "data": [
     0,
     2
@@ -271,28 +285,28 @@
    "triple": "add todo philanthropy",
    "data": [
     0,
-    12
+    15
    ]
   },
   {
    "triple": "add todo recruitment",
    "data": [
     -1,
-    13
+    14
    ]
   },
   {
    "triple": "add todo rush",
    "data": [
     0,
-    8
+    9
    ]
   },
   {
    "triple": "add todo social",
    "data": [
     0,
-    11
+    17
    ]
   },
   {
@@ -416,6 +430,13 @@
    ]
   },
   {
+   "triple": "can you do",
+   "data": [
+    0,
+    3
+   ]
+  },
+  {
    "triple": "can you do?",
    "data": [
     -1,
@@ -426,7 +447,7 @@
    "triple": "can you get",
    "data": [
     0,
-    1
+    3
    ]
   },
   {
@@ -1087,7 +1108,7 @@
    "triple": "get the philanthropy",
    "data": [
     0,
-    16
+    18
    ]
   },
   {
@@ -1130,7 +1151,7 @@
    "triple": "get todos Org",
    "data": [
     0,
-    6
+    7
    ]
   },
   {
@@ -1179,21 +1200,21 @@
    "triple": "get todos philanthropy",
    "data": [
     -1,
-    11
+    13
    ]
   },
   {
    "triple": "get todos recruitment",
    "data": [
-    11,
-    11
+    12,
+    12
    ]
   },
   {
    "triple": "get todos rush",
    "data": [
-    9,
-    9
+    10,
+    10
    ]
   },
   {
@@ -1207,7 +1228,7 @@
    "triple": "get todos social",
    "data": [
     -3,
-    43,
+    44,
     1
    ]
   },
@@ -1299,7 +1320,7 @@
    "triple": "iris add a",
    "data": [
     0,
-    36
+    37
    ]
   },
   {
@@ -1331,6 +1352,20 @@
    ]
   },
   {
+   "triple": "iris add recruitment",
+   "data": [
+    0,
+    2
+   ]
+  },
+  {
+   "triple": "iris add rush",
+   "data": [
+    0,
+    2
+   ]
+  },
+  {
    "triple": "iris add task",
    "data": [
     0,
@@ -1348,14 +1383,14 @@
    "triple": "iris add todo",
    "data": [
     -1,
-    134
+    145
    ]
   },
   {
    "triple": "iris can you",
    "data": [
     0,
-    6
+    8
    ]
   },
   {
@@ -1474,8 +1509,8 @@
   {
    "triple": "iris get todos",
    "data": [
-    15,
-    123
+    17,
+    130
    ]
   },
   {
@@ -2025,6 +2060,13 @@
    ]
   },
   {
+   "triple": "philanthropy social service",
+   "data": [
+    0,
+    2
+   ]
+  },
+  {
    "triple": "philanthropy task list",
    "data": [
     0,
@@ -2043,6 +2085,20 @@
    "data": [
     0,
     10
+   ]
+  },
+  {
+   "triple": "philanthropy todo social",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "philanthropy todos for",
+   "data": [
+    0,
+    2
    ]
   },
   {
@@ -2609,7 +2665,7 @@
    "triple": "the philanthropy todos",
    "data": [
     0,
-    16
+    18
    ]
   },
   {
@@ -3058,6 +3114,27 @@
    ]
   },
   {
+   "triple": "todo philanthropy social",
+   "data": [
+    0,
+    2
+   ]
+  },
+  {
+   "triple": "todo philanthropy todo",
+   "data": [
+    0,
+    1
+   ]
+  },
+  {
+   "triple": "todo social service",
+   "data": [
+    0,
+    7
+   ]
+  },
+  {
    "triple": "todo to education",
    "data": [
     0,
@@ -3096,7 +3173,7 @@
    "triple": "todo to rush",
    "data": [
     0,
-    8
+    9
    ]
   },
   {
@@ -3117,14 +3194,14 @@
    "triple": "todos Org Dev",
    "data": [
     0,
-    6
+    7
    ]
   },
   {
    "triple": "todos for me?",
    "data": [
     1,
-    1
+    3
    ]
   },
   {
@@ -3166,7 +3243,7 @@
    "triple": "todos social service",
    "data": [
     0,
-    33
+    34
    ]
   },
   {
@@ -3201,7 +3278,7 @@
    "triple": "what can you",
    "data": [
     -1,
-    23
+    26
    ]
   },
   {
@@ -3254,6 +3331,13 @@
    ]
   },
   {
+   "triple": "you do iris?",
+   "data": [
+    0,
+    3
+   ]
+  },
+  {
    "triple": "you get our",
    "data": [
     0,
@@ -3264,7 +3348,7 @@
    "triple": "you get the",
    "data": [
     1,
-    1
+    3
    ]
   },
   {
@@ -3314,7 +3398,7 @@
   {
    "data": [
     0,
-    6
+    7
    ],
    "double": "Org Dev"
   },
@@ -3335,7 +3419,7 @@
   {
    "data": [
     0,
-    284
+    285
    ],
    "double": "a todo"
   },
@@ -3356,7 +3440,7 @@
   {
    "data": [
     0,
-    51
+    52
    ],
    "double": "add a"
   },
@@ -3391,6 +3475,20 @@
   {
    "data": [
     0,
+    2
+   ],
+   "double": "add recruitment"
+  },
+  {
+   "data": [
+    0,
+    2
+   ],
+   "double": "add rush"
+  },
+  {
+   "data": [
+    0,
     109
    ],
    "double": "add task"
@@ -3405,7 +3503,7 @@
   {
    "data": [
     -1,
-    134
+    145
    ],
    "double": "add todo"
   },
@@ -3461,7 +3559,7 @@
   {
    "data": [
     -1,
-    34
+    39
    ],
    "double": "can you"
   },
@@ -3583,6 +3681,13 @@
     8
    ],
    "double": "dev todos?"
+  },
+  {
+   "data": [
+    0,
+    3
+   ],
+   "double": "do iris?"
   },
   {
    "data": [
@@ -3762,7 +3867,7 @@
   {
    "data": [
     1,
-    15
+    17
    ],
    "double": "for me?"
   },
@@ -3889,14 +3994,14 @@
   {
    "data": [
     37,
-    162
+    164
    ],
    "double": "get the"
   },
   {
    "data": [
-    15,
-    123
+    17,
+    130
    ],
    "double": "get todos"
   },
@@ -3952,7 +4057,7 @@
   {
    "data": [
     0,
-    11
+    17
    ],
    "double": "hi iris"
   },
@@ -4036,14 +4141,14 @@
   {
    "data": [
     -1,
-    386
+    402
    ],
    "double": "iris add"
   },
   {
    "data": [
     0,
-    6
+    8
    ],
    "double": "iris can"
   },
@@ -4077,8 +4182,8 @@
   },
   {
    "data": [
-    93,
-    503
+    95,
+    510
    ],
    "double": "iris get"
   },
@@ -4344,6 +4449,13 @@
   {
    "data": [
     0,
+    2
+   ],
+   "double": "philanthropy social"
+  },
+  {
+   "data": [
+    0,
     8
    ],
    "double": "philanthropy task"
@@ -4372,14 +4484,14 @@
   {
    "data": [
     0,
-    10
+    11
    ],
    "double": "philanthropy todo"
   },
   {
    "data": [
     0,
-    32
+    34
    ],
    "double": "philanthropy todos"
   },
@@ -4456,7 +4568,7 @@
   {
    "data": [
     0,
-    8
+    10
    ],
    "double": "recruitment todo"
   },
@@ -4512,7 +4624,7 @@
   {
    "data": [
     0,
-    8
+    10
    ],
    "double": "rush todo"
   },
@@ -4633,7 +4745,7 @@
   {
    "data": [
     0,
-    89
+    99
    ],
    "double": "social service"
   },
@@ -4937,7 +5049,7 @@
   {
    "data": [
     -1,
-    59
+    61
    ],
    "double": "the philanthropy"
   },
@@ -5057,7 +5169,7 @@
   {
    "data": [
     0,
-    32
+    33
    ],
    "double": "to rush"
   },
@@ -5148,21 +5260,21 @@
   {
    "data": [
     0,
-    41
+    44
    ],
    "double": "todo philanthropy"
   },
   {
    "data": [
     -1,
-    39
+    40
    ],
    "double": "todo recruitment"
   },
   {
    "data": [
     0,
-    32
+    33
    ],
    "double": "todo rush"
   },
@@ -5176,21 +5288,21 @@
   {
    "data": [
     0,
-    45
+    52
    ],
    "double": "todo social"
   },
   {
    "data": [
     0,
-    65
+    66
    ],
    "double": "todo to"
   },
   {
    "data": [
     0,
-    6
+    7
    ],
    "double": "todos Org"
   },
@@ -5225,7 +5337,7 @@
   {
    "data": [
     21,
-    124
+    126
    ],
    "double": "todos for"
   },
@@ -5246,7 +5358,7 @@
   {
    "data": [
     -1,
-    11
+    13
    ],
    "double": "todos philanthropy"
   },
@@ -5259,15 +5371,15 @@
   },
   {
    "data": [
-    11,
-    11
+    12,
+    12
    ],
    "double": "todos recruitment"
   },
   {
    "data": [
-    9,
-    9
+    10,
+    10
    ],
    "double": "todos rush"
   },
@@ -5281,7 +5393,7 @@
   {
    "data": [
     -3,
-    51,
+    52,
     1
    ],
    "double": "todos social"
@@ -5310,7 +5422,7 @@
   {
    "data": [
     -1,
-    23
+    26
    ],
    "double": "what can"
   },
@@ -5351,6 +5463,13 @@
   },
   {
    "data": [
+    0,
+    3
+   ],
+   "double": "you do"
+  },
+  {
+   "data": [
     -1,
     27
    ],
@@ -5359,7 +5478,7 @@
   {
    "data": [
     1,
-    2
+    4
    ],
    "double": "you get"
   },
@@ -5410,14 +5529,14 @@
   {
    "data": [
     0,
-    6
+    7
    ],
    "word": "Dev"
   },
   {
    "data": [
     0,
-    6
+    7
    ],
    "word": "Org"
   },
@@ -5445,7 +5564,7 @@
   {
    "data": [
     0,
-    546
+    547
    ],
    "word": "a"
   },
@@ -5459,7 +5578,7 @@
   {
    "data": [
     -1,
-    407
+    423
    ],
    "word": "add"
   },
@@ -5501,7 +5620,7 @@
   {
    "data": [
     -2,
-    50
+    55
    ],
    "word": "can"
   },
@@ -5571,7 +5690,7 @@
   {
    "data": [
     -2,
-    137
+    140
    ],
    "word": "do"
   },
@@ -5627,14 +5746,14 @@
   {
    "data": [
     21,
-    446
+    448
    ],
    "word": "for"
   },
   {
    "data": [
-    95,
-    506
+    97,
+    515
    ],
    "word": "get"
   },
@@ -5697,7 +5816,7 @@
   {
    "data": [
     0,
-    51
+    57
    ],
    "word": "hi"
   },
@@ -5724,8 +5843,8 @@
   },
   {
    "data": [
-    180,
-    2611
+    182,
+    2642
    ],
    "word": "iris"
   },
@@ -5739,7 +5858,7 @@
   {
    "data": [
     0,
-    1
+    4
    ],
    "word": "iris?"
   },
@@ -5774,7 +5893,7 @@
   {
    "data": [
     1,
-    15
+    17
    ],
    "word": "me?"
   },
@@ -5823,7 +5942,7 @@
   {
    "data": [
     -3,
-    315
+    322
    ],
    "word": "philanthropy"
   },
@@ -5843,8 +5962,8 @@
   },
   {
    "data": [
-    107,
-    303
+    108,
+    307
    ],
    "word": "recruitment"
   },
@@ -5857,8 +5976,8 @@
   },
   {
    "data": [
-    98,
-    275
+    99,
+    280
    ],
    "word": "rush"
   },
@@ -5879,7 +5998,7 @@
   {
    "data": [
     0,
-    89
+    99
    ],
    "word": "service"
   },
@@ -5893,7 +6012,7 @@
   {
    "data": [
     -16,
-    467,
+    477,
     1
    ],
    "word": "social"
@@ -5943,7 +6062,7 @@
   {
    "data": [
     115,
-    539
+    541
    ],
    "word": "the"
   },
@@ -5957,14 +6076,14 @@
   {
    "data": [
     15,
-    413
+    414
    ],
    "word": "to"
   },
   {
    "data": [
     -1,
-    711
+    728
    ],
    "word": "todo"
   },
@@ -5977,8 +6096,8 @@
   },
   {
    "data": [
-    44,
-    216
+    46,
+    225
    ],
    "word": "todos"
   },
@@ -6020,14 +6139,14 @@
   {
    "data": [
     26,
-    192
+    195
    ],
    "word": "what"
   },
   {
    "data": [
     12,
-    158
+    163
    ],
    "word": "you"
   }

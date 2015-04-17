@@ -60,7 +60,6 @@ public class CenterHub {
 //		read groupme token from file
 		Scanner sc = new Scanner(new File("groupmetokens.txt"));
 		GROUP_TOKEN = sc.nextLine();
-		System.out.println(GROUP_TOKEN);
 		sc.close();
 		
 //		Turn the bot on

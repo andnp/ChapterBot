@@ -165,7 +165,7 @@ public class CommitteeCommands extends Thread {
 	}
 	
 	private void listCommands() throws InterruptedException, IOException, JSONException{
-		String[] commands = {"Get todos", "Add todo", "Complete todo", "Add calendar event"}; // general list of commands
+		String[] commands = {"Get todos", "Add todo", "Complete todo", "Add calendar event", "If you want to stop prompts, say nevermind"}; // general list of commands
 		String to_send = ""; // string of information to send
 		for(String command : commands){
 			to_send += command + "\n";
