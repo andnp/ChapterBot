@@ -3,6 +3,7 @@ package program;
 import groupmechat.GroupMeChat;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
@@ -17,6 +18,7 @@ import org.json.JSONObject;
 
 
 //import studytablestimesheet.CheckOuts;
+
 
 import drivers.GoogleCalendar;
 import drivers.GroupMe;
@@ -56,8 +58,9 @@ public class CenterHub {
 	
 	public static void main(String args[]) throws GeneralSecurityException, IOException, JSONException{
 //		read groupme token from file
-		Scanner sc = new Scanner("groupmetokens.txt");
+		Scanner sc = new Scanner(new File("groupmetokens.txt"));
 		GROUP_TOKEN = sc.nextLine();
+		System.out.println(GROUP_TOKEN);
 		sc.close();
 		
 //		Turn the bot on
