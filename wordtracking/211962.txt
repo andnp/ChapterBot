@@ -80,3 +80,22 @@ discuss phired up recruitment ideas. due: april 18.
 dorm storm due: apr 18
 discuss the six cylinders of phired up. due: april 23.
 
+is this the command you want (yes/no)? add todo recruitment
+is this the command you want (yes/no)? get todos org dev
+discuss where events will be held next year due: april 18
+report discussion with almuni association about goodie baskets due: apr 18
+create a google doc specifying events ideas (new, old, etc). due: apr 18
+start designing the rush shirts for next semester due: sat
+discuss phired up recruitment ideas. due: april 18.
+dorm storm due: apr 18
+discuss the six cylinders of phired up. due: april 23.
+
+hi patrick
+hi alex
+is this the command you want (yes/no)? add todo recruitment
+what todo would you like to add?
+when is it due?
+added: list welcome week recruitment plan. to: recruitment. due on: april 23.
+what todo would you like to add?
+when is it due?
+added: vote on rush shirts?  to: recruitment. due on: the 23rd 
