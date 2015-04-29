@@ -168,7 +168,7 @@ public class CenterHub {
 		phil = new GroupMeChat(2006, PHIL_BOT_ID, PHIL_GROUP_ID, "Philanthropy");
 		phil.committeeCommandsOn();
 		phil.wordCaptureOn();
-		phil.curseFilterOn();
+		phil.curseFilterOff();
 		phil.messageCounterOff();
 		phil.start();
 	}
